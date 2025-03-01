@@ -9,6 +9,9 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
+    <!-- =======================AOS SCROLL================ -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- =======================STYLES================ -->
     <link rel="stylesheet" href="../Public/assets/css/style.css">
 </head>
@@ -92,7 +95,7 @@
 
 
         <!-- =====================MAIN GENERAL=============================== -->
-        
+
         <!-- =====================MAIN TABLEAU=============================== -->
         <div class="mainTableau">
             <div class="topBar">
@@ -155,28 +158,100 @@
                 </div>
             </div>
 
-    <!-- =======================GRAPHIQUES================ -->
+            <!-- =======================GRAPHIQUES STAGIAIRE + ABS RETARD================ -->
 
-    <div class="graphs bg-light">
-        <div class="graphStagiaires">
-            <div class="title">
-                <h4>Nombres total de Stagiaires</h4>
-            </div>
-            <div class="chartContainerStagiaire w-100">
-                <canvas id="stagiaireChart" aria-label="chart" role="img"></canvas>
-            </div>
-        </div>
+            <div class="graphs bg-light">
+                <div class="graphStagiaires">
+                    <div class="title">
+                        <h4>Nombres total de Stagiaires</h4>
+                    </div>
+                    <div class="chartContainerStagiaire w-100">
+                        <canvas id="stagiaireChart" aria-label="chart" role="img"></canvas>
+                    </div>
+                </div>
 
-        <div class="graphLateAbs">
-            <div class="title">
-                <h4>Nombres total de Retards-Absences</h4>
+                <div class="graphLateAbs">
+                    <div class="title">
+                        <h4>Nombres total de Retards-Absences</h4>
+                    </div>
+                    <div class="chartContainerAbs w-100">
+                        <canvas id="absencesChart" aria-label="chart" role="img"></canvas>
+                    </div>
+                </div>
             </div>
-            <div class="chartContainerAbs w-100">
-                <canvas id="absencesChart" aria-label="chart" role="img"></canvas>
-            </div>
-        </div>
-    </div>
 
+            <!-- =======================GRAPHIQUE + TABLEAU DOSSIERS================ -->
+            <!-- graphique -->
+            <div class="graphTableDossiers bg-light">
+                <div data-aos="fade-right">
+                    <div class="graphDossiers me-5">
+                        <div class="title">
+                            <h4>Nombres de dossier par classe</h4>
+                        </div>
+                        <div class="chartContainerDossier w-100">
+                            <canvas id="polarChart" aria-label="chart" role="img"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <!-- tableau -->
+                <div data-aos="fade-left">
+                    <div class="TableDossier pe-3">
+                        <div class="title">
+                            <h4>Dossier en cours</h4>
+                        </div>
+                        <table class="table align-middle table-striped table-hover table-custom bg-secondary">
+                            <thead>
+                                <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col">Nom</th>
+                                    <th scope="col">Prénom</th>
+                                    <th scope="col">Action</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row"><img width="14" height="14"
+                                            src="https://img.icons8.com/material-two-tone/24/collect.png"
+                                            alt="collect" />
+                                    </th>
+                                    <td>Napolitano</td>
+                                    <td>Amandine</td>
+                                    <td><button type="button" class="btn btn-outline-primary ">En cours</button></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><img width="14" height="14"
+                                            src="https://img.icons8.com/material-two-tone/24/collect.png"
+                                            alt="collect" />
+                                    </th>
+                                    <td>Uzumaki</td>
+                                    <td>Naruto</td>
+                                    <td><button type="button" class="btn btn-outline-primary">En cours</button></td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row"><img width="14" height="14"
+                                            src="https://img.icons8.com/material-two-tone/24/collect.png"
+                                            alt="collect" />
+                                    </th>
+                                    <td>Hatake</td>
+                                    <td>Looka</td>
+                                    <td><button type="button" class="btn btn-outline-danger">Refusé</button></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><img width="14" height="14"
+                                            src="https://img.icons8.com/material-two-tone/24/collect.png"
+                                            alt="collect" />
+                                    </th>
+                                    <td>Nara</td>
+                                    <td>Shikamaru</td>
+                                    <td><button type="button" class="btn btn-outline-success">Valider</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
 
 
 
@@ -223,6 +298,12 @@
     <!-- =======================IONICON================ -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- =======================AOS================ -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     <!-- =======================CHARTS================ -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js"></script> -->

@@ -147,3 +147,52 @@ const pieChart = new Chart(pieCanvas, {
         }
     }]
 });
+
+// graph polar par class
+const polarCanvas = document.querySelector('#polarChart');
+const polarChart = new Chart(polarCanvas, {
+    type: 'polarArea',
+    data: {
+        labels: ['CDA', 'FullStack', 'DevWeb', 'RAN1', 'Ran2', 'Réseau'],
+        datasets: [
+            {
+                label: 'Dossiers traités',
+                data: [35, 40, 28, 50, 30, 45], // Remplace avec tes vraies données
+                backgroundColor: [
+                    'rgba(21, 26, 55, 0.8)',  
+                    'rgba(21, 26, 55, 0.6)', 
+                    'rgba(21, 26, 55, 0.4)',  
+                    'rgba(255, 102, 22, 0.8)', 
+                    'rgba(255, 102, 22, 0.6)', 
+                    'rgba(255, 102, 22, 0.4)'  
+                ],
+                borderColor: '#fff',
+                borderWidth: 2
+            }
+        ]
+    },
+    options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        scales: {
+            r: { // Configuration de l'axe radial
+                suggestedMin: 0,
+                suggestedMax: 60,
+                grid: { color: 'rgba(0, 0, 0, 0.1)' }, // Couleur de la grille
+                ticks: { 
+                    backdropColor: 'transparent', // Fond des valeurs
+                    font: { size: 14 }
+                }
+            }
+        },
+        plugins: {
+            legend: {
+                position: 'right', // Légende à droite
+                labels: {
+                    font: { size: 14 },
+                    color: '#333'
+                }
+            }
+        }
+    }
+});
