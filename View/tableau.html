@@ -91,8 +91,9 @@
         </div>
 
 
-        <!-- =====================MAIN=============================== -->
-
+        <!-- =====================MAIN GENERAL=============================== -->
+        
+        <!-- =====================MAIN TABLEAU=============================== -->
         <div class="mainTableau">
             <div class="topBar">
                 <div class="toggle">
@@ -106,13 +107,87 @@
                             alt="search--v1" />
                     </label>
                 </div>
-                
-                    <div class="user">
-                        <img src="../Public/assets/images/gohan.jpg" alt="">
-                    </div>
+
+                <div class="user">
+                    <img src="../Public/assets/images/gohan.jpg" alt="">
                 </div>
             </div>
+
+            <!-- =====================CARDS=============================== -->
+
+            <div class="cardBox">
+                <div class="card border-0">
+                    <div>
+                        <div class="cardNumber">15</div>
+                        <div class="cardName">Classes</div>
+                    </div>
+
+                    <div class="iconCard">
+                        <img width="60" height="60" src="https://img.icons8.com/glyph-neue/64/classroom.png"
+                            alt="classroom" />
+                    </div>
+                </div>
+
+                <div class="card border-0">
+                    <div>
+                        <div class="cardNumber">254</div>
+                        <div class="cardName">Dossiers</div>
+                    </div>
+                    <div class="iconCard"><img width="60" height="60"
+                            src="https://img.icons8.com/glyph-neue/64/user-folder.png" alt="user-folder" /></div>
+                </div>
+                <div class="card border-0">
+                    <div>
+                        <div class="cardNumber">1.502</div>
+                        <div class="cardName">Stagiaires</div>
+                    </div>
+                    <div class="iconCard"><img width="60" height="60"
+                            src="https://img.icons8.com/glyph-neue/64/student-male.png" alt="student-male" /></div>
+                </div>
+                <div class="card border-0">
+                    <div>
+                        <div class="cardNumber">5</div>
+                        <div class="cardName">Notifications</div>
+                    </div>
+                    <div class="iconCard"><img width="60" height="60"
+                            src="https://img.icons8.com/ios-filled/50/appointment-reminders--v1.png"
+                            alt="appointment-reminders--v1" /></div>
+                </div>
+            </div>
+
+    <!-- =======================GRAPHIQUES================ -->
+
+    <div class="graphs bg-light">
+        <div class="graphStagiaires">
+            <div class="title">
+                <h4>Nombres total de Stagiaires</h4>
+            </div>
+            <div class="chartContainerStagiaire w-100">
+                <canvas id="stagiaireChart" aria-label="chart" role="img"></canvas>
+            </div>
         </div>
+
+        <div class="graphLateAbs">
+            <div class="title">
+                <h4>Nombres total de Retards-Absences</h4>
+            </div>
+            <div class="chartContainerAbs w-100">
+                <canvas id="absencesChart" aria-label="chart" role="img"></canvas>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
 
 
 
@@ -135,11 +210,27 @@
 
     </div>
 
-    <!-- =======================SCRIPT================ -->
-    <script src="../Public/assets/js/style.js"></script>
+    <!-- =======================SCRIPT JS================ -->
+    <!-- =======================JQUERY================ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- =======================WAYPOINTS================ dependance requise du Counter-up-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+    <!-- =======================COUNTER================ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+
     <!-- =======================IONICON================ -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- =======================CHARTS================ -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+
+    <!-- =======================SCRIPT================ -->
+    <script src="../Public/assets/js/style.js"></script>
+
 </body>
 
 </html>

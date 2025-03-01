@@ -8,7 +8,9 @@
 
 :root {
 	--bleu: #151A37;
+	--bleu-opacité: #151a3723;
 	--orange: #FF6616;
+	--orange-opacité: #ff681624;
 }
 
 a {
@@ -223,7 +225,7 @@ button:hover {
 	white-space: nowrap;
 }
 
-.navigation ul li a .icon, 
+.navigation ul li a .icon,
 .iconHovered {
 	filter: invert(100%);
 }
@@ -248,17 +250,19 @@ button:hover {
 
 .navigation ul li:hover a::after,
 .navigation ul li.hovered a::after {
-    content: "";
-    position: absolute;
-    bottom: -50px; /* Ajuste pour ne pas remonter trop */
-    right: 0;
-    width: 50px;
-    height: 50px;
-    background-color: transparent;
-    border-radius: 50%;
-    box-shadow: 35px -30px 0px 10px rgba(255, 255, 255);
-    pointer-events: none;
-    z-index: -1; /* Met l'effet derrière */
+	content: "";
+	position: absolute;
+	bottom: -50px;
+	/* Ajuste pour ne pas remonter trop */
+	right: 0;
+	width: 50px;
+	height: 50px;
+	background-color: transparent;
+	border-radius: 50%;
+	box-shadow: 35px -30px 0px 10px rgba(255, 255, 255);
+	pointer-events: none;
+	z-index: -1;
+	/* Met l'effet derrière */
 }
 
 
@@ -340,8 +344,130 @@ button:hover {
 	object-fit: cover;
 }
 
+/* <!-- =====================CARDS=============================== --> */
+
+.cardBox {
+	position: relative;
+	width: 100%;
+	padding: 20px;
+	display: grid;
+	flex-wrap: wrap;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 30px;
+}
+
+.cardBox .card {
+	position: relative;
+	padding: 20px;
+	background-color: var(--bleu-opacité);
+	border-radius: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	cursor: pointer;
+	box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+	overflow: hidden;
+}
+
+.cardBox .card:nth-child(even) {
+	background-color: var(--orange-opacité);
+}
 
 
+.cardBox .card .cardNumber {
+	position: relative;
+	font-weight: 400;
+	font-size: 2.5rem;
+}
+
+.cardBox .card .cardName {
+	position: relative;
+	font-size: 1.5rem;
+
+}
+
+.card .iconCard {
+	position: relative;
+	display: flex;
+	align-items: center;
+
+}
+
+.cardBox .card::before {
+	content: "";
+	position: absolute;
+	top: -20px;
+	right: -20px;
+	/* Déplace le rond en haut à droite */
+	width: 60px;
+	height: 60px;
+	background-color: var(--orange);
+	border-radius: 50%;
+	transition: all 0.4s ease-in-out;
+}
+
+.cardBox .card:hover::before {
+	width: 300%;
+	height: 300%;
+	top: 50%;
+	right: 50%;
+	transform: translate(50%, -50%);
+	border-radius: 0;
+	background-color: var(--orange);
+}
+
+.cardBox .card:nth-child(even)::before {
+	background-color: var(--bleu);
+}
+
+
+.cardBox .card:hover {
+	color: white;
+}
+
+.cardBox .card:hover .iconCard {
+	filter: invert(100%);
+}
+
+/* <!-- =====================GRAPHIQUES=============================== --> */
+
+.graphs {
+	display: grid;
+	flex-wrap: wrap;
+	grid-template-columns: repeat(2, 1fr);
+	margin: 50px 20px 50px 20px;
+}
+
+.graphLateAbs{
+	width: 100%;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+.chartContainerAbs{
+	width: 100%;
+    height: 300px;
+	margin-bottom: 20px;
+}
+
+.graphStagiaires{
+	width: 100%;
+	position: relative;
+	top: 0;
+	padding: 20px;
+}
+
+
+.chartContainerStagiaire {
+
+		width: 100%;
+		height: 350px; /* Augmenté de 50px */
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	
+	
+}
 
 
 
