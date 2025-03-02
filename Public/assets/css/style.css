@@ -277,7 +277,7 @@ button:hover {
 	background-color: white;
 }
 
-.main.active {
+.mainTableau.active{
 	width: calc(100% - 110px);
 	left: 110px;
 
@@ -347,13 +347,12 @@ button:hover {
 /* <!-- =====================CARDS=============================== --> */
 
 .cardBox {
-	position: relative;
-	width: 100%;
-	padding: 20px;
-	display: grid;
-	flex-wrap: wrap;
-	grid-template-columns: repeat(4, 1fr);
-	gap: 30px;
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
 }
 
 .cardBox .card {
@@ -433,8 +432,8 @@ button:hover {
 
 .graphs,.graphTableDossiers {
 	display: grid;
-	flex-wrap: wrap;
-	grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+ 
 	margin: 50px 20px 50px 20px;
 }
 
@@ -459,8 +458,7 @@ button:hover {
 
 .chartContainerStagiaire {
 	width: 100%;
-	height: 350px;
-	/* Augmenté de 50px */
+	height: 300px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
