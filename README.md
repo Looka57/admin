@@ -53,9 +53,3 @@ Un tableau de bord interactif affichant diverses statistiques sous forme de grap
 - **JavaScript (Chart.js)** 📊  
 - **Icons8** (pour les icônes dans le tableau) 🎭  
 ```
-
-💡 **Comment l'utiliser dans ton `README.md` ?**  
-- Copie-colle ce texte directement dans ton `README.md`.  
-- Vérifie l'affichage sur GitHub pour voir le rendu avec les emojis et la mise en page.  
-
-🚀 **C'est prêt à être ajouté à ton repo !**

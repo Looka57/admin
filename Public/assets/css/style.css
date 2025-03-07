@@ -139,7 +139,6 @@ button:hover {
 
 /************************ FIN PAGE CONNEXION *********************/
 
-
 /********************** DEBUT PAGE TABLEAU ************************/
 
 /* =========================NAVIGATION=============== */
@@ -277,11 +276,13 @@ button:hover {
 	background-color: white;
 }
 
-.mainTableau.active{
+.mainTableau.active {
 	width: calc(100% - 110px);
 	left: 110px;
 
 }
+
+/* <!-- =====================TOPBAR=============================== --> */
 
 .topBar {
 	width: 100%;
@@ -347,12 +348,12 @@ button:hover {
 /* <!-- =====================CARDS=============================== --> */
 
 .cardBox {
-    position: relative;
-    width: 100%;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 30px;
+	position: relative;
+	width: 100%;
+	padding: 20px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 30px;
 }
 
 .cardBox .card {
@@ -430,10 +431,11 @@ button:hover {
 
 /* <!-- =====================GRAPHIQUES STAGIAIRE + ABS RETARDS=============================== --> */
 
-.graphs,.graphTableDossiers {
+.graphs,
+.graphTableDossiers {
 	display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
- 
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
 	margin: 50px 20px 50px 20px;
 }
 
@@ -445,7 +447,7 @@ button:hover {
 
 .chartContainerAbs {
 	width: 100%;
-	height: 300px;
+	height: 100%;
 	margin-bottom: 20px;
 }
 
@@ -466,27 +468,48 @@ button:hover {
 
 /* <!-- =====================GRAPHIQUES + TABLEAU DOSSIERS =============================== --> */
 .table-custom {
-    background-color: #151A37 !important; /* Bleu foncé */
-    color: white !important; /* Texte en blanc */
+	background-color: #151A37 !important;
+	/* Bleu foncé */
+	color: white !important;
+	/* Texte en blanc */
 }
 
-.table-custom th, .table-custom td {
-    border-color: #FF6616; /* Bordures en orange */
+.table-custom th,
+.table-custom td {
+	border-color: #FF6616;
+	/* Bordures en orange */
 }
 
 .table-custom thead tr th {
-	
-    background-color: #151A37 !important; /* Bleu foncé */
-    color: white !important;
-	
+
+	background-color: #151A37 !important;
+	/* Bleu foncé */
+	color: white !important;
+
+}
+/************************ FIN PAGE TABLEAU *********************/
+
+
+/********************** DEBUT PAGE STAGIAIRE ************************/
+
+.tableStudent{
+	width: 90%;
+	margin: auto;
 }
 
 
 
 
 
+/* <!-- =====================FOOTER =============================== --> */
 
 
+
+
+
+.footer{
+	height: 80px;
+}
 
 
 
@@ -498,6 +521,65 @@ button:hover {
 
 
 /* <!-- =====================MEDIA QUERY=============================== --> */
+
+@media (max-width: 992px) {
+	.navigation {
+		left: -300px;
+	}
+
+	.navigation.active {
+		width: 300px;
+		left: 0;
+	}
+
+	.mainTableau {
+		width: 100%;
+		left: 0;
+	}
+
+	.mainTableau.active {
+		left: -15px;
+	}
+}
+
+/* TAILLE PORTABLE */
+@media (max-width: 480px) {
+	.user {
+		min-width: 40px;
+	}
+
+	.navigation {
+		width: 100%;
+		left: -100%;
+		z-index: 1000;
+	}
+
+	.navigation.active {
+		width: 100%;
+		left: 0;
+	}
+
+	.toggle{
+		z-index: 1001;
+	}
+
+	.mainTableau.active .toggle img{
+		filter: invert(100%);
+	}
+
+	.mainTableau.active .toggle{
+		color: white;
+		position: fixed;
+		right: 0;
+		left: initial;
+	}
+
+	.topBar {
+		margin: 0px;
+	}
+}
+
+
 @media (max-width: 768px) {
 	.main {
 		position: initial;
