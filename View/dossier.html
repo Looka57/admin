@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dossiers</title>
+    <!-- =======================BOOTSTRAP + ICONS BOOTSTRAP================ -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- =======================AOS SCROLL================ -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- =======================STYLES================ -->
+    <link rel="stylesheet" href="../Public/assets/css/style.css">
+</head>
+
+<body>
+
+
+    <!-- ==============BARRE DE NAVIGATION============== -->
+    <div class="container-fluid containerPrincipal bg-secondary">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon"><img width="40" height="40"
+                                src="https://img.icons8.com/ios/50/control-panel--v2.png"
+                                alt="control-panel--v2" /></span>
+                        <span class="title">MNS</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="tableau.html">
+                        <span class="icon"><img width="40" height="40"
+                                src="https://img.icons8.com/ios/50/control-panel--v2.png"
+                                alt="control-panel--v2" /></span>
+                        <span class="title">Tableau</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="stagiaire.html">
+                        <span class="icon"><img width="40" height="40"
+                                src="https://img.icons8.com/glyph-neue/64/student-male.png" alt="student-male" /></span>
+                        <span class="title">Stagiaires</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="intervenant.html">
+                        <span class="icon"><img width="40" height="40"
+                                src="https://img.icons8.com/ios-filled/50/podium-with-speaker.png"
+                                alt="podium-with-speaker" /></span>
+                        <span class="title">Intervenants</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="dossier.html">
+                        <span class="icon"><img width="40" height="40"
+                                src="https://img.icons8.com/glyph-neue/64/user-folder.png" alt="user-folder" /></span>
+                        <span class="title">Dossiers</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><img width="40" height="40"
+                                src="https://img.icons8.com/ios-filled/50/task-planning.png"
+                                alt="task-planning" /></span>
+                        <span class="title">Retards-Absences</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><img width="40" height="40"
+                                src="https://img.icons8.com/glyph-neue/64/classroom.png" alt="classroom" /></span>
+                        <span class="title">Classes</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><img width="40" height="40"
+                                src="https://img.icons8.com/ios-filled/50/chat.png" alt="chat" /></span>
+                        <span class="title">Messagerie</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><img width="40" height="40"
+                                src="https://img.icons8.com/glyph-neue/64/user--v1.png" alt="user--v1" /></span>
+                        <span class="title">Profils</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- =====================MAIN TABLEAU=============================== -->
+    <div class="mainTableau">
+        <div class="topBar p-4">
+            <div class="toggle">
+                <img width="40" height="40" src="https://img.icons8.com/ios/50/menu--v1.png" alt="menu--v1" />
+            </div>
+
+            <div class="search">
+                <label>
+                    <input type="text" placeholder="Recherche" />
+                    <img width="20" height="20" src="https://img.icons8.com/ios/50/search--v1.png" alt="search--v1" />
+                </label>
+            </div>
+
+            <div class="user">
+                <img src="../Public/assets/images/gohan.jpg" alt="">
+            </div>
+        </div>
+        <h1 class="mx-4 mt-5">Dossiers</h1>
+
+        <!-- =====================CARDS=============================== -->
+
+
+        <div class="cardBox ">
+            <div class="card border-0">
+                <div>
+                    <div class="cardNumber">30</div>
+                    <div class="cardName">CDA</div>
+                </div>
+
+                <div class="iconCard">
+                    <img width="60" height="60" src="https://img.icons8.com/glyph-neue/64/classroom.png"
+                        alt="classroom" />
+                </div>
+            </div>
+
+            <div class="card border-0">
+                <div>
+                    <div class="cardNumber">13</div>
+                    <div class="cardName">C#</div>
+                </div>
+                <div class="iconCard"><img width="60" height="60"
+                        src="https://img.icons8.com/glyph-neue/64/user-folder.png" alt="user-folder" /></div>
+            </div>
+            <div class="card border-0">
+                <div>
+                    <div class="cardNumber">17</div>
+                    <div class="cardName">Java</div>
+                </div>
+                <div class="iconCard"><img width="60" height="60"
+                        src="https://img.icons8.com/glyph-neue/64/student-male.png" alt="student-male" /></div>
+            </div>
+            <div class="card border-0">
+                <div>
+                    <div class="cardNumber">15</div>
+                    <div class="cardName">DevWeb 1</div>
+                </div>
+                <div class="iconCard"><img width="60" height="60"
+                        src="https://img.icons8.com/ios-filled/50/appointment-reminders--v1.png"
+                        alt="appointment-reminders--v1" /></div>
+            </div>
+        </div>
+        <div class="cardBox ">
+            <div class="card border-0">
+                <div>
+                    <div class="cardNumber">15</div>
+                    <div class="cardName">DevWeb 2</div>
+                </div>
+
+                <div class="iconCard">
+                    <img width="60" height="60" src="https://img.icons8.com/glyph-neue/64/classroom.png"
+                        alt="classroom" />
+                </div>
+            </div>
+
+            <div class="card border-0">
+                <div>
+                    <div class="cardNumber">25</div>
+                    <div class="cardName">Réseau</div>
+                </div>
+                <div class="iconCard"><img width="60" height="60"
+                        src="https://img.icons8.com/glyph-neue/64/user-folder.png" alt="user-folder" /></div>
+            </div>
+            <div class="card border-0">
+                <div>
+                    <div class="cardNumber">15</div>
+                    <div class="cardName">RAN 1</div>
+                </div>
+                <div class="iconCard"><img width="60" height="60"
+                        src="https://img.icons8.com/glyph-neue/64/student-male.png" alt="student-male" /></div>
+            </div>
+            <div class="card border-0">
+                <div>
+                    <div class="cardNumber">25</div>
+                    <div class="cardName">RAN2</div>
+                </div>
+                <div class="iconCard"><img width="60" height="60"
+                        src="https://img.icons8.com/ios-filled/50/appointment-reminders--v1.png"
+                        alt="appointment-reminders--v1" /></div>
+            </div>
+        </div>
+
+
+        <div class="btnNewDossier">
+            <button type="button" class="btn btn-outline-warning"><img width="20" height="20"
+                    src="https://img.icons8.com/ios/50/plus--v1.png" alt="plus--v1" /> Nouveau Dossier</button>
+        </div>
+
+
+        <!-- =====================ACCORDEONS=============================== -->
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header bob">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                        aria-controls="panelsStayOpen-collapseOne">
+                        Dossiers en cours
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                    <div class="accordion-body">
+                        <div class="tableProfessors">
+                            <table class="table align-middle table-striped table-hover table-custom bg-secondary">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Nom</th>
+                                        <th scope="col">Prénom</th>
+                                        <th scope="col">Classe</th>
+                                        <th scope="col">Ville</th>
+                                        <th scope="col">Date Inscription</th>
+                                        <th scope="col">Statut</th>
+                                        <th scope="col" colspan="2">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Aizawa</td>
+                                        <td>Shota</td>
+                                        <td>2-A</td>
+                                        <td>Musutafu</td>
+                                        <td>2015-09-01</td>
+                                        <td>Actif</td>
+                                        <td><button class="btn btn-primary">Voir</button></td>
+                                        <td><button class="btn btn-danger">Supprimer</button></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Yamada</td>
+                                        <td>Hizashi</td>
+                                        <td>2-A</td>
+                                        <td>Musutafu</td>
+                                        <td>2015-09-01</td>
+                                        <td>Actif</td>
+                                        <td><button class="btn btn-primary">Voir</button></td>
+                                        <td><button class="btn btn-danger">Supprimer</button></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>Kan</td>
+                                        <td>Sekijiro</td>
+                                        <td>2-B</td>
+                                        <td>Musutafu</td>
+                                        <td>2016-04-10</td>
+                                        <td>Actif</td>
+                                        <td><button class="btn btn-primary">Voir</button></td>
+                                        <td><button class="btn btn-danger">Supprimer</button></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td>Nemuri</td>
+                                        <td>Kayama</td>
+                                        <td>2-C</td>
+                                        <td>Tokyo</td>
+                                        <td>2014-06-15</td>
+                                        <td>Décédée</td>
+                                        <td><button class="btn btn-primary">Voir</button></td>
+                                        <td><button class="btn btn-danger">Supprimer</button></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">5</th>
+                                        <td>All Might</td>
+                                        <td>Toshinori</td>
+                                        <td>Ancien Prof</td>
+                                        <td>Musutafu</td>
+                                        <td>2015-09-01</td>
+                                        <td>Retraité</td>
+                                        <td><button class="btn btn-primary">Voir</button></td>
+                                        <td><button class="btn btn-danger">Supprimer</button></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">6</th>
+                                        <td>Ectoplasm</td>
+                                        <td>-</td>
+                                        <td>2-A</td>
+                                        <td>Musutafu</td>
+                                        <td>2016-01-05</td>
+                                        <td>Actif</td>
+                                        <td><button class="btn btn-primary">Voir</button></td>
+                                        <td><button class="btn btn-danger">Supprimer</button></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">7</th>
+                                        <td>Power Loader</td>
+                                        <td>Higari</td>
+                                        <td>Support</td>
+                                        <td>Musutafu</td>
+                                        <td>2016-07-21</td>
+                                        <td>Actif</td>
+                                        <td><button class="btn btn-primary">Voir</button></td>
+                                        <td><button class="btn btn-danger">Supprimer</button></td>
+                                    </tr>
+                            
+                            
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseTwo">
+                        Dossiers validés
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <div class="tableProfessors">
+                            <table class="table align-middle table-striped table-hover table-custom bg-secondary">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Nom</th>
+                                        <th scope="col">Prénom</th>
+                                        <th scope="col">Classe</th>
+                                        <th scope="col">Ville</th>
+                                        <th scope="col">Date Inscription</th>
+                                        <th scope="col">Statut</th>
+                                        <th scope="col" colspan="2">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Aizawa</td>
+                                        <td>Shota</td>
+                                        <td>2-A</td>
+                                        <td>Musutafu</td>
+                                        <td>2015-09-01</td>
+                                        <td>Actif</td>
+                                        <td><button class="btn btn-primary">Voir</button></td>
+                                        <td><button class="btn btn-danger">Supprimer</button></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Yamada</td>
+                                        <td>Hizashi</td>
+                                        <td>2-A</td>
+                                        <td>Musutafu</td>
+                                        <td>2015-09-01</td>
+                                        <td>Actif</td>
+                                        <td><button class="btn btn-primary">Voir</button></td>
+                                        <td><button class="btn btn-danger">Supprimer</button></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>Kan</td>
+                                        <td>Sekijiro</td>
+                                        <td>2-B</td>
+                                        <td>Musutafu</td>
+                                        <td>2016-04-10</td>
+                                        <td>Actif</td>
+                                        <td><button class="btn btn-primary">Voir</button></td>
+                                        <td><button class="btn btn-danger">Supprimer</button></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td>Nemuri</td>
+                                        <td>Kayama</td>
+                                        <td>2-C</td>
+                                        <td>Tokyo</td>
+                                        <td>2014-06-15</td>
+                                        <td>Décédée</td>
+                                        <td><button class="btn btn-primary">Voir</button></td>
+                                        <td><button class="btn btn-danger">Supprimer</button></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">5</th>
+                                        <td>All Might</td>
+                                        <td>Toshinori</td>
+                                        <td>Ancien Prof</td>
+                                        <td>Musutafu</td>
+                                        <td>2015-09-01</td>
+                                        <td>Retraité</td>
+                                        <td><button class="btn btn-primary">Voir</button></td>
+                                        <td><button class="btn btn-danger">Supprimer</button></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">6</th>
+                                        <td>Ectoplasm</td>
+                                        <td>-</td>
+                                        <td>2-A</td>
+                                        <td>Musutafu</td>
+                                        <td>2016-01-05</td>
+                                        <td>Actif</td>
+                                        <td><button class="btn btn-primary">Voir</button></td>
+                                        <td><button class="btn btn-danger">Supprimer</button></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">7</th>
+                                        <td>Power Loader</td>
+                                        <td>Higari</td>
+                                        <td>Support</td>
+                                        <td>Musutafu</td>
+                                        <td>2016-07-21</td>
+                                        <td>Actif</td>
+                                        <td><button class="btn btn-primary">Voir</button></td>
+                                        <td><button class="btn btn-danger">Supprimer</button></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">8</th>
+                                        <td>Snipe</td>
+                                        <td>-</td>
+                                        <td>2-A</td>
+                                        <td>Osaka</td>
+                                        <td>2017-03-11</td>
+                                        <td>Actif</td>
+                                        <td><button class="btn btn-primary">Voir</button></td>
+                                        <td><button class="btn btn-danger">Supprimer</button></td>
+                                    </tr>
+                                   
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseThree">
+                        Dossiers refusés
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                        does limit overflow.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- =======================SCRIPT JS================ -->
+        <!-- =======================BOOTSTRAP JS================ -->
+        <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- =======================JQUERY================ -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+        <!-- =======================IONICON================ -->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+        <!-- =======================AOS================ -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+
+
+
+        <!-- =======================SCRIPT================ -->
+        <script src="../Public/assets/js/style.js"></script>
+
+</body>
+
+</html>

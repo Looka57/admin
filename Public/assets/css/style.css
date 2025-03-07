@@ -490,12 +490,41 @@ button:hover {
 /************************ FIN PAGE TABLEAU *********************/
 
 
-/********************** DEBUT PAGE STAGIAIRE ************************/
+/********************** DEBUT PAGE STAGIAIRE + INTERVENANT ************************/
 
-.tableStudent{
+.tableStudent, .tableProfesseurs{
 	width: 90%;
 	margin: auto;
 }
+
+/********************** FIN PAGE STAGIAIRE + INTERVENANT ************************/
+
+
+/********************** DEBUT PAGE DOSSIER ************************/
+
+.btnNewDossier{
+	width: 100%;
+	padding: 20px;
+	text-align: right;
+}
+
+
+.accordion{
+	margin:  auto 20px;
+	
+}
+
+.bs-accordion-active-bg{
+	background-color:firebrick !important ;
+}
+
+
+
+
+
+
+
+
 
 
 
