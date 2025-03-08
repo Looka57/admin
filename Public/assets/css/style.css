@@ -19,8 +19,8 @@
 
 
 a {
-
 	text-decoration: none;
+	color: #000000;
 }
 
 
@@ -379,6 +379,7 @@ button:hover {
 }
 
 
+
 .cardBox .card .cardNumber {
 	position: relative;
 	font-weight: 400;
@@ -549,10 +550,12 @@ button:hover {
     border-color: var(--orange); 
 }
 
+/********************** FIN PAGE DOSSIER ************************/
 
+/********************** DEBUT PAGE CLASSE ************************/
 
 .tableauClass {
-    width: 100%;
+	width: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -565,19 +568,52 @@ button:hover {
 }
 
 
-
-
-
 .tableauClass{
 	width: 100%;
 	margin: 20px;
 }
+/********************** FIN PAGE CLASSE ************************/
 
 
+/********************** DEBUT PAGE DOSSIER ETUDIANT ************************/
+
+.cardsPresentationStudent{
+	display: flex;
+	flex-direction: column;
+
+	gap: 20px;
+}
+
+.cardStudent{
+	width: 400px;
+	padding: 20px;
+}
+
+.student-infos{
+	display: flex;
+	flex-direction: column;
+}
+.student-info-enCours{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.student-info{
+	text-align: center;
+}
+
+.cardsPresentationStudent .cardStudent img{
+width: 100px;
+height: 100px;
+}
 
 
+/* INFO DOSSIER */
 
-
+.containerInfoDossier{
+	display: flex;
+}
 
 
 
