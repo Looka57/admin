@@ -1,199 +1,202 @@
-// Ajouter un hover  a la liste des items selectionné
-let list = document.querySelectorAll(".navigation li");
-function activeLink() {
-    list.forEach((item) => {
-        item.classList.remove("hovered");
-        let img = item.querySelector(".icon img"); // Sélection de l'image à l'intérieur
-        if (img) {
-            img.classList.remove("iconHovered");
-        }
-    });
-
-    this.classList.add("hovered");
-    let img = this.querySelector(".icon img");
-    if (img) {
-        img.classList.add("iconHovered");
-    }
-}
-
-list.forEach((item) => item.addEventListener("mouseover", activeLink));
-
-// Menu Toggle
-let toggle = document.querySelector(".toggle");
-let navigation = document.querySelector(".navigation");
-let mainMenu = document.querySelector(".mainTableau")
-
-
-toggle.addEventListener("click", () => {
-    navigation.classList.toggle("active");
-    mainMenu.classList.toggle("active");
-});
-
-// Compteur chiffre cards
-$(document).ready(function () {
-    $('.cardNumber').counterUp({
-        delay: 10, // Intervalle entre chaque incrémentation
-        time: 1200 // Durée totale de l'animation
-    });
-});
-
-// graphique Absences retars
-const barCanvas = document.querySelector('#absencesChart');
-const barChart = new Chart(barCanvas, {
-    type: 'bar',
-    data: {
-        labels: ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'],
-        datasets: [
-            {
-                label: 'Retards',
-                data: [12, 9, 14, 10, 8, 6, 7, 9, 12, 11, 15, 10], // Données des retards
-                backgroundColor: 'rgba(255, 102, 22 , 0.8)',
-                borderColor: 'rgba(255, 102, 22, 1)',
-                borderWidth: 1,
-                borderRadius: 10
-            },
-            {
-                label: 'Absences',
-                data: [5, 7, 6, 9, 10, 4, 3, 6, 8, 7, 5, 6], // Données des absences
-                backgroundColor: 'rgba(21, 26, 55, 0.8)',
-                borderColor: 'rgba(21, 26, 55, 1)',
-                borderWidth: 1,
-                borderRadius: 10
-            }
-        ]
-    },
-    options: {
-        responsive: true,
-        scales: {
-            y: {
-                beginAtZero: true
+document.addEventListener('DOMContentLoaded', function () {
+    // 1. Gestion du hover sur la liste de navigation
+    let list = document.querySelectorAll('.navigation li');
+    if (list.length > 0) {
+        function activeLink() {
+            list.forEach((item) => {
+                item.classList.remove('hovered');
+                let img = item.querySelector('.icon img');
+                if (img) {
+                    img.classList.remove('iconHovered');
+                }
+            });
+            this.classList.add('hovered');
+            let img = this.querySelector('.icon img');
+            if (img) {
+                img.classList.add('iconHovered');
             }
         }
+        list.forEach((item) => item.addEventListener('mouseover', activeLink));
     }
-});
 
-const pieCanvas = document.querySelector('#stagiaireChart');
-const pieChart = new Chart(pieCanvas, {
-    type: 'doughnut',
-    data: {
-        labels: ['Hommes', 'Femmes'], // Ajout des labels globaux pour la légende
-        datasets: [
-            {
-                label: 'Hommes',
-                data: [45, 0], // Ajout d'une deuxième valeur nulle pour bien gérer le cercle
-                backgroundColor: ['rgba(21, 26, 55, 0.8)', 'rgba(21, 26, 55, 0.3)'],
-                borderColor: ['rgba(21, 26, 55, 1)', 'rgba(21, 26, 55, 0.5)'],
-                borderWidth: 1,
-                cutout: '70%',
-            },
-            {
-                label: 'Femmes',
-                data: [0, 30], // Même principe pour le deuxième dataset
-                backgroundColor: ['rgba(255, 102, 22, 0.3)', 'rgba(255, 102, 22, 0.8)'],
-                borderColor: ['rgba(255, 102, 22, 0.5)', 'rgba(255, 102, 22, 1)'],
-                borderWidth: 1,
-                cutout: '50%',
-            }
-        ]
-    },
-    options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        plugins: {
-            legend: {
-                position: 'right',
-                labels: {
-                    usePointStyle: true, // Petits ronds pour la légende
-                    font: {
-                        size: 14
+    // 2. Gestion du menu toggle
+    let toggle = document.querySelector('.toggle');
+    let navigation = document.querySelector('.navigation');
+    let mainMenu = document.querySelector('.mainTableau');
+    if (toggle && navigation && mainMenu) {
+        toggle.addEventListener('click', () => {
+            navigation.classList.toggle('active');
+            mainMenu.classList.toggle('active');
+        });
+    }
+
+    // 3. Compteur de chiffres sur les cartes
+    if (typeof $ !== 'undefined' && $.fn.counterUp) {
+        $('.cardNumber').counterUp({
+            delay: 10,
+            time: 1200,
+        });
+    }
+
+    // 4. Graphique des absences et retards
+    const barCanvas = document.querySelector('#absencesChart');
+    if (barCanvas && typeof Chart !== 'undefined') {
+        const barChart = new Chart(barCanvas, {
+            type: 'bar',
+            data: {
+                labels: ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'],
+                datasets: [
+                    {
+                        label: 'Retards',
+                        data: [12, 9, 14, 10, 8, 6, 7, 9, 12, 11, 15, 10],
+                        backgroundColor: 'rgba(255, 102, 22 , 0.8)',
+                        borderColor: 'rgba(255, 102, 22, 1)',
+                        borderWidth: 1,
+                        borderRadius: 10,
                     },
-                    generateLabels: function (chart) {
-                        return [
-                            {
-                                text: 'Hommes',
-                                fillStyle: 'rgba(21, 26, 55, 0.8)', // Bleu foncé
-                                strokeStyle: 'rgba(21, 26, 55, 1)',
-                                lineWidth: 1,
-                                hidden: false,
-                            },
-                            {
-                                text: 'Femmes',
-                                fillStyle: 'rgba(255, 102, 22, 0.8)', // Orange foncé
-                                strokeStyle: 'rgba(255, 102, 22, 1)',
-                                lineWidth: 1,
-                                hidden: false,
-                            }
-                        ];
-                    }
-                }
-            }
-        }
-    },
-    plugins: [{
-        beforeDraw: function (chart) {
-            let width = chart.width,
-                height = chart.height,
-                ctx = chart.ctx;
-
-            ctx.restore();
-            let image = new Image();
-            image.src = 'https://img.icons8.com/ios-filled/50/couple-posing.png'; 
-            let imageSize = 80; 
-            
-            let x = (width / 2.37) - (imageSize / 2),
-                y = (height / 2) - (imageSize / 2);
-            
-            ctx.drawImage(image, x, y, imageSize, imageSize);
-            ctx.save();
-        }
-    }]
-});
-
-// graph polar par class
-const polarCanvas = document.querySelector('#polarChart');
-const polarChart = new Chart(polarCanvas, {
-    type: 'polarArea',
-    data: {
-        labels: ['CDA', 'FullStack', 'DevWeb', 'RAN1', 'Ran2', 'Réseau'],
-        datasets: [
-            {
-                label: 'Dossiers traités',
-                data: [35, 40, 28, 50, 30, 45], // Remplace avec tes vraies données
-                backgroundColor: [
-                    'rgba(21, 26, 55, 0.8)',  
-                    'rgba(21, 26, 55, 0.6)', 
-                    'rgba(21, 26, 55, 0.4)',  
-                    'rgba(255, 102, 22, 0.8)', 
-                    'rgba(255, 102, 22, 0.6)', 
-                    'rgba(255, 102, 22, 0.4)'  
+                    {
+                        label: 'Absences',
+                        data: [5, 7, 6, 9, 10, 4, 3, 6, 8, 7, 5, 6],
+                        backgroundColor: 'rgba(21, 26, 55, 0.8)',
+                        borderColor: 'rgba(21, 26, 55, 1)',
+                        borderWidth: 1,
+                        borderRadius: 10,
+                    },
                 ],
-                borderColor: '#fff',
-                borderWidth: 2
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                    },
+                },
+            },
+        });
+    }
+
+    // 5. Graphique en donut des stagiaires
+    const pieCanvas = document.querySelector('#stagiaireChart');
+    if (pieCanvas && typeof Chart !== 'undefined') {
+        const pieChart = new Chart(pieCanvas, {
+            type: 'doughnut',
+            data: {
+                labels: ['Hommes', 'Femmes'],
+                datasets: [
+                    {
+                        label: 'Hommes',
+                        data: [45, 0],
+                        backgroundColor: ['rgba(21, 26, 55, 0.8)', 'rgba(21, 26, 55, 0.3)'],
+                        borderColor: ['rgba(21, 26, 55, 1)', 'rgba(21, 26, 55, 0.5)'],
+                        borderWidth: 1,
+                        cutout: '70%',
+                    },
+                    {
+                        label: 'Femmes',
+                        data: [0, 30],
+                        backgroundColor: ['rgba(255, 102, 22, 0.3)', 'rgba(255, 102, 22, 0.8)'],
+                        borderColor: ['rgba(255, 102, 22, 0.5)', 'rgba(255, 102, 22, 1)'],
+                        borderWidth: 1,
+                        cutout: '50%',
+                    },
+                ],
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'right',
+                        labels: {
+                            usePointStyle: true,
+                            font: { size: 14 },
+                            generateLabels: function (chart) {
+                                return [
+                                    {
+                                        text: 'Hommes',
+                                        fillStyle: 'rgba(21, 26, 55, 0.8)',
+                                        strokeStyle: 'rgba(21, 26, 55, 1)',
+                                        lineWidth: 1,
+                                        hidden: false,
+                                    },
+                                    {
+                                        text: 'Femmes',
+                                        fillStyle: 'rgba(255, 102, 22, 0.8)',
+                                        strokeStyle: 'rgba(255, 102, 22, 1)',
+                                        lineWidth: 1,
+                                        hidden: false,
+                                    },
+                                ];
+                            },
+                        },
+                    },
+                },
+            },
+            plugins: [
+                {
+                    beforeDraw: function (chart) {
+                        let width = chart.width,
+                            height = chart.height,
+                            ctx = chart.ctx;
+                        ctx.restore();
+                        let image = new Image();
+                        image.src = 'https://img.icons8.com/ios-filled/50/couple-posing.png';
+                        let imageSize = 80;
+                        let x = width / 2.37 - imageSize / 2,
+                            y = height / 2 - imageSize / 2;
+                        ctx.drawImage(image, x, y, imageSize, imageSize);
+                        ctx.save();
+                    },
+                },
+            ],
+        });
+    }
+
+    // 6. Graphique polaire des classes
+    const polarCanvas = document.querySelector('#polarChart');
+    if (polarCanvas && typeof Chart !== 'undefined') {
+        const polarChart = new Chart(polarCanvas, {
+            type: 'polarArea',
+            data: {
+                labels: ['CDA', 'FullStack', 'DevWeb', 'RAN1', 'Ran2', 'Réseau'],
+                datasets: [
+                    {
+                        label: 'Dossiers traités',
+                        data: [35, 40, 28, 50, 30, 45],
+                        backgroundColor: ['rgba(21, 26, 55, 0.8)', 'rgba(21, 26, 55, 0.6)', 'rgba(21, 26, 55, 0.4)', 'rgba(255, 102, 22, 0.8)', 'rgba(255, 102, 22, 0.6)', 'rgba(255, 102, 22, 0.4)'],
+                        borderColor: '#fff',
+                        borderWidth: 2,
+                    },
+                ],
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    r: {
+                        suggestedMin: 0,
+                        suggestedMax: 60,
+                        grid: { color: 'rgba(0, 0, 0, 0.1)' },
+                        ticks: { backdropColor: 'transparent', font: { size: 14 } },
+                    },
+                },
+                plugins: {
+                    legend: { position: 'right', labels: { font: { size: 14 }, color: '#333' } },
+                },
+            },
+        });
+    }
+
+    // 7. Gestion du clic sur la carte pour afficher/cacher le tableau
+    let card = document.getElementById('cardDevWeb2');
+    let tableContainer = document.getElementById('tableContainerDevWeb2');
+    if (card && tableContainer) {
+        card.addEventListener('click', function () {
+            if (tableContainer.style.display === 'none' || tableContainer.style.display === '') {
+                tableContainer.style.display = 'block';
+            } else {
+                tableContainer.style.display = 'none';
             }
-        ]
-    },
-    options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        scales: {
-            r: { // Configuration de l'axe radial
-                suggestedMin: 0,
-                suggestedMax: 60,
-                grid: { color: 'rgba(0, 0, 0, 0.1)' }, // Couleur de la grille
-                ticks: { 
-                    backdropColor: 'transparent', // Fond des valeurs
-                    font: { size: 14 }
-                }
-            }
-        },
-        plugins: {
-            legend: {
-                position: 'right', // Légende à droite
-                labels: {
-                    font: { size: 14 },
-                    color: '#333'
-                }
-            }
-        }
+        });
     }
 });
