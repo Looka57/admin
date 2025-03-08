@@ -189,11 +189,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // 7. Gestion du clic sur la carte pour afficher/cacher le tableau
     let card = document.getElementById('cardDevWeb2');
-    let tableContainer = document.getElementById('tableContainerDevWeb2');
+    let tableContainer = document.getElementById('tableContainer');
     if (card && tableContainer) {
         card.addEventListener('click', function () {
             if (tableContainer.style.display === 'none' || tableContainer.style.display === '') {
                 tableContainer.style.display = 'block';
+                tableContainer.style.width = '100%'; // Réappliquez la largeur ici
+                tableContainer.classList.add('table-custom');
             } else {
                 tableContainer.style.display = 'none';
             }

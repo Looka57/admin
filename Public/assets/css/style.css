@@ -551,15 +551,27 @@ button:hover {
 
 
 
+.tableauClass {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 
 .table-container {
 	display: none;
-	margin-top: 20px;
+	flex-grow: 1; /* Permet au tableau de prendre l'espace disponible */
+    width: 100%; /* Assurez-vous que la largeur est définie ici */
 }
 
 
 
 
+
+.tableauClass{
+	width: 100%;
+	margin: 20px;
+}
 
 
 

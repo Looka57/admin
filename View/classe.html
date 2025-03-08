@@ -198,80 +198,64 @@
                 </div>
             </div>
 
-            <!-- Tableau qui s'affiche sous la carte -->
-            <div class="table-container" id="tableContainerDevWeb2" style="display: none;">
-                <table class="table table-bordered">
+
+            <!-- TABLEAU APPARITION JS -->
+            <div class="tableauClass">
+                <table class="table-container table align-middle table-striped table-hover table-custom"
+                    id="tableContainer" style="display: none;">
                     <thead>
                         <tr>
-                            <th>Nom</th>
-                            <th>Prénom</th>
-                            <th>Classe</th>
-                            <th>Année d'entrée</th>
+                            <th >#</th>
+                            <th scope="col">Nom</th>
+                            <th scope="col">Prénom</th>
+                            <th scope="col">Classe</th>
+                            <th scope="col">Niveau</th>
+                            <th scope="col">Date de naissance</th>
+                            <th scope="col">Sexe</th>
+
+                            <th scope="col">Action</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Midoriya</td>
-                            <td>Izuku</td>
-                            <td>2-A</td>
-                            <td>2018-04-01</td>
+                            <th scope="row">1</th>
+                            <td>Aizawa</td>
+                            <td>Shota</td>
+                            <td>Combat</td>
+                            <td>Combat</td>
+                            <td>Combat</td>
+                            <td>Combat</td>
+                            <td><button class="btn btn-primary">Voir</button></td>
+
                         </tr>
                         <tr>
-                            <td>Todoroki</td>
-                            <td>Shoto</td>
-                            <td>2-A</td>
-                            <td>2018-04-01</td>
+                            <th scope="row">2</th>
+                            <td>Yamada</td>
+                            <td>Hizashi</td>
+                            <td>Anglais</td>
+                            <td>Anglais</td>
+                            <td>Anglais</td>
+                            <td>Anglais</td>
+                            <td><button class="btn btn-primary">Voir</button></td>
+
                         </tr>
                         <tr>
-                            <td>Bakugo</td>
-                            <td>Katsuki</td>
-                            <td>2-A</td>
-                            <td>2018-04-01</td>
+                            <th scope="row">3</th>
+                            <td>Nezu</td>
+                            <td>Directeur</td>
+                            <td>Gestion</td>
+                            <td>Gestion</td>
+                            <td>Gestion</td>
+                            <td>Gestion</td>
+                            <td><button class="btn btn-primary">Voir</button></td>
+
                         </tr>
                     </tbody>
                 </table>
             </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </div>
+
 
 
 
@@ -310,4 +294,3 @@
 </body>
 
 </html>
-</body>
