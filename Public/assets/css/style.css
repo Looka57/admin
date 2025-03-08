@@ -611,8 +611,13 @@ height: 100px;
 
 /* INFO DOSSIER */
 
-.containerInfoDossier{
+.pieceAdmin{
 	display: flex;
+	justify-content: space-around;
+}
+
+.pieceAlertInfo, .pieceIdentity{
+	width: 100%;
 }
 
 
