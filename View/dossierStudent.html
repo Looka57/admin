@@ -119,9 +119,9 @@
 
             <!-- =====================PRESENTATION=============================== -->
 
-            <div class="container cardStudent ">
+            <div class="container cardStudent">
                 <div class="row g-4 mb-5">
-                    <div class="col-4">
+                    <div class="col-md-4 col-sm-12">
                         <div class="p-3 mb-3 border bg-light studentInfos">
                             <img src="../Public/assets/images/looka.png" alt="Looka Hatake" class="student-image">
                             <h4>Looka Hatake</h4>
@@ -132,40 +132,42 @@
                             <span>Mail: looka.hatake@...</span>
                             <span>Date de naissance : 01/01/2000</span>
                         </div>
-                        <div class="p-3  mb-3  mb-3 border bg-light studentInfos">
+                        <div class="p-3 mb-3 border bg-light studentInfos">
                             <div class="student-info-enCours">
                                 <h4>En cours</h4>
-                                <img width="80" height="80" src="https://img.icons8.com/dotty/80/rotate.png"
-                                    alt="rotate" />
+                                <img width="80" height="80" src="https://img.icons8.com/dotty/80/rotate.png" alt="rotate" />
                             </div>
                         </div>
-                        <div class="p-3  mb-3 border bg-light studentInfos">
+                        <div class="p-3 mb-3 border bg-light studentInfos">
                             <div class="student-info">
                                 <h4>Dépot de document</h4>
-                                <button type="button" class="btn btn-outline-warning">Warning</button>
+                                <button type="button" class="btn btn-outline-warning">Ajouter</button>
                             </div>
                         </div>
-                        <div class="p-3  mb-3 border bg-light studentInfos">
-                            <div class="student-info">
+                        <div class="p-3 mb-3 border bg-light studentInfos">
+                            <div class="student-info-supp">
                                 <h4>Supprimer Dossier</h4>
-                                <button type="button" class="btn btn-outline-warning">Warning</button>
+                                <button type="button" class="btn btn-outline-warning">Supprimer</button>
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="col-8">
-                        <div class="row g-3  mb-4">
+            
+                    <div class="col-md-8 col-sm-12">
+                        <div class="row g-3 mb-4">
                             <div class="col-12">
                                 <div class="row g-5">
-                                    <div class="col-5 p-3 mx-4  border bg-light">
+                                    <div class="col-md-5 col-sm-12 p-3 mx-4 border bg-light">
                                         <h4>Progression du dossier</h4>
-                                        <div class="progress" style="height: 20px;">
-                                            <div class="progress-bar" role="progressbar" style="width: 50%" aria
-                                                valuemin="0" aria-valuemax="100" aria-valuenow="50">50%</div>
+                                        <div class="progress mb-5" style="height: 20px;">
+                                            <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuemin="0"
+                                                aria-valuemax="100" aria-valuenow="50">50%</div>
                                         </div>
-
+                                        <div class="progress" style="height: 20px;">
+                                            <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuemin="0"
+                                                aria-valuemax="100" aria-valuenow="50">50%</div>
+                                        </div>
                                     </div>
-                                    <div class="col-6 p-3 border bg-light">
+                                    <div class="col-md-6 col-sm-12 p-3 border boxNotif" style="background-color: #FF6616;">
                                         <h4>Notifications</h4>
                                         <table class="table">
                                             <thead>
@@ -178,17 +180,14 @@
                                                 <tr>
                                                     <th scope="row">1</th>
                                                     <td>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz</td>
-
                                                 </tr>
                                                 <tr>
                                                     <th scope="row">2</th>
                                                     <td>C.C</td>
-
                                                 </tr>
                                                 <tr>
                                                     <th scope="row">3</th>
                                                     <td colspan="2">Dossier</td>
-
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -196,7 +195,7 @@
                                 </div>
                             </div>
                         </div>
-
+            
                         <div class="p-3 g-3 border bg-light">
                             <h4>Pièce à fournir</h4>
                             <table class="table align-middle table-striped table-hover table-custom bg-secondary">
@@ -209,49 +208,56 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-
                                     <tr>
                                         <td>Lettre de motivation</td>
                                         <td>14.05.2025</td>
-                                        <td> <button type="button" class="btn btn-warning btn-sm">
+                                        <td>
+                                            <button type="button" class="btn btn-warning btn-sm">
                                                 <i class="bi bi-file-earmark-text"></i> Vérifier
-                                            </button></td>
+                                            </button>
+                                        </td>
                                         <td>
                                             <button type="button" class="btn btn-success btn-sm">Valider</button>
                                             <button type="button" class="btn btn-danger btn-sm">Refuser</button>
                                         </td>
                                     </tr>
-
+            
                                     <tr>
                                         <td>Rib</td>
                                         <td>21.08.2024</td>
-                                        < <td> <button type="button" class="btn btn-warning btn-sm">
+                                        <td>
+                                            <button type="button" class="btn btn-warning btn-sm">
                                                 <i class="bi bi-file-earmark-text"></i> Vérifier
-                                            </button></td>
-                                            <td>
-                                                <button type="button" class="btn btn-success btn-sm">Valider</button>
-                                                <button type="button" class="btn btn-danger btn-sm">Refuser</button>
-                                            </td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>Entretien</td>
-                                        <td>18.10.2024</td>
-                                        <td> <button type="button" class="btn btn-warning btn-sm">
-                                                <i class="bi bi-file-earmark-text"></i> Vérifier
-                                            </button></td>
+                                            </button>
+                                        </td>
                                         <td>
                                             <button type="button" class="btn btn-success btn-sm">Valider</button>
                                             <button type="button" class="btn btn-danger btn-sm">Refuser</button>
                                         </td>
                                     </tr>
-
+            
+                                    <tr>
+                                        <td>Entretien</td>
+                                        <td>18.10.2024</td>
+                                        <td>
+                                            <button type="button" class="btn btn-warning btn-sm">
+                                                <i class="bi bi-file-earmark-text"></i> Vérifier
+                                            </button>
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btn btn-success btn-sm">Valider</button>
+                                            <button type="button" class="btn btn-danger btn-sm">Refuser</button>
+                                        </td>
+                                    </tr>
+            
                                     <tr>
                                         <td>Photo</td>
                                         <td>29.09.2025</td>
-                                        <td> <button type="button" class="btn btn-warning btn-sm">
+                                        <td>
+                                            <button type="button" class="btn btn-warning btn-sm">
                                                 <i class="bi bi-file-earmark-text"></i> Vérifier
-                                            </button></td>
+                                            </button>
+                                        </td>
                                         <td>
                                             <button type="button" class="btn btn-success btn-sm">Valider</button>
                                             <button type="button" class="btn btn-danger btn-sm">Refuser</button>
@@ -261,20 +267,11 @@
                             </table>
                         </div>
                     </div>
-
+            
                 </div>
             </div>
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-
+            
+        
 
     <!-- =======================SCRIPT JS================ -->
 
