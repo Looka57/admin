@@ -577,7 +577,14 @@ button:hover {
 
 /********************** DEBUT PAGE DOSSIER ETUDIANT ************************/
 
-.cardsPresentationStudent{
+
+.cardStudent img{
+	width: 100px;
+	height: 100px;
+	} 
+	
+
+/* .cardsPresentationStudent{
 	display: flex;
 	flex-direction: column;
 
@@ -601,24 +608,21 @@ button:hover {
 
 .student-info{
 	text-align: center;
-}
+}*/
 
-.cardsPresentationStudent .cardStudent img{
-width: 100px;
-height: 100px;
-}
 
 
 /* INFO DOSSIER */
 
-.pieceAdmin{
-	display: flex;
+/* .pieceAdmin{
+	display: inline-flex;
 	justify-content: space-around;
+	height: 100%;
 }
 
-.pieceAlertInfo, .pieceIdentity{
+.pieceAlertInfo, .notification{
 	width: 100%;
-}
+} */
 
 
 
