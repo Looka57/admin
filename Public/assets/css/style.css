@@ -514,7 +514,7 @@ button:hover {
 	text-align: right;
 }
 
-.btnNewDossier button img{
+.btnNewDossier button img, .btnNewRetard-abs img{
 	filter: invert(100%);
 }
 .btn-outline-warning {
@@ -529,7 +529,7 @@ button:hover {
     color: var(--bleu); 
 }
 
-.btnNewDossier button:hover img{
+.btnNewDossier button:hover img, .btnNewRetard-abs button:hover img{
 	filter: initial;
 }
 
@@ -613,6 +613,39 @@ button:hover {
 	}
 
 /* INFO DOSSIER */
+
+
+
+
+/********************** FIN PAGE DOSSIER ETUDIANT ************************/
+
+/********************** DEBUT PAGE RETARD ABS ************************/
+
+.separated{
+	margin-top: 20px;
+}
+.enteteOnglet {
+	margin: 20px 0px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.ongletRetard {
+	background-color: var(--bleu-opacité);
+}
+
+#home-tab {
+	background-color: var(--bleu-opacité);
+	font-weight: 600;
+	width: 200px;
+}
+
+#profile-tab {
+	background-color: var(--orange-opacité);
+	font-weight: 600;
+	width: 200px;
+}
+
 
 
 

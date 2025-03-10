@@ -26,7 +26,7 @@
         <div class="navigation">
             <ul>
                 <li>
-                    <a href="#">
+                    <a href="tableau.html">
                         <span class="icon"><img width="40" height="40"
                                 src="https://img.icons8.com/ios/50/control-panel--v2.png"
                                 alt="control-panel--v2" /></span>
@@ -64,7 +64,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="retard-abs.html">
                         <span class="icon"><img width="40" height="40"
                                 src="https://img.icons8.com/ios-filled/50/task-planning.png"
                                 alt="task-planning" /></span>
@@ -72,14 +72,14 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="classe.html">
                         <span class="icon"><img width="40" height="40"
                                 src="https://img.icons8.com/glyph-neue/64/classroom.png" alt="classroom" /></span>
                         <span class="title">Classes</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="">
                         <span class="icon"><img width="40" height="40"
                                 src="https://img.icons8.com/ios-filled/50/chat.png" alt="chat" /></span>
                         <span class="title">Messagerie</span>
@@ -201,11 +201,14 @@
 
 
 
-            <div class="container separtion">
+
+            <!-- ONGLETS -->
+            <div class="container separated">
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
                         <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
-                            type="button" role="tab" aria-controls="home" aria-selected="true">Retards </button>
+                            type="button" role="tab" aria-controls="home" aria-selected="true">Retards
+                        </button>
                     </li>
                     <li class="nav-item" role="presentation">
                         <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
@@ -214,9 +217,25 @@
                 </ul>
 
                 <!-- RETARD -->
-                <div class="tab-content" id="myTabContent">
+                <div class="tab-content contentRetard" id="myTabContent">
                     <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                        <h3>Retards</h3>
+                        <div class="enteteOnglet">
+                            <!--========================= SEARCH ====================-->
+                            <div class="search">
+                                <label>
+                                    <input type="text" placeholder="Recherche" />
+                                    <img width="20" height="20" src="https://img.icons8.com/ios/50/search--v1.png"
+                                        alt="search--v1" />
+                                </label>
+                            </div>
+                            <!--========================= BOUTON ====================-->
+                            <div class="btnNewRetard-abs">
+                                <button type="button" class="btn btn-outline-warning"><img width="20" height="20"
+                                        src="https://img.icons8.com/ios/50/plus--v1.png" alt="plus--v1" /> Nouveau
+                                    Retard</button>
+                            </div>
+                        </div>
+
                         <table class="table align-middle table-striped table-hover table-custom bg-secondary">
                             <thead>
                                 <tr>
@@ -302,7 +321,21 @@
 
                     <!-- ABSENCES -->
                     <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                        <h3>Absences</h3>
+                        <div class="enteteOnglet">
+                            <!--========================= SEARCH ====================-->
+                            <div class="search">
+                                <label>
+                                    <input type="text" placeholder="Recherche" />
+                                    <img width="20" height="20" src="https://img.icons8.com/ios/50/search--v1.png"
+                                        alt="search--v1" />
+                                </label>
+                            </div>
+                            <!--========================= BOUTON ====================-->
+                            <div class="btnNewRetard-abs">
+                                <button type="button" class="btn btn-outline-warning"><img width="20" height="20"
+                                        src="https://img.icons8.com/ios/50/plus--v1.png" alt="plus--v1" /> Nouvelle Absences</button>
+                            </div>
+                        </div>
                         <table class="table align-middle table-striped table-hover table-custom bg-secondary">
                             <thead>
                                 <tr>
@@ -384,7 +417,7 @@
                                 </tr>
                             </tbody>
                         </table>
-                        
+
                     </div>
 
                 </div>
