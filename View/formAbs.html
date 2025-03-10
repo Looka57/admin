@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Intervenants</title>
+    <title>Tableau</title>
     <!-- =======================BOOTSTRAP + ICONS BOOTSTRAP================ -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -18,8 +18,8 @@
     <link rel="stylesheet" href="../Public/assets/css/style.css">
 </head>
 
-<body>
 
+<body>
 
     <!-- ==============BARRE DE NAVIGATION============== -->
     <div class="container-fluid containerPrincipal bg-secondary">
@@ -95,6 +95,7 @@
             </ul>
         </div>
 
+
         <!-- =====================MAIN GENERAL=============================== -->
 
         <!-- =====================MAIN TABLEAU=============================== -->
@@ -116,123 +117,47 @@
                     <img src="../Public/assets/images/gohan.jpg" alt="">
                 </div>
             </div>
+            <h1 class="mx-4 mt-5">Nouvelle Absence</h1>
 
-
-            <!--======================= TABLEAU PROF ======================-->
-
-            <div class="tableProfesseurs">
-                <h1 class="mt-5">Professeurs</h1>
-                <table class="table align-middle table-striped table-hover table-custom bg-secondary">
-                    <thead>
-                        <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">Nom</th>
-                            <th scope="col">Prénom</th>
-                            <th scope="col">Matière</th>
-                            <th scope="col">Ville</th>
-                            <th scope="col">Date d'embauche</th>
-                            <th scope="col">Statut</th>
-                            <th scope="col" colspan="2">Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Aizawa</td>
-                            <td>Shota</td>
-                            <td>Combat</td>
-                            <td>Musutafu</td>
-                            <td>2015-03-15</td>
-                            <td>Actif</td>
-                            <td><a href="#" data-bs-toggle="modal" data-bs-target="#modalStagiaire">
-                                    <img width="20" height="20"
-                                        src="https://img.icons8.com/fluency-systems-filled/48/visible.png"
-                                        alt="visible" />
-                                </a></td>
-                            <td><a href=""><img width="20" height="20"
-                                        src="https://img.icons8.com/ios-filled/50/waste.png" alt="waste" /></a></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Yamada</td>
-                            <td>Hizashi</td>
-                            <td>Anglais</td>
-                            <td>Tokyo</td>
-                            <td>2014-06-22</td>
-                            <td>Actif</td>
-                            <td><a href=""><img width="20" height="20"
-                                        src="https://img.icons8.com/fluency-systems-filled/48/visible.png"
-                                        alt="visible" /></a></td>
-                            <td><a href=""><img width="20" height="20"
-                                        src="https://img.icons8.com/ios-filled/50/waste.png" alt="waste" /></a></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Nezu</td>
-                            <td>Directeur</td>
-                            <td>Gestion</td>
-                            <td>Musutafu</td>
-                            <td>2010-01-10</td>
-                            <td>Actif</td>
-                            <td><a href=""><img width="20" height="20"
-                                        src="https://img.icons8.com/fluency-systems-filled/48/visible.png"
-                                        alt="visible" /></a></td>
-                            <td><a href=""><img width="20" height="20"
-                                        src="https://img.icons8.com/ios-filled/50/waste.png" alt="waste" /></a></td>
-                        </tr>
-                    </tbody>
-                </table>
-
-
-
-                <!-- PAGINATION -->
-                <nav aria-label="Page navigation example">
-                    <ul class="pagination">
-                        <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Previous">
-                                <span aria-hidden="true">&laquo;</span>
-                            </a>
-                        </li>
-                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Next">
-                                <span aria-hidden="true">&raquo;</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-
-
-            <!-- Modakl BACK -->
-            <div class="modal fade" id="modalStagiaire" tabindex="-1" aria-labelledby="modalStagiaireLabel"
-                aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="modalStagiaireLabel">Détails du Stagiaire</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <p><strong>Nom :</strong> Aizawa</p>
-                            <p><strong>Prénom :</strong> Shota</p>
-                            <p><strong>Classe :</strong> 2-A</p>
-                            <p><strong>Adresse :</strong> 15 rue quelque chose</p>
-                            <p><strong>Ville :</strong> Musutafu</p>
-                            <p><strong>MAtiere: </strong> C#</p>
-                            <p><strong>Telephone</strong> 06.06.060.06</p>
-                            <p><strong>Mail</strong> Bob@gogole.com</p>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
-                        </div>
+            <!-- =========================FORMULAIRE ABSENCE=========================== -->
+            <div class="container formAbs">
+                <form action="" method="post">
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                     </div>
-                </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+
             </div>
+
+
+
+
+
+
+
+
+
+
+
+
         </div>
+
+
     </div>
+
+
+
 
 
 
@@ -243,6 +168,11 @@
     <!-- =======================JQUERY================ -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+    <!-- =======================WAYPOINTS================ dependance requise du Counter-up-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+    <!-- =======================COUNTER================ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
 
     <!-- =======================IONICON================ -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
@@ -254,7 +184,9 @@
         AOS.init();
     </script>
 
-
+    <!-- =======================CHARTS================ -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 
     <!-- =======================SCRIPT================ -->
     <script src="../Public/assets/js/style.js"></script>

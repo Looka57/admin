@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau</title>
+    <!-- =======================BOOTSTRAP + ICONS BOOTSTRAP================ -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- =======================AOS SCROLL================ -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- =======================STYLES================ -->
+    <link rel="stylesheet" href="../Public/assets/css/style.css">
+</head>
+
+
+<body>
+
+    <!-- ==============BARRE DE NAVIGATION============== -->
+    <div class="container-fluid containerPrincipal bg-secondary">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="tableau.html">
+                        <span class="icon"><img width="40" height="40"
+                                src="https://img.icons8.com/ios/50/control-panel--v2.png"
+                                alt="control-panel--v2" /></span>
+                        <span class="title">MNS</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="tableau.html">
+                        <span class="icon"><img width="40" height="40"
+                                src="https://img.icons8.com/ios/50/control-panel--v2.png"
+                                alt="control-panel--v2" /></span>
+                        <span class="title">Tableau</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="stagiaire.html">
+                        <span class="icon"><img width="40" height="40"
+                                src="https://img.icons8.com/glyph-neue/64/student-male.png" alt="student-male" /></span>
+                        <span class="title">Stagiaires</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="intervenant.html">
+                        <span class="icon"><img width="40" height="40"
+                                src="https://img.icons8.com/ios-filled/50/podium-with-speaker.png"
+                                alt="podium-with-speaker" /></span>
+                        <span class="title">Intervenants</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="dossier.html">
+                        <span class="icon"><img width="40" height="40"
+                                src="https://img.icons8.com/glyph-neue/64/user-folder.png" alt="user-folder" /></span>
+                        <span class="title">Dossiers</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="retard-abs.html">
+                        <span class="icon"><img width="40" height="40"
+                                src="https://img.icons8.com/ios-filled/50/task-planning.png"
+                                alt="task-planning" /></span>
+                        <span class="title">Retards-Absences</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="classe.html">
+                        <span class="icon"><img width="40" height="40"
+                                src="https://img.icons8.com/glyph-neue/64/classroom.png" alt="classroom" /></span>
+                        <span class="title">Classes</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="icon"><img width="40" height="40"
+                                src="https://img.icons8.com/ios-filled/50/chat.png" alt="chat" /></span>
+                        <span class="title">Messagerie</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><img width="40" height="40"
+                                src="https://img.icons8.com/glyph-neue/64/user--v1.png" alt="user--v1" /></span>
+                        <span class="title">Profils</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+        <!-- =====================MAIN GENERAL=============================== -->
+
+        <!-- =====================MAIN TABLEAU=============================== -->
+        <div class="mainTableau">
+            <div class="topBar p-4">
+                <div class="toggle">
+                    <img width="40" height="40" src="https://img.icons8.com/ios/50/menu--v1.png" alt="menu--v1" />
+                </div>
+
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="Recherche" />
+                        <img width="20" height="20" src="https://img.icons8.com/ios/50/search--v1.png"
+                            alt="search--v1" />
+                    </label>
+                </div>
+
+                <div class="user">
+                    <img src="../Public/assets/images/gohan.jpg" alt="">
+                </div>
+            </div>
+            <h1 class="mx-4 mt-5">Bonjour Bob !</h1>
+
+            <!-- =====================CARDS=============================== -->
+
+            <div class="cardBox ">
+                <a href="classe.html" class="card-link">
+                <div class="card border-0">
+                        <div>
+                            <div class="cardNumber">15</div>
+                            <div class="cardName">Classes</div>
+                        </div>
+                        <div class="iconCard">
+                            <img width="60" height="60" src="https://img.icons8.com/glyph-neue/64/classroom.png"
+                                alt="classroom" />
+                        </div>
+                    </div>
+                </a>
+
+                <a href="dossier.html" class="card-link">
+                    <div class="card border-0">
+                        <div>
+                            <div class="cardNumber">254</div>
+                            <div class="cardName">Dossiers</div>
+                        </div>
+                        <div class="iconCard"><img width="60" height="60"
+                                src="https://img.icons8.com/glyph-neue/64/user-folder.png" alt="user-folder" /></div>
+                    </div>
+                </a>
+
+                <a href="stagiaire.html" class="card-link">
+                    <div class="card border-0">
+                        <div>
+                            <div class="cardNumber">1.502</div>
+                            <div class="cardName">Stagiaires</div>
+                        </div>
+                        <div class="iconCard"><img width="60" height="60"
+                                src="https://img.icons8.com/glyph-neue/64/student-male.png" alt="student-male" /></div>
+                    </div>
+                </a>
+
+                <a href="#" class="card-link">
+                    <div class="card border-0">
+                        <div>
+                            <div class="cardNumber">5</div>
+                            <div class="cardName">Notifications</div>
+                        </div>
+                        <div class="iconCard"><img width="60" height="60"
+                                src="https://img.icons8.com/ios-filled/50/appointment-reminders--v1.png"
+                                alt="appointment-reminders--v1" /></div>
+                    </div>
+                </a>
+            </div>
+
+
+
+       <!-- =======================FOOTER================ -->
+       <footer class="footer bg-secondary">blbkakalal</footer>
+    </div>
+
+
+</div>
+
+
+
+
+
+
+<!-- =======================SCRIPT JS================ -->
+
+<!-- =======================BOOTSTRAP JS================ -->
+<script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- =======================JQUERY================ -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- =======================WAYPOINTS================ dependance requise du Counter-up-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+<!-- =======================COUNTER================ -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+
+<!-- =======================IONICON================ -->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<!-- =======================AOS================ -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+<!-- =======================CHARTS================ -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+
+<!-- =======================SCRIPT================ -->
+<script src="../Public/assets/js/style.js"></script>
+
+</body>
+
+</html>
+
+
+
+
