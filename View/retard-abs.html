@@ -225,11 +225,55 @@
                                         alt="search--v1" />
                                 </label>
                             </div>
+
                             <!--========================= BOUTON ====================-->
                             <div class="btnNewRetard-abs">
-                                <button type="button" class="btn btn-outline-warning"><img width="20" height="20"
-                                        src="https://img.icons8.com/ios/50/plus--v1.png" alt="plus--v1" /> Ajout d'un
+                                <button class="btn btn-outline-warning" type="button" data-bs-toggle="offcanvas"
+                                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img width="20"
+                                        height="20" src="https://img.icons8.com/ios/50/plus--v1.png" alt="plus--v1" />
+                                    Ajout d'un
                                     Retard</button>
+
+                                <!--========================= OFFCANVAS ====================-->
+                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                                    aria-labelledby="offcanvasRightLabel">
+                                    <div class="offcanvas-header">
+                                        <h5 id="offcanvasRightLabel">Ajouter un retard</h5>
+                                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        <div class="search w-75">
+                                            <label>Choisir un stagiaire
+                                                <input type="text" placeholder="Recherche" />
+                                            </label>
+                                        </div>
+
+                                        <label class="mt-3">Choisir un type de retard</label>
+                                        <div class="typeLate mt-3">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="flexCheckReveil">
+                                                <label class="form-check-label" for="flexCheckReveil">Réveil</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="flexCheckTransport">
+                                                <label class="form-check-label" for="flexCheckTransport">Transport</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="flexCheckFamiliale">
+                                                <label class="form-check-label" for="flexCheckFamiliale">Familiale</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="flexCheckRetard" >
+                                                <label class="form-check-label" for="flexCheckRetard">Retard</label>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <button type="button" class="">
+                                </button>
                             </div>
                         </div>
 
@@ -330,7 +374,8 @@
                             <!--========================= BOUTON ====================-->
                             <div class="btnNewRetard-abs">
                                 <button type="button" class="btn btn-outline-warning"><img width="20" height="20"
-                                        src="https://img.icons8.com/ios/50/plus--v1.png" alt="plus--v1" /> Ajout d'une absences</button>
+                                        src="https://img.icons8.com/ios/50/plus--v1.png" alt="plus--v1" /> Ajout d'une
+                                    absences</button>
                             </div>
                         </div>
                         <table class="table align-middle table-striped table-hover table-custom bg-secondary">

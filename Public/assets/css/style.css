@@ -646,9 +646,47 @@ button:hover {
 	width: 200px;
 }
 
+/********************** DEBUT PAGE RETARD ABS OFFCANVAS************************/
 
 
+.typeLate {
+	display: flex;
+	flex-wrap: wrap;
+}
 
+.form-check {
+	position: relative;
+}
+
+.form-check-input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+}
+
+.form-check-label {
+	display: inline-block;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	width: 125px;
+	height: 25px;
+	margin: 10px;
+	text-align: center;
+	line-height: 25px;
+	font-weight: bold;
+	font-size: 14px;
+	color: #151A37;
+	cursor: pointer;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+/* Style de la case cochée */
+.form-check-input:checked + .form-check-label {
+	background-color: var(--bleu);
+	border-color: #FF6616;
+	color: #eeeeee;
+}
 
 
 /* <!-- =====================FOOTER =============================== --> */
