@@ -654,6 +654,8 @@ button:hover {
 	flex-wrap: wrap;
 }
 
+
+
 .form-check {
 	position: relative;
 }
@@ -688,6 +690,10 @@ button:hover {
 	color: #eeeeee;
 }
 
+.DelayLate{
+	border-radius: 25px;
+
+}
 
 /* <!-- =====================FOOTER =============================== --> */
 
