@@ -1,0 +1,43 @@
+/********************** DEBUT PAGE DOSSIER ETUDIANT ************************/
+
+.cardStudent img{
+	width: 100px;
+	height: 100px;
+	} 
+
+	.student-info, .student-info-supp{
+		text-align: center;
+	}
+
+ .student-info-supp button{
+	background-color: var(--orange);
+	border: 1px solid var(--bleu);
+ }
+
+		
+	
+	.student-info-enCours{
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+	}
+
+	.studentInfos{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.boxNotif{
+		background-color: var(--orange);
+	}
+
+	.progress-bar{
+		background-color: var(--bleu);
+	}
+
+/* INFO DOSSIER */
+
+
+
+
+/********************** FIN PAGE DOSSIER ETUDIANT ************************/
