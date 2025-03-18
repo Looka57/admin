@@ -5,35 +5,15 @@
 	display: flex;
 }
 
-.chartContainerAbs {
+.chartContainerAbs, .chartContainerLate {
     width: 100%;
-    height: 400px; /* Ajuste selon ton besoin */
-    margin-bottom: 20px;
+    height: 400px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/********************** DEBUT PAGE RETARD ABS OFFCANVAS************************/
+/**********************  OFFCANVAS************************/
 
 
 .typeLate {
@@ -41,16 +21,15 @@
 	flex-wrap: wrap;
 }
 
-
-
 .form-check {
-	position: relative;
+    display: flex;
+    align-items: center; /
 }
 
 .form-check-input {
-	position: absolute;
-	opacity: 0;
-	cursor: pointer;
+    position: static; 
+    opacity: 0; 
+    margin-right: 5px;
 }
 
 .form-check-label {
