@@ -157,324 +157,6 @@
                                 <th scope="col">Nom</th>
                                 <th scope="col">Prenom</th>
                                 <th scope="col">Date</th>
-                                <th scope="col">Heure d'arrivée</th>
-                                <th scope="col">Motif</th>
-                                <th scope="col">Justificatifs</th>
-                                <th scope="col">Actions</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Dupont</td>
-                                <td>Jean</td>
-                                <td>12/03/2025</td>
-                                <td>09:15</td>
-                                <td>Transport</td>
-                                <td><a href="#" class="btn btn-info btn-sm">Télécharger</a></td>
-                                <td>
-                                    <button type="button" class="btn btn-success btn-sm">Valider</button>
-                                    <button type="button" class="btn btn-danger btn-sm">Refuser</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Martin</td>
-                                <td>Sophie</td>
-                                <td>15/03/2025</td>
-                                <td>09:30</td>
-                                <td>Maladie</td>
-                                <td><a href="#" class="btn btn-info btn-sm">Télécharger</a></td>
-                                <td>
-                                    <button type="button" class="btn btn-success btn-sm">Valider</button>
-                                    <button type="button" class="btn btn-danger btn-sm">Refuser</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>Leblanc</td>
-                                <td>Marc</td>
-                                <td>20/03/2025</td>
-                                <td>10:00</td>
-                                <td>Retard accidentel</td>
-                                <td><a href="#" class="btn btn-info btn-sm">Télécharger</a></td>
-                                <td>
-                                    <button type="button" class="btn btn-success btn-sm">Valider</button>
-                                    <button type="button" class="btn btn-danger btn-sm">Refuser</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">4</th>
-                                <td>Durand</td>
-                                <td>Claire</td>
-                                <td>10/04/2025</td>
-                                <td>09:45</td>
-                                <td>Problème de transport</td>
-                                <td><a href="#" class="btn btn-info btn-sm">Télécharger</a></td>
-                                <td>
-                                    <button type="button" class="btn btn-success btn-sm">Valider</button>
-                                    <button type="button" class="btn btn-danger btn-sm">Refuser</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">5</th>
-                                <td>Petit</td>
-                                <td>Lucas</td>
-                                <td>25/05/2025</td>
-                                <td>09:05</td>
-                                <td>Famille</td>
-                                <td><a href="#" class="btn btn-info btn-sm">Télécharger</a></td>
-                                <td>
-                                    <button type="button" class="btn btn-success btn-sm">Valider</button>
-                                    <button type="button" class="btn btn-danger btn-sm">Refuser</button>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-        <!--  =======================BOUTON AJOUT ABS======================= -->
-                <div class="btnNewRetard-abs">
-                    <button class="btn btn-outline-warning" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-                        aria-controls="offcanvasRight"><img width="20" height="20" src="https://img.icons8.com/ios/50/plus--v1.png"
-                            alt="plus--v1" />  Ajout d'une absence</button>
-                
-                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                        <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-                            <div class="offcanvas-body">
-                                <form action="#" method="POST">
-                                    <div class="search w-75">
-                                        <label for="searchStagiaire">Choisir un stagiaire</label>
-                                        <input type="text" id="searchStagiaire" name="stagiaire" placeholder="Recherche" required />
-                                    </div>
-                    
-                                    <label class="mt-3">Choisir un type d'abscence</label>
-                                    <div class="typeLate mt-3">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" id="flexCheckMaladie" name="type_retard[]" value="Réveil">
-                                            <label class="form-check-label" for="flexCheckMaladie">Maladie</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" id="flexCheckAccident" name="type_retard[]" value="Transport">
-                                            <label class="form-check-label" for="flexCheckAccident">Accident</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" id="flexCheckFamiliale" name="type_retard[]" value="Familiale">
-                                            <label class="form-check-label" for="flexCheckFamiliale">Familiale</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" id="flexCheckVacances" name="type_retard[]" value="Autre">
-                                            <label class="form-check-label" for="flexCheckVacances">Vacances</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" id="flexCheckAutres" name="type_retard[]" value="Autre">
-                                            <label class="form-check-label" for="flexCheckAutres">Autres</label>
-                                        </div>
-                                    </div>
-                    
-                                    <label class="form-label mt-3" for="DelayLate">Durée du retard:</label>
-                                    <input class="form-control w-50" type="text" id="DelayLate" name="duree_retard" placeholder="Ex: 15 min" required>
-                    
-                                    <div class="mt-4">
-                                        <button class="btn btn-outline-warning mx-3 px-4" type="submit">Valider</button>
-                                        <button class="btn btn-outline-warning mx-3 px-4" type="reset">Supprimer</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-
-        <!--  =======================TABLEAU JUSTIFICATIF ABS RETARD ======================= -->
-
-                <h4 class="mt-5 mb-4 mx-4">Retards a valider</h4>
-                <div class="JustificatifsRetard">
-                    <table class="table align-middle table-striped table-hover table-custom bg-secondary">
-                        <thead>
-                            <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">Nom</th>
-                                <th scope="col">Prenom</th>
-                                <th scope="col">Date</th>
-                                <th scope="col">Heure d'arrivée</th>
-                                <th scope="col">Motif</th>
-                                <th scope="col">Actions</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Dupont</td>
-                                <td>Jean</td>
-                                <td>12/03/2025</td>
-                                <td>09:15</td>
-                                <td>Transport</td>
-                             
-                                <td>
-                                    <button type="button" class="btn btn-success btn-sm">Valider</button>
-                                    <!-- <button type="button" class="btn btn-danger btn-sm">Refuser</button> -->
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Martin</td>
-                                <td>Sophie</td>
-                                <td>15/03/2025</td>
-                                <td>09:30</td>
-                                <td>Maladie</td>
-
-                                <td>
-                                    <button type="button" class="btn btn-success btn-sm">Valider</button>
-                                    <!-- <button type="button" class="btn btn-danger btn-sm">Refuser</button> -->
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>Leblanc</td>
-                                <td>Marc</td>
-                                <td>20/03/2025</td>
-                                <td>10:00</td>
-                                <td>Retard accidentel</td>
-
-                                <td>
-                                    <button type="button" class="btn btn-success btn-sm">Valider</button>
-                                    <!-- <button type="button" class="btn btn-danger btn-sm">Refuser</button> -->
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">4</th>
-                                <td>Durand</td>
-                                <td>Claire</td>
-                                <td>10/04/2025</td>
-                                <td>09:45</td>
-                                <td>Problème de transport</td>
-
-                                <td>
-                                    <button type="button" class="btn btn-success btn-sm">Valider</button>
-                                    <!-- <button type="button" class="btn btn-danger btn-sm">Refuser</button> -->
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">5</th>
-                                <td>Petit</td>
-                                <td>Lucas</td>
-                                <td>25/05/2025</td>
-                                <td>09:05</td>
-                                <td>Famille</td>
-
-                                <td>
-                                    <button type="button" class="btn btn-success btn-sm">Valider</button>
-                                    <!-- <button type="button" class="btn btn-danger btn-sm">Refuser</button> -->
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-        <!--  =======================BOUTON AJOUT ABS======================= -->
-       <div class="btnNewRetard-abs">
-                    <button class="btn btn-outline-warning" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-                        aria-controls="offcanvasRight"><img width="20" height="20" src="https://img.icons8.com/ios/50/plus--v1.png"
-                            alt="plus--v1" />  Ajout d'un retard</button>
-                
-                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                        <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-                            <div class="offcanvas-body">
-                                <form action="#" method="POST">
-                                    <div class="search w-75">
-                                        <label for="searchStagiaire">Choisir un stagiaire</label>
-                                        <input type="text" id="searchStagiaire" name="stagiaire" placeholder="Recherche" required />
-                                    </div>
-                    
-                                    <label class="mt-3">Choisir un type d'abscence</label>
-                                    <div class="typeLate mt-3">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" id="flexCheckMaladie" name="type_retard[]" value="Réveil">
-                                            <label class="form-check-label" for="flexCheckMaladie">Maladie</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" id="flexCheckAccident" name="type_retard[]" value="Transport">
-                                            <label class="form-check-label" for="flexCheckAccident">Accident</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" id="flexCheckFamiliale" name="type_retard[]" value="Familiale">
-                                            <label class="form-check-label" for="flexCheckFamiliale">Familiale</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" id="flexCheckVacances" name="type_retard[]" value="Autre">
-                                            <label class="form-check-label" for="flexCheckVacances">Vacances</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" id="flexCheckAutres" name="type_retard[]" value="Autre">
-                                            <label class="form-check-label" for="flexCheckAutres">Autres</label>
-                                        </div>
-                                    </div>
-                    
-                                    <label class="form-label mt-3" for="DelayLate">Durée du retard:</label>
-                                    <input class="form-control w-50" type="text" id="DelayLate" name="duree_retard" placeholder="Ex: 15 min" required>
-                    
-                                    <div class="mt-4">
-                                        <button class="btn btn-outline-warning mx-3 px-4" type="submit">Valider</button>
-                                        <button class="btn btn-outline-warning mx-3 px-4" type="reset">Supprimer</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                <!-- ABSENCES -->
-                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                    <div class="enteteOnglet">
-                        <!--========================= SEARCH ====================-->
-                        <div class="search">
-                            <label>
-                                <input type="text" placeholder="Recherche" />
-                                <img width="20" height="20" src="https://img.icons8.com/ios/50/search--v1.png"
-                                    alt="search--v1" />
-                            </label>
-                        </div>
-                        <!--========================= BOUTON ====================-->
-                        <div class="btnNewRetard-abs">
-                            <button type="button" class="btn btn-outline-warning"><img width="20" height="20"
-                                    src="https://img.icons8.com/ios/50/plus--v1.png" alt="plus--v1" /> Ajout d'une
-                                absences</button>
-                        </div>
-                    </div>
-                    <table class="table align-middle table-striped table-hover table-custom bg-secondary">
-                        <thead>
-                            <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">Nom</th>
-                                <th scope="col">Prenom</th>
-                                <th scope="col">Date</th>
                                 <th scope="col">Durée</th>
                                 <th scope="col">Type</th>
                                 <th scope="col">Justificatifs</th>
@@ -489,6 +171,7 @@
                                 <td>12/03/2025</td>
                                 <td>2 jours</td>
                                 <td>Maladie</td>
+                                <td><a href="#" class="btn btn-info btn-sm">Télécharger</a></td>
                                 <td>
                                     <button type="button" class="btn btn-success btn-sm">Valider</button>
                                     <button type="button" class="btn btn-danger btn-sm">Refuser</button>
@@ -501,7 +184,7 @@
                                 <td>15/03/2025</td>
                                 <td>1 jour</td>
                                 <td>Congé</td>
-
+                                <td><a href="#" class="btn btn-info btn-sm">Télécharger</a></td>
                                 <td>
                                     <button type="button" class="btn btn-success btn-sm">Valider</button>
                                     <button type="button" class="btn btn-danger btn-sm">Refuser</button>
@@ -540,6 +223,7 @@
                                 <td>25/05/2025</td>
                                 <td>2 jours</td>
                                 <td>Raisons personnelles</td>
+                                <td><a href="#" class="btn btn-info btn-sm">Télécharger</a></td>
                                 <td>
                                     <button type="button" class="btn btn-success btn-sm">Valider</button>
                                     <button type="button" class="btn btn-danger btn-sm">Refuser</button>
@@ -547,30 +231,236 @@
                             </tr>
                         </tbody>
                     </table>
+                </div>
 
+                <!--  =======================BOUTON AJOUT ABS======================= -->
+                <div class="btnNewRetard-abs">
+                    <button class="btn btn-outline-warning" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img width="20" height="20"
+                            src="https://img.icons8.com/ios/50/plus--v1.png" alt="plus--v1" /> Ajout d'une
+                        absence</button>
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                        aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasRightLabel">Ajout d'une absence</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+
+
+                        <div class="offcanvas-body">
+                            <div class="offcanvas-body">
+                                <form action="#" method="POST">
+                                    <div class="search w-75">
+                                        <label for="searchStagiaire">Choisir un stagiaire</label>
+                                        <input type="text" id="searchStagiaire" name="stagiaire" placeholder="Recherche"
+                                            required />
+                                    </div>
+
+                                    <label class="mt-3">Choisir un type d'abscence</label>
+                                    <div class="typeLate mt-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="flexCheckMaladie"
+                                                name="type_retard[]" value="Réveil">
+                                            <label class="form-check-label" for="flexCheckMaladie">Maladie</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="flexCheckAccident"
+                                                name="type_retard[]" value="Transport">
+                                            <label class="form-check-label" for="flexCheckAccident">Accident</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="flexCheckFamiliale"
+                                                name="type_retard[]" value="Familiale">
+                                            <label class="form-check-label" for="flexCheckFamiliale">Familiale</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="flexCheckVacances"
+                                                name="type_retard[]" value="Autre">
+                                            <label class="form-check-label" for="flexCheckVacances">Vacances</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="flexCheckAutres"
+                                                name="type_retard[]" value="Autre">
+                                            <label class="form-check-label" for="flexCheckAutres">Autres</label>
+                                        </div>
+                                    </div>
+
+                                    <label class="form-label mt-3" for="DelayLate">Durée du retard:</label>
+                                    <input class="form-control w-50" type="text" id="DelayLate" name="duree_retard"
+                                        placeholder="Ex: 15 min" required>
+
+                                    <div class="mt-4">
+                                        <button class="btn btn-outline-warning mx-3 px-4" type="submit">Valider</button>
+                                        <button class="btn btn-outline-warning mx-3 px-4"
+                                            type="reset">Supprimer</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!--  =======================TABLEAU JUSTIFICATIF ABS RETARD ======================= -->
+
+                <h4 class="mt-5 mb-4 mx-4">Retards a valider</h4>
+                <div class="JustificatifsRetard">
+                    <table class="table align-middle table-striped table-hover table-custom bg-secondary">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Nom</th>
+                                <th scope="col">Prenom</th>
+                                <th scope="col">Date</th>
+                                <th scope="col">Heure d'arrivée</th>
+                                <th scope="col">Motif</th>
+                                <th scope="col">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Dupont</td>
+                                <td>Jean</td>
+                                <td>12/03/2025</td>
+                                <td>09:15</td>
+                                <td>Transport</td>
+
+                                <td>
+                                    <button type="button" class="btn btn-success btn-sm">Valider</button>
+                                    <!-- <button type="button" class="btn btn-danger btn-sm">Refuser</button> -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Martin</td>
+                                <td>Sophie</td>
+                                <td>15/03/2025</td>
+                                <td>09:30</td>
+                                <td>Maladie</td>
+
+                                <td>
+                                    <button type="button" class="btn btn-success btn-sm">Valider</button>
+                                    <!-- <button type="button" class="btn btn-danger btn-sm">Refuser</button> -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Leblanc</td>
+                                <td>Marc</td>
+                                <td>20/03/2025</td>
+                                <td>10:00</td>
+                                <td>Retard accidentel</td>
+
+                                <td>
+                                    <button type="button" class="btn btn-success btn-sm">Valider</button>
+                                    <!-- <button type="button" class="btn btn-danger btn-sm">Refuser</button> -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>Durand</td>
+                                <td>Claire</td>
+                                <td>10/04/2025</td>
+                                <td>09:45</td>
+                                <td>Problème de transport</td>
+
+                                <td>
+                                    <button type="button" class="btn btn-success btn-sm">Valider</button>
+                                    <!-- <button type="button" class="btn btn-danger btn-sm">Refuser</button> -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>Petit</td>
+                                <td>Lucas</td>
+                                <td>25/05/2025</td>
+                                <td>09:05</td>
+                                <td>Famille</td>
+
+                                <td>
+                                    <button type="button" class="btn btn-success btn-sm">Valider</button>
+                                    <!-- <button type="button" class="btn btn-danger btn-sm">Refuser</button> -->
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!--  =======================BOUTON AJOUT RETARD======================= -->
+                <div class="btnNewRetard-abs mb-5">
+                    <button class="btn btn-outline-warning" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img width="20" height="20"
+                            src="https://img.icons8.com/ios/50/plus--v1.png" alt="plus--v1" /> Ajout d'un
+                        retard</button>
                 </div>
 
 
 
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                    aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasRightLabel">Ajout d'un retard</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="offcanvas-body">
+                            <form action="#" method="POST">
+                                <div class="search w-75">
+                                    <label for="searchStagiaire">Choisir un stagiaire</label>
+                                    <input type="text" id="searchStagiaire" name="stagiaire" placeholder="Recherche"
+                                        required />
+                                </div>
 
+                                <label class="mt-3">Choisir un type d'abscence</label>
+                                <div class="typeLate mt-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="flexCheckReveil"
+                                            name="type_retard[]" value="Réveil">
+                                        <label class="form-check-label" for="flexCheckReveil">Reveil</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="flexCheckAccident"
+                                            name="type_retard[]" value="Transport">
+                                        <label class="form-check-label" for="flexCheckAccident">Accident</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="flexCheckFamiliale"
+                                            name="type_retard[]" value="Familiale">
+                                        <label class="form-check-label" for="flexCheckFamiliale">Familiale</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="flexCheckTransport"
+                                            name="type_retard[]" value="Autre">
+                                        <label class="form-check-label" for="flexCheckTransport">Transport</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="flexCheckAutres"
+                                            name="type_retard[]" value="Autre">
+                                        <label class="form-check-label" for="flexCheckAutres">Autres</label>
+                                    </div>
+                                </div>
 
+                                <label class="form-label mt-3" for="DelayLate">Durée du retard:</label>
+                                <input class="form-control w-50" type="text" id="DelayLate" name="duree_retard"
+                                    placeholder="Ex: 15 min" required>
 
-
-
-
-
-
-
-
-
-
+                                <div class="mt-4">
+                                    <button class="btn btn-outline-warning mx-3 px-4" type="submit">Valider</button>
+                                    <button class="btn btn-outline-warning mx-3 px-4" type="reset">Supprimer</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-
-
-
         </div>
     </div>
+
+    
+</div>
 </div>
 
 

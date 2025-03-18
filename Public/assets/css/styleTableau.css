@@ -328,21 +328,18 @@
 /* <!-- =====================GRAPHIQUES + TABLEAU DOSSIERS =============================== --> */
 .table-custom {
 	background-color: #151A37 !important;
-	/* Bleu foncé */
 	color: white !important;
-	/* Texte en blanc */
+	
 }
 
 .table-custom th,
 .table-custom td {
 	border-color: #FF6616;
-	/* Bordures en orange */
 }
 
 .table-custom thead tr th {
 
 	background-color: #151A37 !important;
-	/* Bleu foncé */
 	color: white !important;
 
 }

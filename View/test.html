@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Délais d'Absence avec Flatpickr</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+    <!-- Flatpickr CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 500px;
+            margin-top: 50px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h3 class="text-center mb-4">Délais d'Absence</h3>
+
+        <!-- Sélection de la date de début -->
+        <label for="dateDebut" class="form-label">Date de début :</label>
+        <div class="input-group mb-3">
+            <input type="text" id="dateDebut" class="form-control" placeholder="Sélectionne la date de début">
+            <span class="input-group-text"><i class="bi bi-calendar"></i></span>
+        </div>
+
+        <!-- Sélection de la date de fin -->
+        <label for="dateFin" class="form-label">Date de fin :</label>
+        <div class="input-group mb-3">
+            <input type="text" id="dateFin" class="form-control" placeholder="Sélectionne la date de fin">
+            <span class="input-group-text"><i class="bi bi-calendar"></i></span>
+        </div>
+
+        <button class="btn btn-primary w-100" id="validerAbsence">Valider</button>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Flatpickr JS -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Initialisation des deux Flatpickr
+            let dateDebutPicker = flatpickr("#dateDebut", {
+                dateFormat: "d/m/Y",
+                minDate: "today",
+                locale: "fr",
+                allowInput: true,
+                onChange: function(selectedDates, dateStr) {
+                    // Définit la date de fin minimum après la date de début choisie
+                    dateFinPicker.set("minDate", dateStr);
+                }
+            });
+
+            let dateFinPicker = flatpickr("#dateFin", {
+                dateFormat: "d/m/Y",
+                minDate: "today",
+                locale: "fr",
+                allowInput: true
+            });
+
+            // Bouton de validation
+            document.getElementById("validerAbsence").addEventListener("click", function () {
+                let debut = document.getElementById("dateDebut").value;
+                let fin = document.getElementById("dateFin").value;
+
+                if (debut && fin) {
+                    alert("Période d'absence du " + debut + " au " + fin);
+                } else {
+                    alert("Merci de sélectionner une date de début et une date de fin.");
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

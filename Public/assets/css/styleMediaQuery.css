@@ -1,0 +1,65 @@
+/* <!-- =====================MEDIA QUERY=============================== --> */
+
+@media (max-width: 992px) {
+	.navigation {
+		left: -300px;
+	}
+
+	.navigation.active {
+		width: 300px;
+		left: 0;
+	}
+
+	.mainTableau {
+		width: 100%;
+		left: 0;
+	}
+
+	.mainTableau.active {
+		left: -15px;
+	}
+}
+
+/* TAILLE PORTABLE */
+@media (max-width: 480px) {
+	.user {
+		min-width: 40px;
+	}
+
+	.navigation {
+		width: 100%;
+		left: -100%;
+		z-index: 1000;
+	}
+
+	.navigation.active {
+		width: 100%;
+		left: 0;
+	}
+
+	.toggle{
+		z-index: 1001;
+	}
+
+	.mainTableau.active .toggle img{
+		filter: invert(100%);
+	}
+
+	.mainTableau.active .toggle{
+		color: white;
+		position: fixed;
+		right: 0;
+		left: initial;
+	}
+
+	.topBar {
+		margin: 0px;
+	}
+}
+
+
+@media (max-width: 768px) {
+	.main {
+		position: initial;
+	}
+}

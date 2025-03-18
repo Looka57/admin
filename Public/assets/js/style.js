@@ -222,9 +222,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-
-
-
     // 7. Gestion du clic sur la carte pour afficher/cacher le tableau
     let card = document.getElementById('cardDevWeb2');
     let tableContainer = document.getElementById('tableContainer');
@@ -240,3 +237,8 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
+
+
+
+
+
