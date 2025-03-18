@@ -11,479 +11,143 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    <!-- =======================AOS SCROLL================ -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 
     <!-- =======================STYLES================ -->
     <link rel="stylesheet" href="../Public/assets/css/style.css">
     <link rel="stylesheet" href="../Public/assets/css/styleNavigation.css">
-    <link rel="stylesheet" href="../Public/assets/css/styleCards.css">
-    <link rel="stylesheet" href="../Public/assets/css/stleRetardAbs.css">
+    <link rel="stylesheet" href="../Public/assets/css/styleTableau.css">
+    <link rel="stylesheet" href="../Public/assets/css/styleRetardAbs.css">
 </head>
 
-<body>
 
-
-    <!-- ==============BARRE DE NAVIGATION============== -->
-    <div class="container-fluid containerPrincipal bg-secondary">
-        <div class="navigation">
-            <ul>
-                <li>
-                    <a href="tableau.html">
-                        <span class="icon"><img width="40" height="40"
-                                src="https://img.icons8.com/ios/50/control-panel--v2.png"
-                                alt="control-panel--v2" /></span>
-                        <span class="title">MNS</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="tableau.html">
-                        <span class="icon"><img width="40" height="40"
-                                src="https://img.icons8.com/ios/50/control-panel--v2.png"
-                                alt="control-panel--v2" /></span>
-                        <span class="title">Tableau</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="stagiaire.html">
-                        <span class="icon"><img width="40" height="40"
-                                src="https://img.icons8.com/glyph-neue/64/student-male.png" alt="student-male" /></span>
-                        <span class="title">Stagiaires</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="intervenant.html">
-                        <span class="icon"><img width="40" height="40"
-                                src="https://img.icons8.com/ios-filled/50/podium-with-speaker.png"
-                                alt="podium-with-speaker" /></span>
-                        <span class="title">Intervenants</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="dossier.html">
-                        <span class="icon"><img width="40" height="40"
-                                src="https://img.icons8.com/glyph-neue/64/user-folder.png" alt="user-folder" /></span>
-                        <span class="title">Dossiers</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="retard-abs.html">
-                        <span class="icon"><img width="40" height="40"
-                                src="https://img.icons8.com/ios-filled/50/task-planning.png"
-                                alt="task-planning" /></span>
-                        <span class="title">Retards-Absences</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="classe.html">
-                        <span class="icon"><img width="40" height="40"
-                                src="https://img.icons8.com/glyph-neue/64/classroom.png" alt="classroom" /></span>
-                        <span class="title">Classes</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <span class="icon"><img width="40" height="40"
-                                src="https://img.icons8.com/ios-filled/50/chat.png" alt="chat" /></span>
-                        <span class="title">Messagerie</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span class="icon"><img width="40" height="40"
-                                src="https://img.icons8.com/glyph-neue/64/user--v1.png" alt="user--v1" /></span>
-                        <span class="title">Profils</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-
-        <!-- =====================MAIN GENERAL=============================== -->
-
-        <!-- =====================MAIN TABLEAU=============================== -->
-        <div class="mainTableau">
-            <div class="topBar p-4">
-                <div class="toggle">
-                    <img width="40" height="40" src="https://img.icons8.com/ios/50/menu--v1.png" alt="menu--v1" />
-                </div>
-
-                <div class="search">
-                    <label>
-                        <input type="text" placeholder="Recherche" />
-                        <img width="20" height="20" src="https://img.icons8.com/ios/50/search--v1.png"
-                            alt="search--v1" />
-                    </label>
-                </div>
-
-                <div class="user">
-                    <img src="../Public/assets/images/gohan.jpg" alt="">
-                </div>
-            </div>
-
-            <!-- =====================CARDS=============================== -->
-            <h1 class="mt-5 mx-4">Retards-Absences</h1>
-            <div class="cardBox ">
-                <div class="card border-0" id="cardDevWeb2">
-                    <div>
-                        <div class="cardNumber">30</div>
-                        <div class="cardName">CDA</div>
-                    </div>
-
-                    <div class="iconCard">
-                        <img width="60" height="60" src="https://img.icons8.com/glyph-neue/64/classroom.png"
-                            alt="classroom" />
-                    </div>
-                </div>
-
-                <div class="card border-0">
-                    <div>
-                        <div class="cardNumber">13</div>
-                        <div class="cardName">C#</div>
-                    </div>
-                    <div class="iconCard"><img width="60" height="60"
-                            src="https://img.icons8.com/glyph-neue/64/user-folder.png" alt="user-folder" /></div>
-                </div>
-                <div class="card border-0">
-                    <div>
-                        <div class="cardNumber">17</div>
-                        <div class="cardName">Java</div>
-                    </div>
-                    <div class="iconCard"><img width="60" height="60"
-                            src="https://img.icons8.com/glyph-neue/64/student-male.png" alt="student-male" /></div>
-                </div>
-                <div class="card border-0">
-                    <div>
-                        <div class="cardNumber">15</div>
-                        <div class="cardName">DevWeb 1</div>
-                    </div>
-                    <div class="iconCard"><img width="60" height="60"
-                            src="https://img.icons8.com/ios-filled/50/appointment-reminders--v1.png"
-                            alt="appointment-reminders--v1" /></div>
-                </div>
-            </div>
-            <div class="cardBox ">
-                <div class="card border-0">
-                    <div>
-                        <div class="cardNumber">15</div>
-                        <div class="cardName">DevWeb 2</div>
-                    </div>
-
-                    <div class="iconCard">
-                        <img width="60" height="60" src="https://img.icons8.com/glyph-neue/64/classroom.png"
-                            alt="classroom" />
-                    </div>
-                </div>
-
-                <div class="card border-0">
-                    <div>
-                        <div class="cardNumber">25</div>
-                        <div class="cardName">Réseau</div>
-                    </div>
-                    <div class="iconCard"><img width="60" height="60"
-                            src="https://img.icons8.com/glyph-neue/64/user-folder.png" alt="user-folder" /></div>
-                </div>
-                <div class="card border-0">
-                    <div>
-                        <div class="cardNumber">15</div>
-                        <div class="cardName">RAN 1</div>
-                    </div>
-                    <div class="iconCard"><img width="60" height="60"
-                            src="https://img.icons8.com/glyph-neue/64/student-male.png" alt="student-male" /></div>
-                </div>
-                <div class="card border-0">
-                    <div>
-                        <div class="cardNumber">25</div>
-                        <div class="cardName">RAN2</div>
-                    </div>
-                    <div class="iconCard"><img width="60" height="60"
-                            src="https://img.icons8.com/ios-filled/50/appointment-reminders--v1.png"
-                            alt="appointment-reminders--v1" /></div>
-                </div>
-            </div>
-
-
-            <!--========================== ONGLETS SEPARATION ====================-->
-            <div class="container-fluid separated">
-                <ul class="nav nav-tabs" id="myTab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
-                            type="button" role="tab" aria-controls="home" aria-selected="true">Retards
-                        </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
-                            type="button" role="tab" aria-controls="profile" aria-selected="false">Absences</button>
-                    </li>
-                </ul>
-
-                <!-- RETARD -->
-                <div class="tab-content contentRetard" id="myTabContent">
-                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                        <div class="enteteOnglet">
-                            <!--========================= SEARCH ====================-->
-                            <div class="search">
-                                <label>
-                                    <input type="text" placeholder="Recherche" />
-                                    <img width="20" height="20" src="https://img.icons8.com/ios/50/search--v1.png"
-                                        alt="search--v1" />
-                                </label>
-                            </div>
-
-                            <!--========================= BOUTON ====================-->
-                            <div class="btnNewRetard-abs">
-                                <button class="btn btn-outline-warning" type="button" data-bs-toggle="offcanvas"
-                                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img width="20"
-                                        height="20" src="https://img.icons8.com/ios/50/plus--v1.png" alt="plus--v1" />
-                                    Ajout d'un  Retard</button>
-                                <!--========================= OFFCANVAS RETARD ====================-->
-                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
-                                    aria-labelledby="offcanvasRightLabel">
-                                    <div class="offcanvas-header">
-                                        <h5 id="offcanvasRightLabel">Ajouter un retard</h5>
-                                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="offcanvas-body">
-                                        <form action="#" method="POST">
-                                            <div class="search w-75">
-                                                <label for="searchStagiaire">Choisir un stagiaire</label>
-                                                <input type="text" id="searchStagiaire" name="stagiaire" placeholder="Recherche" required />
-                                            </div>
-                            
-                                            <label class="mt-3">Choisir un type de retard</label>
-                                            <div class="typeLate mt-3">
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" id="flexCheckReveil" name="type_retard[]" value="Réveil">
-                                                    <label class="form-check-label" for="flexCheckReveil">Réveil</label>
-                                                </div>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" id="flexCheckTransport" name="type_retard[]" value="Transport">
-                                                    <label class="form-check-label" for="flexCheckTransport">Transport</label>
-                                                </div>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" id="flexCheckFamiliale" name="type_retard[]" value="Familiale">
-                                                    <label class="form-check-label" for="flexCheckFamiliale">Familiale</label>
-                                                </div>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" id="flexCheckRetard" name="type_retard[]" value="Autre">
-                                                    <label class="form-check-label" for="flexCheckRetard">Autre</label>
-                                                </div>
-                                            </div>
-                            
-                                            <label class="form-label mt-3" for="DelayLate">Durée du retard:</label>
-                                            <input class="form-control w-50" type="text" id="DelayLate" name="duree_retard" placeholder="Ex: 15 min" required>
-                            
-                                            <div class="mt-4">
-                                                <button class="btn btn-outline-warning mx-3 px-4" type="submit">Valider</button>
-                                                <button class="btn btn-outline-warning mx-3 px-4" type="reset">Supprimer</button>
-                                            </div>
-                                        </form>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-
-
-                        <table class="table align-middle table-striped table-hover table-custom bg-secondary">
-                            <thead>
-                                <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">Nom</th>
-                                    <th scope="col">Prenom</th>
-                                    <th scope="col">Date</th>
-                                    <th scope="col">Heure d'arrivée</th>
-                                    <th scope="col">Motif</th>
-                                    <th scope="col">Justificatifs</th>
-                                    <th scope="col">Actions</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Dupont</td>
-                                    <td>Jean</td>
-                                    <td>12/03/2025</td>
-                                    <td>09:15</td>
-                                    <td>Transport</td>
-                                    <td><a href="#" class="btn btn-info btn-sm">Télécharger</a></td>
-                                    <td>
-                                        <button type="button" class="btn btn-success btn-sm">Valider</button>
-                                        <button type="button" class="btn btn-danger btn-sm">Refuser</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>Martin</td>
-                                    <td>Sophie</td>
-                                    <td>15/03/2025</td>
-                                    <td>09:30</td>
-                                    <td>Maladie</td>
-                                    <td><a href="#" class="btn btn-info btn-sm">Télécharger</a></td>
-                                    <td>
-                                        <button type="button" class="btn btn-success btn-sm">Valider</button>
-                                        <button type="button" class="btn btn-danger btn-sm">Refuser</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td>Leblanc</td>
-                                    <td>Marc</td>
-                                    <td>20/03/2025</td>
-                                    <td>10:00</td>
-                                    <td>Retard accidentel</td>
-                                    <td><a href="#" class="btn btn-info btn-sm">Télécharger</a></td>
-                                    <td>
-                                        <button type="button" class="btn btn-success btn-sm">Valider</button>
-                                        <button type="button" class="btn btn-danger btn-sm">Refuser</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">4</th>
-                                    <td>Durand</td>
-                                    <td>Claire</td>
-                                    <td>10/04/2025</td>
-                                    <td>09:45</td>
-                                    <td>Problème de transport</td>
-                                    <td><a href="#" class="btn btn-info btn-sm">Télécharger</a></td>
-                                    <td>
-                                        <button type="button" class="btn btn-success btn-sm">Valider</button>
-                                        <button type="button" class="btn btn-danger btn-sm">Refuser</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">5</th>
-                                    <td>Petit</td>
-                                    <td>Lucas</td>
-                                    <td>25/05/2025</td>
-                                    <td>09:05</td>
-                                    <td>Famille</td>
-                                    <td><a href="#" class="btn btn-info btn-sm">Télécharger</a></td>
-                                    <td>
-                                        <button type="button" class="btn btn-success btn-sm">Valider</button>
-                                        <button type="button" class="btn btn-danger btn-sm">Refuser</button>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <!-- ABSENCES -->
-                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                        <div class="enteteOnglet">
-                            <!--========================= SEARCH ====================-->
-                            <div class="search">
-                                <label>
-                                    <input type="text" placeholder="Recherche" />
-                                    <img width="20" height="20" src="https://img.icons8.com/ios/50/search--v1.png"
-                                        alt="search--v1" />
-                                </label>
-                            </div>
-                            <!--========================= BOUTON ====================-->
-                            <div class="btnNewRetard-abs">
-                                <button type="button" class="btn btn-outline-warning"><img width="20" height="20"
-                                        src="https://img.icons8.com/ios/50/plus--v1.png" alt="plus--v1" /> Ajout d'une
-                                    absences</button>
-                            </div>
-                        </div>
-                        <table class="table align-middle table-striped table-hover table-custom bg-secondary">
-                            <thead>
-                                <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">Nom</th>
-                                    <th scope="col">Prenom</th>
-                                    <th scope="col">Date</th>
-                                    <th scope="col">Durée</th>
-                                    <th scope="col">Type</th>
-                                    <th scope="col">Justificatifs</th>
-                                    <th scope="col">Actions</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Dupont</td>
-                                    <td>Jean</td>
-                                    <td>12/03/2025</td>
-                                    <td>2 jours</td>
-                                    <td>Maladie</td>
-                                    <td><a href="#" class="btn btn-info btn-sm">Télécharger</a></td>
-                                    <td>
-                                        <button type="button" class="btn btn-success btn-sm">Valider</button>
-                                        <button type="button" class="btn btn-danger btn-sm">Refuser</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>Martin</td>
-                                    <td>Sophie</td>
-                                    <td>15/03/2025</td>
-                                    <td>1 jour</td>
-                                    <td>Congé</td>
-                                    <td><a href="#" class="btn btn-info btn-sm">Télécharger</a></td>
-                                    <td>
-                                        <button type="button" class="btn btn-success btn-sm">Valider</button>
-                                        <button type="button" class="btn btn-danger btn-sm">Refuser</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td>Leblanc</td>
-                                    <td>Marc</td>
-                                    <td>20/03/2025</td>
-                                    <td>3 jours</td>
-                                    <td>Urgence</td>
-                                    <td><a href="#" class="btn btn-info btn-sm">Télécharger</a></td>
-                                    <td>
-                                        <button type="button" class="btn btn-success btn-sm">Valider</button>
-                                        <button type="button" class="btn btn-danger btn-sm">Refuser</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">4</th>
-                                    <td>Durand</td>
-                                    <td>Claire</td>
-                                    <td>10/04/2025</td>
-                                    <td>1 semaine</td>
-                                    <td>Vacances</td>
-                                    <td><a href="#" class="btn btn-info btn-sm">Télécharger</a></td>
-                                    <td>
-                                        <button type="button" class="btn btn-success btn-sm">Valider</button>
-                                        <button type="button" class="btn btn-danger btn-sm">Refuser</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">5</th>
-                                    <td>Petit</td>
-                                    <td>Lucas</td>
-                                    <td>25/05/2025</td>
-                                    <td>2 jours</td>
-                                    <td>Raisons personnelles</td>
-                                    <td><a href="#" class="btn btn-info btn-sm">Télécharger</a></td>
-                                    <td>
-                                        <button type="button" class="btn btn-success btn-sm">Valider</button>
-                                        <button type="button" class="btn btn-danger btn-sm">Refuser</button>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                    </div>
-
-                </div>
-            </div>
-        </div>
+<!-- ==============BARRE DE NAVIGATION============== -->
+<div class="container-fluid containerPrincipal">
+    <div class="navigation">
+        <ul>
+            <li>
+                <a href="tableau.html">
+                    <span class="icon"><img width="40" height="40"
+                            src="https://img.icons8.com/ios/50/control-panel--v2.png" alt="control-panel--v2" /></span>
+                    <span class="title">MNS</span>
+                </a>
+            </li>
+            <li>
+                <a href="tableau.html">
+                    <span class="icon"><img width="40" height="40"
+                            src="https://img.icons8.com/ios/50/control-panel--v2.png" alt="control-panel--v2" /></span>
+                    <span class="title">Tableau</span>
+                </a>
+            </li>
+            <li>
+                <a href="stagiaire.html">
+                    <span class="icon"><img width="40" height="40"
+                            src="https://img.icons8.com/glyph-neue/64/student-male.png" alt="student-male" /></span>
+                    <span class="title">Stagiaires</span>
+                </a>
+            </li>
+            <li>
+                <a href="intervenant.html">
+                    <span class="icon"><img width="40" height="40"
+                            src="https://img.icons8.com/ios-filled/50/podium-with-speaker.png"
+                            alt="podium-with-speaker" /></span>
+                    <span class="title">Intervenants</span>
+                </a>
+            </li>
+            <li>
+                <a href="dossier.html">
+                    <span class="icon"><img width="40" height="40"
+                            src="https://img.icons8.com/glyph-neue/64/user-folder.png" alt="user-folder" /></span>
+                    <span class="title">Dossiers</span>
+                </a>
+            </li>
+            <li>
+                <a href="retard-abs.html">
+                    <span class="icon"><img width="40" height="40"
+                            src="https://img.icons8.com/ios-filled/50/task-planning.png" alt="task-planning" /></span>
+                    <span class="title">Retards-Absences</span>
+                </a>
+            </li>
+            <li>
+                <a href="classe.html">
+                    <span class="icon"><img width="40" height="40"
+                            src="https://img.icons8.com/glyph-neue/64/classroom.png" alt="classroom" /></span>
+                    <span class="title">Classes</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <span class="icon"><img width="40" height="40" src="https://img.icons8.com/ios-filled/50/chat.png"
+                            alt="chat" /></span>
+                    <span class="title">Messagerie</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><img width="40" height="40"
+                            src="https://img.icons8.com/glyph-neue/64/user--v1.png" alt="user--v1" /></span>
+                    <span class="title">Profils</span>
+                </a>
+            </li>
+        </ul>
     </div>
 
+    <!-- =====================MAIN GENERAL=============================== -->
+
+    <!-- =====================MAIN TABLEAU=============================== -->
+    <div class="mainTableau">
+        <div class="topBar p-4">
+            <div class="toggle">
+                <img width="40" height="40" src="https://img.icons8.com/ios/50/menu--v1.png" alt="menu--v1" />
+            </div>
+
+            <div class="search">
+                <label>
+                    <input type="text" placeholder="Recherche" />
+                    <img width="20" height="20" src="https://img.icons8.com/ios/50/search--v1.png" alt="search--v1" />
+                </label>
+            </div>
+
+            <div class="user">
+                <img src="../Public/assets/images/gohan.jpg" alt="">
+            </div>
+        </div>
+
+        <!-- =======================GRAPHIQUES ABS RETARD================ -->
+        <div class="graphLateAbs">
+            <div class="title">
+                <h1 class="mt-5 mx-4">Retards-Absences</h1>
+            </div>
+            <div class="chartContainerAbs w-75 mx-auto">
+                <canvas id="absencesChart" aria-label="chart" role="img"></canvas>
+            </div>
+        </div>
+
+        <!-- =======================GRAPHIQUES ABS RETARD================ -->
+        <div class="container-fluid graphClassLateAbs ">
+            <div class="graphClassAbs w-100 me-5 bg-primary">
+                <div class="title">
+                    <h4>Nombre d'abscence par classe</h4>
+                </div>
+                <div class="chartContainerAbs ">
+                    <canvas id="polarChart" aria-label="chart" role="img"></canvas>
+                </div>
+            </div>
+            <div class="graphClassLate w-100 me-5 bg-light">
+                <div class="title">
+                    <h4>Nombre de retards par classe</h4>
+                </div>
+                <div class="chartContainerLate">
+                    <canvas id="polarChartLate" aria-label="chart" role="img"></canvas>
+                </div>
+            </div>
+
+        </div>
+</div>
 
 
 
 
-    </div>
 
 
 
@@ -492,36 +156,20 @@
 
 
 
+        <!-- =======================SCRIPT================ -->
 
+        <!-- =======================BOOTSTRAP JS================ -->
+        <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- =======================JQUERY================ -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <!-- =======================SCRIPT JS================ -->
+        <!-- =======================CHARTS================ -->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 
-    <!-- =======================BOOTSTRAP JS================ -->
-    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- =======================JQUERY================ -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- =======================SCRIPT================ -->
+        <script src="../Public/assets/js/style.js"></script>
 
-    <!-- =======================WAYPOINTS================ dependance requise du Counter-up-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-
-    <!-- =======================COUNTER================ -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
-
-    <!-- =======================IONICON================ -->
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
-    <!-- =======================AOS================ -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-
-
-    <!-- =======================SCRIPT================ -->
-    <script src="../Public/assets/js/style.js"></script>
-
-
-</body>
+        </body>
 
 </html>
