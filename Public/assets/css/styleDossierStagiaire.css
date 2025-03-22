@@ -1,5 +1,8 @@
 /********************** DEBUT PAGE DOSSIER ETUDIANT ************************/
-
+.cardStudent{
+	width: 90%;
+	margin: auto;
+}
 .cardStudent img{
 	width: 100px;
 	height: 100px;
@@ -9,9 +12,13 @@
 		text-align: center;
 	}
 
+	.student-info button{
+		background-color: var(--bleu);
+	}
+	
  .student-info-supp button{
-	background-color: var(--orange);
-	border: 1px solid var(--bleu);
+	background-color: var(--orange) ;
+	border: 1px solid var(--bleu) ;
  }
 
 		

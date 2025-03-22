@@ -89,7 +89,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="profil.html">
                         <span class="icon"><img width="40" height="40"
                                 src="https://img.icons8.com/glyph-neue/64/user--v1.png" alt="user--v1" /></span>
                         <span class="title">Profils</span>
@@ -126,13 +126,26 @@
 
             <header>
                 <div class=" containerHeader border">
-                    <img src="../Public/assets/images/gohan.jpg" alt="">
-                    <h1>Bob Alfred</h1>
+                    <img src="../Public/assets/images/gohan.jpg" alt="photo de profil">
+                    <div class="titreContainerHeader">
+                        <h1>Bob Alfred</h1>
+                        <div class="dropdown">
+                            <button class="btn btn-light border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-three-dots"></i>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="#">Modifier le profil</a></li>
+                                <li><a class="dropdown-item" href="#">Autre option</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
                     <div class="coordonneProfil  ">
                         <div class="status">
                             <h5>Admin</h5>
                             <div class="positionIcon">
-                                <i class="bi bi-bookmark-star-fill d-flex"></i>
+                                <i class="bi bi-shield-lock-fill"></i>
                                 <p>Admin</p>
                             </div>
                         </div>
@@ -140,7 +153,12 @@
                         <div class="phone">
                             <h5>Téléphone</h5>
                             <div class="positionIcon">
-                                <i class="bi bi-telephone-fill"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25"
+                                    viewBox="0 0 32 32">
+                                    <path
+                                        d="M26.963,7.254c-0.258-1.089-1.128-1.959-2.217-2.217c-5.803-1.376-11.688-1.376-17.492,0 C6.165,5.295,5.295,6.165,5.037,7.254C3.66,13.061,3.66,18.947,5.039,24.751c0.257,1.086,1.124,1.953,2.209,2.21 c2.904,0.689,5.828,1.034,8.752,1.034s5.848-0.345,8.752-1.034c1.085-0.257,1.952-1.124,2.209-2.209 C28.34,18.947,28.34,13.061,26.963,7.254z M9.2,10.75c0.44-1.03,2.25-1.88,3.66-1.73c0.86,0.08,2.18,1.71,2.25,3.09 c0.05,1.13-1.13,2.25-1.13,2.25s0.97,0.75,1.94,1.72c0.94,0.92,1.72,1.94,1.72,1.94s1.12-1.18,2.25-1.13 c1.38,0.07,3.01,1.39,3.09,2.25c0.15,1.41-0.7,3.22-1.73,3.66c-2.04,0.88-6.12-1.27-8.45-3.6C10.47,16.87,8.32,12.79,9.2,10.75z">
+                                    </path>
+                                </svg>
                                 <p>+12 56 89 74 594</p>
                             </div>
                         </div>
@@ -154,15 +172,30 @@
                                 </div>
                             </div>
                         </div>
-                    </header>
+            </header>
 
             <!-- ===================== BOX INFOS USER =============================== -->
 
-
-                    <div class="boxInfos">
-                        <div class="box">sffs</div>
-                        <div class="box">ds</div>
+            <div class="boxInfos">
+                <div class="box">
+                    <h3 class="text-center">Gerer les profils utilisateurs</h3>
+                    <div class="boxStagiaire bg-secondary">
+                        <h4>Stagiaires</h4>
                     </div>
+                    <div class="boxIntervenant">
+                        <h4>Intervenants</h4>
+                    </div>
+                    <div class="boxAdmin bg-secondary">
+                        <h4>Admin</h4>
+                    </div>
+                    <div class="boxNew">
+                        <h4>Nouveau</h4>
+                    </div>
+                </div>
+                <div class="box">
+                    <h3>Gerer les profils utilisateurs</h3>
+                </div>
+            </div>
 
 
 

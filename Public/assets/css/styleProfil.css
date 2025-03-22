@@ -1,44 +1,72 @@
-.containerHeader{
+.containerHeader {
     width: 90%;
     height: 350px;
-    margin: auto;
-    background: rgb(21,26,55);
-    background: linear-gradient(180deg, rgba(21,26,55,1) 36%, rgba(255,255,255,1) 33%);
+    margin: 40px auto;
+    background: rgb(21, 26, 55);
+    background: linear-gradient(180deg, rgba(21, 26, 55, 1) 36%, rgba(255, 255, 255, 1) 33%);
     border-radius: 25px;
-    
+
 }
 
+.titreContainerHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 30px 0px 30px;
+}
+
+.titreContainerHeader i{
+    cursor: pointer;
+}
+
+
+
 header .containerHeader img {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
     border-radius: 50%;
     border: 8px solid #fff;
-    margin: 20px;
+    margin: 30px 0px 10px 30px;
 }
 
-.coordonneProfil{
+.coordonneProfil {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px 10px 30px;
+}
+
+.positionIcon {
+    display: flex;
+}
+
+.boxInfos {
+    width: 90%;
     display: flex;
     justify-content: space-around;
+    margin: 30px auto;
+    gap: 50px;
 }
 
-.positionIcon{
-    display: flex;
-}
-
-
-
-.box{
+.box {
     width: 600px;
-    height: 600px;
+    height: 650px;
     border-radius: 25px;
-    background-color: aqua;
+    border: 2px solid gray;
+    padding: 10px;
+
+
 }
 
+.boxStagiaire,
+.boxIntervenant,
+.boxAdmin,
+.boxNew {
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 25px;
+    height: 120px;
+    padding: 10px;
+    background-color: #f0f0f0;
 
-.boxInfos{
-    display: flex;
-   justify-content: space-around;
-   margin: 20px;
-   gap: 100px;
 }
