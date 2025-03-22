@@ -15,11 +15,13 @@
     margin: 0px 30px 0px 30px;
 }
 
+.containerHeader h2{
+    font-weight: 700;
+}
+
 .titreContainerHeader i{
     cursor: pointer;
 }
-
-
 
 header .containerHeader img {
     width: 150px;
@@ -40,6 +42,8 @@ header .containerHeader img {
     display: flex;
 }
 
+
+/* BOX INFOS ET MANIPULATION DONNEES */
 .boxInfos {
     width: 90%;
     display: flex;
@@ -50,7 +54,7 @@ header .containerHeader img {
 
 .box {
     width: 600px;
-    height: 650px;
+    height: auto;
     border-radius: 25px;
     border: 2px solid gray;
     padding: 10px;
@@ -65,7 +69,7 @@ header .containerHeader img {
     width: 90%;
     margin: 20px auto;
     border-radius: 25px;
-    height: 120px;
+    
     padding: 10px;
     background-color: #f0f0f0;
 
