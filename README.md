@@ -200,21 +200,28 @@ Ce projet a consisté à développer une interface web avec des cartes de prése
 
 ---
 
-## 📂 Fichiers modifiés
-- `index.html` : Ajout des champs de sélection de dates et de leurs styles.
-- `style.css` : Amélioration de l'affichage des cases à cocher.
-- `script.js` : Ajout des fonctionnalités Flatpickr et des validations.
+# Modifications et améliorations
+# Rapport de travail - [22.03]
 
----
+## 1. Page Profil - Bouton Trois Points
+- Ajout d’un **menu déroulant Bootstrap** avec les options :
+  - **Modifier le profil**
+  - **Autre option**
+- Positionnement du **bouton trois points** à droite du nom.
 
-## 🚀 Prochaines étapes
-- Ajouter une gestion des erreurs côté serveur pour la validation des dates.
-- Implémenter un envoi des données via **AJAX** pour une mise à jour dynamique.
-- Tester sur différents navigateurs et appareils.
+## 2. Bouton "Nouveau Dossier"
+- Utilisation d’un bouton **Bootstrap `btn-outline-warning`**.
+- Changement de couleur du **texte et de l’icône au hover** :
+  - Texte en **noir au hover**
+  - Icône en **blanc par défaut, noir au hover**
 
----
+## 3. Border-Radius sur le Haut Uniquement
+- Application de `border-radius` uniquement en haut d’un élément :
+  ```css
+  .ma-box {
+      border-radius: 10px 10px 0 0;
+  }
 
-🎯 **Résumé** : Journée productive avec des améliorations UX/UI et de nouvelles fonctionnalités pour la gestion des absences. ✅
 
 
 
