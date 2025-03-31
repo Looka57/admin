@@ -58,8 +58,6 @@ header .containerHeader img {
     border-radius: 25px;
     border: 2px solid gray;
     padding: 10px;
-
-
 }
 
 .boxStagiaire,
@@ -69,8 +67,19 @@ header .containerHeader img {
     width: 90%;
     margin: 20px auto;
     border-radius: 25px;
-    
     padding: 10px;
     background-color: #f0f0f0;
+}
 
+
+
+.boxGestionRoleStudent, .boxGestionRoleIntervenant, .boxGestionRoleAdmin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxGestionRoleStudent button, .boxGestionRoleIntervenant button, .boxGestionRoleAdmin button{
+    margin: 10px;
 }

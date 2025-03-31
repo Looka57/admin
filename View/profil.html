@@ -131,12 +131,13 @@
                     <div class="titreContainerHeader">
                         <h2>Bob Alfred</h2>
                         <div class="dropdown">
-                            <button class="btn btn-light border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <button class="btn btn-light border-0" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
                                 <i class="bi bi-three-dots"></i>
                             </button>
                             <ul class="dropdown-menu dropdown-menu-end">
                                 <li><a class="dropdown-item" href="#">Modifier le profil</a></li>
-                                <li><a class="dropdown-item" href="#">Autre option</a></li>
+                                <li><a class="dropdown-item" href="#">Parametres</a></li>
                             </ul>
                         </div>
                     </div>
@@ -179,18 +180,36 @@
             <div class="boxInfos">
                 <div class="box">
                     <h3 class="text-center">Gerer les profils utilisateurs</h3>
-                    <div class="boxStagiaire bg-secondary">
+                    <div class="boxStagiaire bg-light border">
                         <h4>Stagiaires</h4>
-                        <p>✅ Gestion des rôles
-                            ✅ Accès aux dossiers et informations administratives
-                            ✅ Messagerie interne</p>
+                        <div class="boxGestionStudent">
+                            <div class="boxGestionRoleStudent">
+                                <button class="btn btn-outline-info w-75">Gestion des rôles</button>
+                                <button class="btn btn-outline-info w-75">Accès aux dossiers et informations administratives</button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="boxIntervenant">
-                        <h4>Intervenants</h4>
-                        <p>✅ Gestion des rôles
-                            ✅ Accès aux dossiers et informations administratives
-                            ✅ Messagerie interne</p>
+                    <div class="boxIntervenant bg-light border">
+                        <h4>Intervenant</h4>
+                        <div class="boxGestionIntervenant">
+                            <div class="boxGestionRoleIntervenant">
+                                <button class="btn btn-outline-info w-75">Gestion des rôles</button>
+                                <button class="btn btn-outline-info w-75">Accès aux dossiers et informations administratives</button>
+                            </div>
+                        </div>
                     </div>
+
+                    <div class="boxAdmin bg-light border">
+                        <h4>Admin</h4>
+                        <div class="boxGestionAdmin">
+                            <div class="boxGestionRoleAdmin">
+                                <button class="btn btn-outline-info w-75">Gestion des rôles</button>
+                                <button class="btn btn-outline-info w-75">Accès aux dossiers et informations administratives</button>
+                                <button class="btn btn-outline-info w-75">Ajout d’un nouvel utilisateur</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 
                     <div class="boxAdmin bg-secondary">
                         <h4>Admin</h4>
                         <p>🔹 3. Gestion des rôles et permissions
@@ -199,69 +218,73 @@
                             ✔ Intervenants
                             ✔ Admins
                             ✔ Ajout d’un nouvel utilisateur
-                            
+
                             📌 Accès aux autres profils
                             ✔ Rechercher un utilisateur
                             ✔ Modifier les rôles</p>
-                    </div>
+                    </div> -->
+
+
                     <div class="boxNew">
                         <h4>Nouveau</h4>
                         <p>🔹 4. Historique & Statistiques
                             📌 Activités récentes
                             ✔ Dernières connexions
                             ✔ Actions récentes
-                            
+
                             📌 Statistiques personnelles
                             ✔ Nombre de connexions
                             ✔ Nombre d’actions effectuées</p>
                     </div>
                 </div>
-                <div class="box">
-                    <h3>Gerer les profils utilisateurs</h3>
-                    <p>📌 Paramètres
-                        ✔ Modifier l’email et le mot de passe
-                        ✔ Paramètres de confidentialité
-                        
-                        📌 Réseaux sociaux (optionnel)
-                        ✔ Liens vers les comptes associés
-                        
-                        📌 Déconnexion
-                        ✔ Bouton de déconnexion</p>
+
+                <div class="boxParametre">
+                    <div class="box">
+                        <div class="boxParametreProfil">
+                            <h3 class="text-center">Paramètres profils</h3>
+                            <p> ✔ Modifier l’email et le mot de passe</p>
+                            <p>✔ Paramètres de confidentialité </p>
+                            <p>Réseaux sociaux (optionnel)</p>
+                            <p> Liens vers les comptes associés</p>✔
+                            <p>📌 Déconnexion</p>
+                            <button class="btn btn-outline-info w-100">Deconnexion</button>
+                        </div>
+                        <img src="" alt="">
+                    </div>
                 </div>
             </div>
 
 
 
 
+            <!-- =======================FOOTER================ -->
+            <hr>
+            <footer class="footer">
+                <div class="linkFooter ">
+                    <ul>
+                        <li><a href="">Politique de confidentialité</a></li>
+                        <li><a href="">Parametre</a></li>
+                        <li><a href="">Contacter Nous</a></li>
 
-          <!-- =======================FOOTER================ -->
-          <hr>
-          <footer class="footer">
-              <div class="linkFooter ">
-                  <ul>
-                      <li><a href="">Politique de confidentialité</a></li>
-                      <li><a href="">Parametre</a></li>
-                      <li><a href="">Contacter Nous</a></li>
+                    </ul>
+                    <p class="text-center">&copy 2025 Metz Numeric School</p>
+                </div>
 
-                  </ul>
-                  <p class="text-center">&copy 2025 Metz Numeric School</p>
-              </div>
+            </footer>
 
-          </footer>
-
-      </div>
+        </div>
 
 
-  </div>
-
+    </div>
 
 
 
 
 
 
-        <!-- =======================FOOTER================ -->
-        <!-- <footer class="footer bg-secondary">blbkakalal</footer> -->
+
+    <!-- =======================FOOTER================ -->
+    <!-- <footer class="footer bg-secondary">blbkakalal</footer> -->
     </div>
 
 
