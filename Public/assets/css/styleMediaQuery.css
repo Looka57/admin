@@ -1,5 +1,6 @@
 /* <!-- =====================MEDIA QUERY=============================== --> */
 
+/* BARRE DE NAVIGATION */
 @media (max-width: 992px) {
 	.navigation {
 		left: -300px;
@@ -19,6 +20,15 @@
 		left: -15px;
 	}
 }
+
+@media (max-width: 768px) {
+	.main {
+		position: initial;
+	}
+}
+
+/* <!-- =====================MEDIA QUERY=============================== --> */
+
 
 /* TAILLE PORTABLE */
 @media (max-width: 480px) {
@@ -58,8 +68,7 @@
 }
 
 
-@media (max-width: 768px) {
-	.main {
-		position: initial;
-	}
+
+@media (max-width: 992px) {
+	
 }

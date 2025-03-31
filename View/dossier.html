@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="../Public/assets/css/styleStagiaire.css">
     <link rel="stylesheet" href="../Public/assets/css/styleDossier.css">
     <link rel="stylesheet" href="../Public/assets/css/styleFooter.css">
+    <link rel="stylesheet" href="../Public/assets/css/styleMediaQuery.css">
 
 </head>
 
@@ -159,16 +160,15 @@
                     <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
                         <div class="accordion-body">
                             <div class="tableProfessors">
-                                <table class="table align-middle table-striped table-hover table-custom bg-secondary">
+                                <table class="table align-middle table-striped table-hover table-custom bg-secondary table-responsive">
                                     <thead>
                                         <tr>
                                             <th scope="col">#</th>
                                             <th scope="col">Nom</th>
                                             <th scope="col">Prénom</th>
-                                            <th scope="col">Classe</th>
-                                            <th scope="col">Date</th>
+                                            <th scope="col" class="d-none d-sm-table-cell">Classe</th>
+                                            <th scope="col" class="d-none d-md-table-cell">Date</th>
                                             <th scope="col">Action</th>
-
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -176,45 +176,41 @@
                                             <th scope="row">1</th>
                                             <td>Hatake</td>
                                             <td>Looka</td>
-                                            <td>2-A</td>
-                                            <td>2015-09-01</td>
+                                            <td class="d-none d-sm-table-cell">2-A</td>
+                                            <td class="d-none d-md-table-cell">2015-09-01</td>
                                             <td><a href="dossierStudent.html"><img width="20" height="20"
                                                         src="https://img.icons8.com/fluency-systems-filled/48/visible.png"
                                                         alt="visible" />
                                                 </a></td>
-
                                         </tr>
                                         <tr>
                                             <th scope="row">2</th>
                                             <td>Yamada</td>
                                             <td>Hizashi</td>
-                                            <td>2-A</td>
-                                            <td>2015-09-01</td>
+                                            <td class="d-none d-sm-table-cell">2-A</td>
+                                            <td class="d-none d-md-table-cell">2015-09-01</td>
                                             <td><a href="dossierStudent.html"><img width="20" height="20"
                                                         src="https://img.icons8.com/fluency-systems-filled/48/visible.png"
                                                         alt="visible" />
                                                 </a></td>
-
                                         </tr>
                                         <tr>
                                             <th scope="row">3</th>
                                             <td>Kan</td>
                                             <td>Sekijiro</td>
-                                            <td>2-B</td>
-                                            <td>2016-04-10</td>
+                                            <td class="d-none d-sm-table-cell">2-B</td>
+                                            <td class="d-none d-md-table-cell">2016-04-10</td>
                                             <td><a href=""><img width="20" height="20"
                                                         src="https://img.icons8.com/fluency-systems-filled/48/visible.png"
                                                         alt="visible" />
                                                 </a></td>
-
-
                                         </tr>
                                         <tr>
                                             <th scope="row">4</th>
                                             <td>Nemuri</td>
                                             <td>Kayama</td>
-                                            <td>2-C</td>
-                                            <td>2014-06-15</td>
+                                            <td class="d-none d-sm-table-cell">2-C</td>
+                                            <td class="d-none d-md-table-cell">2014-06-15</td>
                                             <td><a href=""><img width="20" height="20"
                                                         src="https://img.icons8.com/fluency-systems-filled/48/visible.png"
                                                         alt="visible" />
@@ -224,20 +220,19 @@
                                             <th scope="row">5</th>
                                             <td>All Might</td>
                                             <td>Toshinori</td>
-                                            <td>Ancien Prof</td>
-                                            <td>2015-09-01</td>
+                                            <td class="d-none d-sm-table-cell">Ancien Prof</td>
+                                            <td class="d-none d-md-table-cell">2015-09-01</td>
                                             <td><a href=""><img width="20" height="20"
                                                         src="https://img.icons8.com/fluency-systems-filled/48/visible.png"
                                                         alt="visible" />
                                                 </a></td>
-
                                         </tr>
                                         <tr>
                                             <th scope="row">6</th>
                                             <td>Ectoplasm</td>
                                             <td>-</td>
-                                            <td>2-A</td>
-                                            <td>2016-01-05</td>
+                                            <td class="d-none d-sm-table-cell">2-A</td>
+                                            <td class="d-none d-md-table-cell">2016-01-05</td>
                                             <td><a href=""><img width="20" height="20"
                                                         src="https://img.icons8.com/fluency-systems-filled/48/visible.png"
                                                         alt="visible" />
@@ -247,8 +242,8 @@
                                             <th scope="row">7</th>
                                             <td>Power Loader</td>
                                             <td>Higari</td>
-                                            <td>Support</td>
-                                            <td>2016-07-21</td>
+                                            <td class="d-none d-sm-table-cell">Support</td>
+                                            <td class="d-none d-md-table-cell">2016-07-21</td>
                                             <td><a href=""><img width="20" height="20"
                                                         src="https://img.icons8.com/fluency-systems-filled/48/visible.png"
                                                         alt="visible" />
@@ -256,6 +251,7 @@
                                         </tr>
                                     </tbody>
                                 </table>
+                                
                             </div>
 
                         </div>
@@ -272,17 +268,17 @@
                     <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
                         <div class="accordion-body">
                             <div class="tableProfessors">
-                                <table class="table align-middle table-striped table-hover table-custom">
+                                <table class="table align-middle table-striped table-hover table-custom bg-secondary table-responsive">
                                     <thead>
                                         <tr>
                                             <th scope="col">#</th>
                                             <th scope="col">Nom</th>
                                             <th scope="col">Prénom</th>
-                                            <th scope="col">Classe</th>
-                                            <th scope="col">Ville</th>
-                                            <th scope="col">Date Inscription</th>
-                                            <th scope="col">Statut</th>
-                                            <th scope="col" colspan="2">Action</th>
+                                            <th scope="col" class="d-none d-sm-table-cell">Classe</th>
+                                            <th scope="col" class="d-none d-md-table-cell">Ville</th>
+                                            <th scope="col" class="d-none d-lg-table-cell">Date Inscription</th>
+                                            <th scope="col" class="d-none d-lg-table-cell">Statut</th>
+                                            <th scope="col">Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -290,93 +286,85 @@
                                             <th scope="row">1</th>
                                             <td>Aizawa</td>
                                             <td>Shota</td>
-                                            <td>2-A</td>
-                                            <td>Musutafu</td>
-                                            <td>2015-09-01</td>
-                                            <td>Actif</td>
+                                            <td class="d-none d-sm-table-cell">2-A</td>
+                                            <td class="d-none d-md-table-cell">Musutafu</td>
+                                            <td class="d-none d-lg-table-cell">2015-09-01</td>
+                                            <td class="d-none d-lg-table-cell">Actif</td>
                                             <td><button class="btn btn-primary">Voir</button></td>
-
                                         </tr>
                                         <tr>
                                             <th scope="row">2</th>
                                             <td>Yamada</td>
                                             <td>Hizashi</td>
-                                            <td>2-A</td>
-                                            <td>Musutafu</td>
-                                            <td>2015-09-01</td>
-                                            <td>Actif</td>
+                                            <td class="d-none d-sm-table-cell">2-A</td>
+                                            <td class="d-none d-md-table-cell">Musutafu</td>
+                                            <td class="d-none d-lg-table-cell">2015-09-01</td>
+                                            <td class="d-none d-lg-table-cell">Actif</td>
                                             <td><button class="btn btn-primary">Voir</button></td>
-
                                         </tr>
                                         <tr>
                                             <th scope="row">3</th>
                                             <td>Kan</td>
                                             <td>Sekijiro</td>
-                                            <td>2-B</td>
-                                            <td>Musutafu</td>
-                                            <td>2016-04-10</td>
-                                            <td>Actif</td>
+                                            <td class="d-none d-sm-table-cell">2-B</td>
+                                            <td class="d-none d-md-table-cell">Musutafu</td>
+                                            <td class="d-none d-lg-table-cell">2016-04-10</td>
+                                            <td class="d-none d-lg-table-cell">Actif</td>
                                             <td><button class="btn btn-primary">Voir</button></td>
-
                                         </tr>
                                         <tr>
                                             <th scope="row">4</th>
                                             <td>Nemuri</td>
                                             <td>Kayama</td>
-                                            <td>2-C</td>
-                                            <td>Tokyo</td>
-                                            <td>2014-06-15</td>
-                                            <td>Décédée</td>
+                                            <td class="d-none d-sm-table-cell">2-C</td>
+                                            <td class="d-none d-md-table-cell">Tokyo</td>
+                                            <td class="d-none d-lg-table-cell">2014-06-15</td>
+                                            <td class="d-none d-lg-table-cell">Décédée</td>
                                             <td><button class="btn btn-primary">Voir</button></td>
-
                                         </tr>
                                         <tr>
                                             <th scope="row">5</th>
                                             <td>All Might</td>
                                             <td>Toshinori</td>
-                                            <td>Ancien Prof</td>
-                                            <td>Musutafu</td>
-                                            <td>2015-09-01</td>
-                                            <td>Retraité</td>
+                                            <td class="d-none d-sm-table-cell">Ancien Prof</td>
+                                            <td class="d-none d-md-table-cell">Musutafu</td>
+                                            <td class="d-none d-lg-table-cell">2015-09-01</td>
+                                            <td class="d-none d-lg-table-cell">Retraité</td>
                                             <td><button class="btn btn-primary">Voir</button></td>
-
                                         </tr>
                                         <tr>
                                             <th scope="row">6</th>
                                             <td>Ectoplasm</td>
                                             <td>-</td>
-                                            <td>2-A</td>
-                                            <td>Musutafu</td>
-                                            <td>2016-01-05</td>
-                                            <td>Actif</td>
+                                            <td class="d-none d-sm-table-cell">2-A</td>
+                                            <td class="d-none d-md-table-cell">Musutafu</td>
+                                            <td class="d-none d-lg-table-cell">2016-01-05</td>
+                                            <td class="d-none d-lg-table-cell">Actif</td>
                                             <td><button class="btn btn-primary">Voir</button></td>
-
                                         </tr>
                                         <tr>
                                             <th scope="row">7</th>
                                             <td>Power Loader</td>
                                             <td>Higari</td>
-                                            <td>Support</td>
-                                            <td>Musutafu</td>
-                                            <td>2016-07-21</td>
-                                            <td>Actif</td>
+                                            <td class="d-none d-sm-table-cell">Support</td>
+                                            <td class="d-none d-md-table-cell">Musutafu</td>
+                                            <td class="d-none d-lg-table-cell">2016-07-21</td>
+                                            <td class="d-none d-lg-table-cell">Atif</td>
                                             <td><button class="btn btn-primary">Voir</button></td>
-
                                         </tr>
                                         <tr>
                                             <th scope="row">8</th>
                                             <td>Snipe</td>
                                             <td>-</td>
-                                            <td>2-A</td>
-                                            <td>Osaka</td>
-                                            <td>2017-03-11</td>
-                                            <td>Actif</td>
+                                            <td class="d-none d-sm-table-cell">2-A</td>
+                                            <td class="d-none d-md-table-cell">Osaka</td>
+                                            <td class="d-none d-lg-table-cell">2017-03-11</td>
+                                            <td class="d-none d-lg-table-cell">Actif</td>
                                             <td><button class="btn btn-primary">Voir</button></td>
-
                                         </tr>
-
                                     </tbody>
                                 </table>
+                                
                             </div>
 
                         </div>

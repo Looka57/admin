@@ -138,6 +138,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         let width = chart.width,
                             height = chart.height,
                             ctx = chart.ctx;
+                        if (window.innerWidth > 768) {
                         ctx.restore();
                         let image = new Image();
                         image.src = 'https://img.icons8.com/ios-filled/50/couple-posing.png';
@@ -146,6 +147,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             y = height / 2 - imageSize / 2;
                         ctx.drawImage(image, x, y, imageSize, imageSize);
                         ctx.save();
+                        }
                     },
                 },
             ],
