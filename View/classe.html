@@ -209,50 +209,179 @@
                     id="tableContainer" style="display: none;">
                     <thead>
                         <tr>
-                            <th >#</th>
+                            <th scope="col">#</th>
                             <th scope="col">Nom</th>
                             <th scope="col">Prénom</th>
                             <th scope="col">Classe</th>
-                            <th scope="col">Niveau</th>
-                            <th scope="col">Date de naissance</th>
-                            <th scope="col">Sexe</th>
-
-                            <th scope="col">Action</th>
+                            <th scope="col">Ville</th>
+                            <th scope="col">Date Inscription</th>
+                            <th scope="col">Statuts</th>
+                            <th scope="col" colspan="2">Action</th>
                         </tr>
                     </thead>
                     <tbody>
+                        <!-- Classe 2-A -->
                         <tr>
                             <th scope="row">1</th>
-                            <td>Aizawa</td>
-                            <td>Shota</td>
-                            <td>Combat</td>
-                            <td>Combat</td>
-                            <td>Combat</td>
-                            <td>Combat</td>
-                            <td><button class="btn btn-primary">Voir</button></td>
-
+                            <td>Midoriya</td>
+                            <td>Izuku</td>
+                            <td>2-A</td>
+                            <td>Musutafu</td>
+                            <td>2018-04-01</td>
+                            <td>V</td>
+                            <td><a href="#" data-bs-toggle="modal" data-bs-target="#modalStagiaire">
+                                    <img width="20" height="20"
+                                        src="https://img.icons8.com/fluency-systems-filled/48/visible.png"
+                                        alt="visible" />
+                                </a>
+                            </td>
+                            <td><a href=""><img width="20" height="20"
+                                        src="https://img.icons8.com/ios-filled/50/waste.png" alt="waste" />
+                                </a></td>
                         </tr>
                         <tr>
                             <th scope="row">2</th>
-                            <td>Yamada</td>
-                            <td>Hizashi</td>
-                            <td>Anglais</td>
-                            <td>Anglais</td>
-                            <td>Anglais</td>
-                            <td>Anglais</td>
-                            <td><button class="btn btn-primary">Voir</button></td>
-
+                            <td>Bakugo</td>
+                            <td>Katsuki</td>
+                            <td>2-A</td>
+                            <td>Musutafu</td>
+                            <td>2018-04-01</td>
+                            <td>Actif</td>
+                            <td><a href=""><img width="20" height="20"
+                                        src="https://img.icons8.com/fluency-systems-filled/48/visible.png"
+                                        alt="visible" />
+                                </a></td>
+                            <td><a href=""><img width="20" height="20"
+                                        src="https://img.icons8.com/ios-filled/50/waste.png" alt="waste" />
+                                </a></td>
                         </tr>
                         <tr>
                             <th scope="row">3</th>
-                            <td>Nezu</td>
-                            <td>Directeur</td>
-                            <td>Gestion</td>
-                            <td>Gestion</td>
-                            <td>Gestion</td>
-                            <td>Gestion</td>
-                            <td><button class="btn btn-primary">Voir</button></td>
-
+                            <td>Todoroki</td>
+                            <td>Shoto</td>
+                            <td>2-A</td>
+                            <td>Musutafu</td>
+                            <td>2018-04-01</td>
+                            <td>Actif</td>
+                            <td><a href=""><img width="20" height="20"
+                                        src="https://img.icons8.com/fluency-systems-filled/48/visible.png"
+                                        alt="visible" />
+                                </a></td>
+                            <td><a href=""><img width="20" height="20"
+                                        src="https://img.icons8.com/ios-filled/50/waste.png" alt="waste" />
+                                </a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Uraraka</td>
+                            <td>Ochaco</td>
+                            <td>2-A</td>
+                            <td>Kusuo</td>
+                            <td>2018-04-01</td>
+                            <td>Actif</td>
+                            <td><a href=""><img width="20" height="20"
+                                        src="https://img.icons8.com/fluency-systems-filled/48/visible.png"
+                                        alt="visible" />
+                                </a></td>
+                            <td><a href=""><img width="20" height="20"
+                                        src="https://img.icons8.com/ios-filled/50/waste.png" alt="waste" />
+                                </a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Iida</td>
+                            <td>Tenya</td>
+                            <td>2-A</td>
+                            <td>Tokyo</td>
+                            <td>2018-04-01</td>
+                            <td>Actif</td>
+                            <td><a href=""><img width="20" height="20"
+                                        src="https://img.icons8.com/fluency-systems-filled/48/visible.png"
+                                        alt="visible" />
+                                </a></td>
+                            <td><a href=""><img width="20" height="20"
+                                        src="https://img.icons8.com/ios-filled/50/waste.png" alt="waste" />
+                                </a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Tokoyami</td>
+                            <td>Fumikage</td>
+                            <td>2-A</td>
+                            <td>Musutafu</td>
+                            <td>2018-04-01</td>
+                            <td>Actif</td>
+                            <td><a href=""><img width="20" height="20"
+                                        src="https://img.icons8.com/fluency-systems-filled/48/visible.png"
+                                        alt="visible" />
+                                </a></td>
+                            <td><a href=""><img width="20" height="20"
+                                        src="https://img.icons8.com/ios-filled/50/waste.png" alt="waste" />
+                                </a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">7</th>
+                            <td>Asui</td>
+                            <td>Tsuyu</td>
+                            <td>2-A</td>
+                            <td>Kyoto</td>
+                            <td>2018-04-01</td>
+                            <td>Actif</td>
+                            <td><a href=""><img width="20" height="20"
+                                        src="https://img.icons8.com/fluency-systems-filled/48/visible.png"
+                                        alt="visible" />
+                                </a></td>
+                            <td><a href=""><img width="20" height="20"
+                                        src="https://img.icons8.com/ios-filled/50/waste.png" alt="waste" />
+                                </a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">8</th>
+                            <td>Kirishima</td>
+                            <td>Eijiro</td>
+                            <td>2-A</td>
+                            <td>Osaka</td>
+                            <td>2018-04-01</td>
+                            <td>Actif</td>
+                            <td><a href=""><img width="20" height="20"
+                                        src="https://img.icons8.com/fluency-systems-filled/48/visible.png"
+                                        alt="visible" />
+                                </a></td>
+                            <td><a href=""><img width="20" height="20"
+                                        src="https://img.icons8.com/ios-filled/50/waste.png" alt="waste" />
+                                </a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">9</th>
+                            <td>Yaoyorozu</td>
+                            <td>Momo</td>
+                            <td>2-A</td>
+                            <td>Tokyo</td>
+                            <td>2018-04-01</td>
+                            <td>Actif</td>
+                            <td><a href=""><img width="20" height="20"
+                                        src="https://img.icons8.com/fluency-systems-filled/48/visible.png"
+                                        alt="visible" />
+                                </a></td>
+                            <td><a href=""><img width="20" height="20"
+                                        src="https://img.icons8.com/ios-filled/50/waste.png" alt="waste" />
+                                </a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">10</th>
+                            <td>Kaminari</td>
+                            <td>Denki</td>
+                            <td>2-A</td>
+                            <td>Yokohama</td>
+                            <td>2018-04-01</td>
+                            <td>Actif</td>
+                            <td><a href=""><img width="20" height="20"
+                                        src="https://img.icons8.com/fluency-systems-filled/48/visible.png"
+                                        alt="visible" />
+                                </a></td>
+                            <td><a href=""><img width="20" height="20"
+                                        src="https://img.icons8.com/ios-filled/50/waste.png" alt="waste" />
+                                </a></td>
                         </tr>
                     </tbody>
                 </table>
