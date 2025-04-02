@@ -72,7 +72,6 @@ header .containerHeader img {
 }
 
 
-
 .boxGestionRoleStudent, .boxGestionRoleIntervenant, .boxGestionRoleAdmin{
     display: flex;
     flex-direction: column;
@@ -82,4 +81,10 @@ header .containerHeader img {
 
 .boxGestionRoleStudent button, .boxGestionRoleIntervenant button, .boxGestionRoleAdmin button{
     margin: 10px;
+}
+
+
+.reseauSociaux i{
+    font-size: 40px;
+    margin: 5px;
 }
