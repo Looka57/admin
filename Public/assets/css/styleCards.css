@@ -72,7 +72,7 @@
 
 .cardBox .card:nth-child(even)::before {
 	background-color: var(--bleu);
-}
+} 
 
 
 .cardBox .card:hover {

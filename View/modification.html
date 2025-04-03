@@ -98,7 +98,6 @@
             </ul>
         </div>
 
-
         <!-- =====================MAIN GENERAL=============================== -->
 
         <!-- =====================MAIN TABLEAU=============================== -->
@@ -120,57 +119,68 @@
                     <img src="../Public/assets/images/gohan.jpg" alt="">
                 </div>
             </div>
-            <h1 class="mx-4 mt-5">Ajout d'un nouveau utilisateur</h1>
+            <h1 class="mx-4 mt-5">Paramètre de modification</h1>
+           
 
             <!-- =====================FORMULAIRE=============================== -->
 
+            <!-- =====================  MODIFICATION DE L'EMAIL=============================== -->
             <div class="container containerStudentDetails ">
                 <div class="enteteForm"></div>
                 <div class="formulaireStudent">
                     <form method="post" action="#">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="mb-3 ">
-                                    <label for="name" class="form-label">Nom</label>
-                                    <input type="text" class="form-control" id="name" aria-describedby="name">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="mb-3">
-                                    <label for="firstName" class="form-label">Prénom</label>
-                                    <input type="text" class="form-control" id="firstName" aria-describedby="firstName">
-                                </div>
-                            </div>
-                        </div>
-
+                        <h2 class="text-center mb-5">Modification de l'email</h2>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="mb-3">
-                                    <label for="mail" class="form-label">Email</label>
-                                    <input type="email" class="form-control" id="mail" aria-describedby="emailHelp">
+                                    <label for="mailActuel" class="form-label">Email Actuel</label>
+                                    <input type="email" class="form-control" id="mailActuel"
+                                        aria-describedby="emailHelp">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="mb-3">
-                                    <label for="password" class="form-label">Mot de passe</label>
-                                    <input type="password" class="form-control" id="password">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="mb-3">
-                                    <label for="password" class="form-label">Statuts</label>
-                                    <select name="" id="">
-                                        <option value="">Admin</option>
-                                        <option value="">Intervenant</option>
-                                        <option value="">Stagiaire</option>
-                                    </select>
+                                    <label for="mailNew" class="form-label">Nouveau Email</label>
+                                    <input type="email" class="form-control" id="mailNew" aria-describedby="emailHelp">
                                 </div>
                             </div>
                         </div>
                         <div class="btnLoadStagiaire">
-                            <button type="button" class="btn btn-outline-warning">Valider</button>
+                            <button type="button" class="btn btn-outline-warning">Confirmer</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+            <!-- =====================  MODIFICATION DU MOT DE PASSE=============================== -->
+            <div class="container containerStudentDetails mt-3">
+                <div class="enteteForm"></div>
+                <div class="formulaireStudent">
+                    <form method="post" action="#">
+                        <h2 class="mb-5 text-center">Modification du mot de passe</h2>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="mailActuel" class="form-label">Mot de Passe Actuel</label>
+                                    <input type="email" class="form-control" id="mailActuel"
+                                        aria-describedby="emailHelp">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="mailActuel" class="form-label">Nouveau Mot de Passe</label>
+                                    <input type="email" class="form-control" id="mailActuel"
+                                        aria-describedby="emailHelp">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="mailNew" class="form-label">Confirmation du nouveau Mot de Passe
+                                    </label>
+                                    <input type="email" class="form-control" id="mailNew" aria-describedby="emailHelp">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="btnLoadStagiaire">
+                            <button type="button" class="btn btn-outline-warning">Confirmer</button>
                         </div>
                     </form>
                 </div>
