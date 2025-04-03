@@ -1,5 +1,5 @@
+// 1. Gestion du hover sur la liste de navigation et du responsive
 document.addEventListener('DOMContentLoaded', function () {
-    // 1. Gestion du hover sur la liste de navigation
     let list = document.querySelectorAll('.navigation li');
     if (list.length > 0) {
         function activeLink() {
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // 2. Gestion du menu toggle
     let toggle = document.querySelector('.toggle');
     let navigation = document.querySelector('.navigation');
-    let mainMenu = document.querySelector('.mainTableau');
+    let mainMenu = document.querySelector('.mainDashboard ');
     if (toggle && navigation && mainMenu) {
         toggle.addEventListener('click', () => {
             navigation.classList.toggle('active');

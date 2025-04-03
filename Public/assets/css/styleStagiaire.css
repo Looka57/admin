@@ -1,29 +1,29 @@
 
 /********************** DEBUT PAGE STAGIAIRE + INTERVENANT ************************/
 
-.tableStudent, .tableProfesseurs{
+.studentTable, .tableProfesseurs{
 	width: 90%;
 	margin: auto;
 }
 
 /* BOUTON */
 
-.btnNewStagiaire a, .btnNewIntervenant a {
+.btnNewStudent a, .btnNewIntervenant a {
     color: white;
 }
 
-.btnNewStagiaire, .btnNewIntervenant {
+.btnNewStudent, .btnNewIntervenant {
     width: 100%;
     padding: 20px;
     text-align: right;
 }
 
-.btnNewStagiaire a img, .btnNewIntervenant a img {
+.btnNewStudent a img, .btnNewIntervenant a img {
     filter: invert(100%);
 }
 
 
-.btnNewStagiaire a:hover img, .btnNewIntervenant a:hover img {
+.btnNewStudent a:hover img, .btnNewIntervenant a:hover img {
     filter: invert(0%); /* Noir au hover */
 }
 
@@ -40,7 +40,7 @@
     color: black !important; /* Texte devient noir */
 }
 
-.btnNewStagiaire a:hover img, .btnNewIntervenant a:hover img {
+.btnNewStudent a:hover img, .btnNewIntervenant a:hover img {
     filter: initial;
 }
 

@@ -22,22 +22,21 @@
         <div class="main">
             <input type="checkbox" id="chk" aria-hidden="true">
             <div class="signup">
-                <form class="formConnexion" method="POST" action="../View/tableau.html">
+                <form class="formConnexion" method="POST" action="../View/tableauStagiaire.html">
                     <label for="chk" aria-hidden="true">Stagiaire</label>
-                    <input type="email" name="email" placeholder="Email" required="">
-                    <input type="password" name="pswd" placeholder="Mot de passe" required="">
+                    <input type="email" name="email" autocomplete="off" placeholder="Email" required="">
+                    <input type="password" name="pswd" autocomplete="off" placeholder="Mot de passe" required="">
                     <button class="btnConnexion">Connexion</button>
                     <p class="text-center"><a href="#">Mot de passe oublié ?</a></p>
                 </form>
             </div>
 
             <div class="login">
-                <form class="formConnexion" method="POST" action="inscription.php">
+                <form class="formConnexion" method="POST" action="../View/tableau.html">
                     <label for="chk" aria-hidden="true">Admin</label>
-                    <input type="text" name="txt" placeholder="Nom" required="">
-                    <input type="email" name="email" placeholder="Email" required="">
-                    <input type="password" name="pswd" placeholder="Mot de passe" required="">
-                    <input type="verifPassword" name="vPswd" placeholder="Password" required="">
+                    <input type="email" name="email" autocomplete="off" placeholder="Email" required="">
+                    <input type="password" name="pswd" autocomplete="off" placeholder="Mot de passe" required="">
+                    <p class="text-center"><a href="#">Mot de passe oublié ?</a></p>
                     <button class="btnInscription">Valider</button>
                 </form>
             </div>

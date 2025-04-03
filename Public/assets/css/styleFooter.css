@@ -5,7 +5,9 @@
 }
 
 hr{
-	height:5px;
+	height:5
+	
+	px;
 	font-style: dotted;
 	width: 60%;
 	margin: 50px auto;

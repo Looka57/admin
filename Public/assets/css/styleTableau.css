@@ -1,7 +1,7 @@
 /********************** DEBUT PAGE TABLEAU ************************/
 
 /* =========================NAVIGATION=============== */
-.containerPrincipal {
+.mainContainer {
 
 	position: relative;
 	width: 100%;
@@ -126,7 +126,7 @@
 
 /* <!-- =====================MAIN=============================== --> */
 
-.mainTableau {
+.mainDashboard {
 	position: absolute;
 	width: calc(100% - 300px);
 	left: 300px;
@@ -135,7 +135,7 @@
 	background-color: white;
 }
 
-.mainTableau.active {
+.mainDashboard.active {
 	width: calc(100% - 110px);
 	left: 110px;
 

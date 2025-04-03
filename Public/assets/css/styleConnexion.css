@@ -1,6 +1,6 @@
-/* DEBUT PAGE CONNEXION */
-.containers {
+/********************** DEBUT PAGE CONNEXION ************************/
 
+.containers {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
@@ -10,7 +10,6 @@
 	background: url(../images/bgFondConnexion.png);
 	background-size: cover;
 	background-position: center;
-
 }
 
 .main {
