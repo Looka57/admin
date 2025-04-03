@@ -12,7 +12,7 @@
     padding: 10px;
 }
 
-.formulaireStudent{
+.formulaireStudent, .formulaireRole, .formulairePermission{
     width: 90%;
     margin: auto;
     padding-top: 20px;

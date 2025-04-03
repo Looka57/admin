@@ -72,7 +72,7 @@ header .containerHeader img {
 }
 
 
-.boxGestionRoleStudent, .boxGestionRoleIntervenant, .boxGestionRoleAdmin{
+.boxGestionRoleStudent a, .boxGestionRoleIntervenant a, .boxGestionRoleAdmin a{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -88,3 +88,4 @@ header .containerHeader img {
     font-size: 40px;
     margin: 5px;
 }
+
