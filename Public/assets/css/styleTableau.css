@@ -19,6 +19,7 @@
 	border-left: 10px solid var(--bleu);
 	transition: 0.5s;
 	overflow: hidden;
+	/* transition: right 0.3 ease; */
 }
 
 .navigation.active {
@@ -292,10 +293,11 @@
 /* <!-- =====================GRAPHIQUES STAGIAIRE + ABS RETARDS=============================== --> */
 
 .graphs,
-.graphTableDossiers {
+.graphTableFiles{
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 	margin: 50px 20px 50px 20px;
+	gap: 20px;
 }
 
 .graphLateAbs {
@@ -310,7 +312,7 @@
 	margin-bottom: 20px;
 }
 
-.graphStagiaires {
+.graphStagiaires, .graphFiles, .graphLateAbs, .TableDossier {
 	width: 100%;
 	position: relative;
 	top: 0;

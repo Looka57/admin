@@ -16,13 +16,13 @@
 		left: 0;
 	}
 
-	.mainDashboard .active {
-		left: -15px;
+	.mainDashboard.active {
+		left: 300px;
 	}
 }
 
 @media (max-width: 768px) {
-	.main {
+	.mainDas {
 		position: initial;
 	}
 }
@@ -51,7 +51,7 @@
 		z-index: 1001;
 	}
 
-	.mainDashboard .active .toggle img{
+	.mainDashboard.active .toggle img{
 		filter: invert(100%);
 	}
 
@@ -69,6 +69,4 @@
 
 
 
-@media (max-width: 992px) {
-	
-}
+
