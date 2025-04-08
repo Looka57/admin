@@ -1,4 +1,4 @@
-.enteteForm{
+.enteteForm {
     width: 90%;
     height: 50px;
     margin: auto;
@@ -6,13 +6,21 @@
     background-color: var(--bleu);
 }
 
-.containerStudentDetails form{
+.containerStudentDetails form,
+.containerModifyRules form,
+.containerModifyPermission form,
+.containerModifyEmail form,
+.containerModifyPassword form{
     width: 90%;
     margin: auto;
     padding: 10px;
 }
 
-.formulaireStudent, .formulaireRole, .formulairePermission{
+.formulaireStudent,
+.formulaireRole,
+.formulairePermission,
+.formulaireModifyEmail,
+.formulaireModifyPassword {
     width: 90%;
     margin: auto;
     padding-top: 20px;
@@ -20,32 +28,35 @@
     border: 2px solid var(--bleu);
 }
 
-.formulaireStudent form label{
+.formulaireStudent form label {
     font-weight: 600;
 }
 
-.cadre{
+.cadre {
     height: 120px;
     width: 120px;
     border: 3px dotted gray;
 }
 
 
-.btnLoadStagiaire{
-	width: 100%;
-	padding: 20px;
-	text-align: right;
+.btnLoadStagiaire,
+.btnModifyRules,
+.btnModifyPermission,
+.btnModifyEmail,
+.btnModifyPassword{
+    width: 100%;
+    padding: 20px;
+    text-align: right;
 }
 
 .btn-outline-warning {
-	color: white; 
-	background-color: var(--bleu);
-	border-color: var(--orange)
+    color: white;
+    background-color: var(--bleu);
+    border-color: var(--orange)
 }
 
 .btn-outline-warning:hover {
     background-color: white;
-    border-color: var(--orange)	; 
-    color: var(--bleu); 
+    border-color: var(--orange);
+    color: var(--bleu);
 }
-
