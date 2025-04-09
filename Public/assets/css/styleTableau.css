@@ -349,9 +349,12 @@
 
 /************************ DEBUT PAGE TABLEAU USEr *********************/
 
-.progressFiles{
+.progressFilesCandidat{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 	height: 100%;
+}
+.progressFiles{
+	width: 100%;
 }
