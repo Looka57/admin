@@ -1,4 +1,4 @@
-/********************** DEBUT PAGE DOSSIER ETUDIANT ************************/
+/********************** DEBUT PAGE DOSSIER ETUDIANT ADMIN ************************/
 .cardStudent{
 	width: 90%;
 	margin: auto;
@@ -29,6 +29,7 @@
 		justify-content: space-around;
 	}
 
+
 	.studentInfos{
 		display: flex;
 		flex-direction: column;
@@ -44,7 +45,11 @@
 
 /* INFO DOSSIER */
 
+.bob {
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+}
 
 
-
-/********************** FIN PAGE DOSSIER ETUDIANT ************************/
+/********************** FIN PAGE DOSSIER ETUDIANT ADMIN ************************/

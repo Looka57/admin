@@ -346,3 +346,12 @@
 
 }
 /************************ FIN PAGE TABLEAU *********************/
+
+/************************ DEBUT PAGE TABLEAU USEr *********************/
+
+.progressFiles{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 100%;
+}
