@@ -74,5 +74,13 @@ display: grid;
 	border-radius: 10px;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+/**********************  OFFCANVAS************************/
 
 
+/********************** FIN PAGE RETARD ABS ************************/
+
+/********************** DEBUT PAGE RETARD ABS STAGIAIRRE ************************/
+
+table tr .statut{
+	border: 2px solid green;
+}
