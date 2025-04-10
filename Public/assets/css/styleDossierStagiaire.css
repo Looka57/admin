@@ -35,9 +35,10 @@
 		flex-direction: column;
 	}
 
-	.boxNotif{
-		background-color: var(--orange);
-	}
+	.boxNotif {
+		border: 4px solid rgba(255, 136, 0, 0.988);
+	  }
+	  
 
 	.progress-bar{
 		background-color: var(--bleu);
@@ -45,11 +46,28 @@
 
 /* INFO DOSSIER */
 
-.bob {
-	display: flex;
-	flex-direction: column;
-	justify-content: end;
+.table-custom {
+	background-color: #151A37 !important;
+	color: white !important;
+	
 }
 
+.table-custom th,
+.table-custom td {
+	border-color: #FF6616;
+}
+
+.table-custom thead tr th {
+
+	background-color: #151A37 !important;
+	color: white !important;
+
+}
 
 /********************** FIN PAGE DOSSIER ETUDIANT ADMIN ************************/
+
+.fileInputLoad[disabled] {
+	opacity: 0.5;
+	pointer-events: none;
+  }
+  
