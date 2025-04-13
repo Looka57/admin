@@ -1,55 +1,57 @@
 /********************** DEBUT PAGE DOSSIER ETUDIANT ADMIN ************************/
-.cardStudent{
+.cardStudent {
 	width: 90%;
 	margin: auto;
 }
-.cardStudent img{
+
+.cardStudent img {
 	width: 100px;
 	height: 100px;
-	} 
+}
 
-	.student-info, .student-info-supp{
-		text-align: center;
-	}
+.student-info,
+.student-info-supp {
+	text-align: center;
+}
 
-	.student-info button{
-		background-color: var(--bleu);
-	}
-	
- .student-info-supp button{
-	background-color: var(--orange) ;
-	border: 1px solid var(--bleu) ;
- }
+.student-info button {
+	background-color: var(--bleu);
+}
 
-		
-	
-	.student-info-enCours{
-		display: flex;
-		align-items: center;
-		justify-content: space-around;
-	}
+.student-info-supp button {
+	background-color: var(--orange);
+	border: 1px solid var(--bleu);
+}
 
 
-	.studentInfos{
-		display: flex;
-		flex-direction: column;
-	}
 
-	.boxNotif {
-		border: 4px solid rgba(255, 136, 0, 0.988);
-	  }
-	  
+.student-info-enCours {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
 
-	.progress-bar{
-		background-color: var(--bleu);
-	}
+
+.studentInfos {
+	display: flex;
+	flex-direction: column;
+}
+
+.boxNotif {
+	border: 4px solid rgba(255, 136, 0, 0.988);
+}
+
+
+.progress-bar {
+	background-color: var(--bleu);
+}
 
 /* INFO DOSSIER */
 
 .table-custom {
 	background-color: #151A37 !important;
 	color: white !important;
-	
+
 }
 
 .table-custom th,
@@ -66,8 +68,13 @@
 
 /********************** FIN PAGE DOSSIER ETUDIANT ADMIN ************************/
 
+/********************** FIN PAGE DOSSIER ETUDIANT STUDENT ************************/
+.student-info p {
+	text-align: justify;
+}
+
+/* changement d'input a la validation du document telechargé */
 .fileInputLoad[disabled] {
 	opacity: 0.5;
 	pointer-events: none;
-  }
-  
+}

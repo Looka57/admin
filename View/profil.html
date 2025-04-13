@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="../Public/assets/css/styleNavigation.css">
     <link rel="stylesheet" href="../Public/assets/css/styleProfil.css">
     <link rel="stylesheet" href="../Public/assets/css/styleFooter.css">
+    <link rel="stylesheet" href="../Public/assets/css/styleCardAnime.css">
     <link rel="stylesheet" href="../Public/assets/css/styleMediaQuery.css">
 </head>
 
@@ -176,64 +177,49 @@
                         </div>
             </header>
 
+            <!-- ===================== CARD DECO =============================== -->
+
+            <div class="containersCardDeco">
+                <a href="#" alt="Mythrill">
+                    <div class="card">
+                        <div class="wrapper">
+                            <img src="../Public/assets/images/curveDroite.jpg" class="cover-image miroir border" />
+                        </div>
+                        <h3 class="titleCardsAnime text-center">Stagiaires</h3>
+                        <img src="../Public/assets/images/stagiaire.jpg" class="character" />
+
+                    </div>
+                </a>
+
+                <a href="#" alt="Mythrill">
+                    <div class="card">
+                        <div class="wrapper">
+                            <img src="../Public/assets/images/curveMilieu.jpg" class="cover-image border" />
+                        </div>
+                        <h3 class="titleCardsAnime text-center">Intervenants</h3>
+                        <img src="../Public/assets/images/intervenants.jpg"
+                            class="character" />
+                    </div>
+                </a>
+
+                <a href="#" alt="Mythrill">
+                    <div class="card">
+                        <div class="wrapper">
+                            <img src="../Public/assets/images/curveDroite.jpg" class="cover-image border" />
+                        </div>
+                        <h3 class="titleCardsAnime text-center">Admins</h3>
+                        <img src="../Public/assets/images/admin.jpg" class="character" />
+                    </div>
+                </a>
+            </div>
+
             <!-- ===================== BOX INFOS USER =============================== -->
-
-            <div class="boxInfos">
-                <div class="box">
-                    <h3 class="text-center">Gerer les profils utilisateurs</h3>
-                    <div class="boxStagiaire bg-light border">
-                        <h5>Stagiaires</h5>
-                        <div class="boxGestionStudent">
-                            <div class="boxGestionRoleStudent">
-                                <a href=""><button class="btn btn-outline-info w-75">Gestion des rôles</button></a>
-                                <a href=""><button class="btn btn-outline-info w-75">Accès aux dossiers et informations
-                                    administratives</button></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="boxIntervenant bg-light border">
-                        <h5>Intervenant</h5>
-                        <div class="boxGestionIntervenant">
-                            <div class="boxGestionRoleIntervenant">
-                                <a href=""><button class="btn btn-outline-info w-75">Gestion des rôles</button></a>
-                                <a href=""><button class="btn btn-outline-info w-75">Accès aux dossiers et informations
-                                    administratives</button></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="boxAdmin bg-light border">
-                        <h5>Admin</h5>
-                        <div class="boxGestionAdmin">
-                            <div class="boxGestionRoleAdmin">
-                                <a class="w-100" href="rolePermission.html"><button class="btn btn-outline-info w-75">Gestion des rôles et permissions</button></a>
-                                <a class="w-100" href=""><button class="btn btn-outline-info w-75">Liste des types d’utilisateurs gérés</button></a>
-                                <a class="w-100" href=""><button class="btn btn-outline-info w-75">Accès aux dossiers et informations
-                                    administratives</button></a>
-                                <a class="w-100" href="user.html"><button class="btn btn-outline-info w-75">Ajout d’un nouvel
-                                        utilisateur</button></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- <div class="boxNew">
-                        <h4>Nouveau</h4>
-                        <p>🔹 4. Historique & Statistiques
-                            📌 Activités récentes
-                            ✔ Dernières connexions
-                            ✔ Actions récentes
-
-                            📌 Statistiques personnelles
-                            ✔ Nombre de connexions
-                            ✔ Nombre d’actions effectuées</p>
-                    </div> -->
-                </div>
-
+        
                 <div class="boxParametre">
-                    <div class="box">
+                    <div class="box bg-light border">
                         <div class="boxParametreProfil">
-                            <h3 class="text-center">Paramètres profils</h3>
-                            <a href="modification.html"><button class="btn btn-outline-info w-100"> ✔ Modifier l’email
+                            <h3 class="text-center mb-4">Paramètres profils</h3>
+                            <a href="modification.html"><button class="btnEmail btn btn-outline-info w-100"> ✔ Modifier l’email
                                     et le mot de passe</button></a>
                             <h6 class="text-center mt-4">Réseaux sociaux</h6>
                             <div class="reseauSociaux d-flex justify-content-center">
@@ -241,15 +227,12 @@
                                     <a href="#"><i class="bi bi-instagram"></i>
                                         <a href="#"><i class="bi bi-twitter-x"></i>
                             </div>
-                            <p class="text-center mt-4"><a  href="">✔ Paramètres de confidentialité</a></p>
-                            <a href=""><button class="btn btn-outline-info w-100">Deconnexion</button></a>
+                            <p class="text-center mt-4"><a href="">✔ Paramètres de confidentialité</a></p>
+                            <a href=""><button class="btnLogout btn btn-outline-info w-100">Deconnexion</button></a>
                         </div>
                     </div>
                 </div>
-            </div>
-
-
-
+           
 
             <!-- =======================FOOTER================ -->
             <hr>

@@ -44,20 +44,28 @@ header .containerHeader img {
 
 
 /* BOX INFOS ET MANIPULATION DONNEES */
-.boxInfos {
+.boxParametre {
     width: 90%;
-    display: flex;
-    justify-content: space-around;
     margin: 30px auto;
-    gap: 50px;
 }
 
 .box {
-    width: 600px;
+    width: 100%;
     height: auto;
     border-radius: 25px;
-    border: 2px solid gray;
     padding: 10px;
+}
+
+.btnEmail, .btnLogout {
+    color: white; 
+    background-color: var(--bleu);
+    border-color: var(--orange);
+}
+
+.btnEmail:hover, .btnLogout:hover {
+    background-color: white;
+    border-color: var(--orange);
+    color: black !important; /* Texte devient noir */
 }
 
 .boxStagiaire,
