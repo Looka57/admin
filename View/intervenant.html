@@ -216,29 +216,76 @@
             </div>
 
 
-            <!-- Modakl BACK -->
+            <!-- Modal -->
             <div class="modal fade" id="modalStagiaire" tabindex="-1" aria-labelledby="modalStagiaireLabel"
                 aria-hidden="true">
                 <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="modalStagiaireLabel">Détails du Stagiaire</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <form method="post" action="/Stagiaire/Modifier"> 
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalStagiaireLabel">Modifier l'intervenant</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="mb-3">
+                                    <label for="Nom" class="form-label">Nom</label>
+                                    <input type="text" class="form-control" id="Nom" name="Nom" value="Aizawa">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="Prenom" class="form-label">Prénom</label>
+                                    <input type="text" class="form-control" id="Prenom" name="Prenom" value="Shota">
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="DateNaissance" class="form-label">Date de naissance</label>
+                                    <input type="date" class="form-control" id="DateNaissance" name="DateNaissance"
+                                        value="2008-05-14">
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="Adresse" class="form-label">Adresse</label>
+                                    <input type="text" class="form-control" id="Adresse" name="Adresse"
+                                        value="15 rue quelque chose">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="Ville" class="form-label">Ville</label>
+                                    <input type="text" class="form-control" id="Ville" name="Ville" value="Musutafu">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="Mail" class="form-label">Mail</label>
+                                    <input type="email" class="form-control" id="Mail" name="Mail"
+                                        value="Bob@gogole.com">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="Telephone" class="form-label">Téléphone</label>
+                                    <input type="tel" class="form-control" id="Telephone" name="Telephone"
+                                        value="06.06.060.06">
+                                </div>
+
+
+                                <div class="mb-3">
+                                    <label for="Spécialité" class="form-label">Spécialité</label>
+                                    <select class="form-select" id="Spécialité" name="Spécialité">
+                                        <option value="Candidat" selected>CDA</option>
+                                        <option value="Stagiaire">C#</option>
+                                        <option value="Stagiaire">Java</option>
+                                        <option value="Stagiaire">Dev</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="NumSecu" class="form-label">N° Sécurité Sociale</label>
+                                    <input type="text" class="form-control" id="NumSecu" name="NumSecu"
+                                        value="1234567890">
+                                </div>
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="submit" class="btn btn-primary">Enregistrer</button>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                            </div>
                         </div>
-                        <div class="modal-body">
-                            <p><strong>Nom :</strong> Aizawa</p>
-                            <p><strong>Prénom :</strong> Shota</p>
-                            <p><strong>Classe :</strong> 2-A</p>
-                            <p><strong>Adresse :</strong> 15 rue quelque chose</p>
-                            <p><strong>Ville :</strong> Musutafu</p>
-                            <p><strong>MAtiere: </strong> C#</p>
-                            <p><strong>Telephone</strong> 06.06.060.06</p>
-                            <p><strong>Mail</strong> Bob@gogole.com</p>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
-                        </div>
-                    </div>
+                    </form>
                 </div>
             </div>
 
