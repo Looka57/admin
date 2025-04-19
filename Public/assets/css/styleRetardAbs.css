@@ -1,20 +1,61 @@
 /********************** DEBUT PAGE RETARD ABS ************************/
 
-.graphClassLateAbs{
-display: grid;
+.graphClassLateAbs {
+	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 
 	gap: 20px;
 }
 
-.chartContainerAbs, .chartContainerLate {
-    width: 100%;
-    height: 400px; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.chartContainerAbs,
+.chartContainerLate {
+	width: 100%;
+	height: 400px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
+
+/* BOUTON */
+
+.btnNewLateAbs .btnNewAbs,
+.btnNewLateAbs .btnNewLate {
+	color: white;
+	text-align: right;
+}
+
+.btnNewLateAbs .btnNewAbs img,
+.btnNewLateAbs .btnNewLate img {
+	filter: invert(100%);
+}
+
+.btnNewLateAbs .btnNewAbs:hover img:hover,
+.btnNewLateAbs .btnNewLate:hover img:hover {
+	filter: invert(0%);
+	/* Noir au hover */
+}
+
+
+.btnNewLateAbs .btnNewAbs,
+.btnNewLateAbs .btnNewLate {
+	color: white;
+	background-color: var(--bleu);
+	border-color: var(--orange);
+}
+
+.btnNewLateAbs .btnNewAbs:hover,
+.btnNewLateAbs .btnNewLate:hover {
+	background-color: white;
+	border-color: var(--orange);
+	color: black !important;
+	/* Texte devient noir */
+}
+
+.btnNewLateAbs:hover,
+.btnNewLate:hover {
+	filter: initial;
+}
 
 /**********************  OFFCANVAS************************/
 .typeLate {
@@ -23,16 +64,15 @@ display: grid;
 }
 
 
-
 .form-check {
-    display: flex;
-    align-items: center; /
+	display: flex;
+	align-items: center;/
 }
 
 .form-check-input {
-    position: static; 
-    opacity: 0; 
-    margin-right: 5px;
+	position: static;
+	opacity: 0;
+	margin-right: 5px;
 }
 
 .form-check-label {
@@ -53,13 +93,13 @@ display: grid;
 }
 
 /* Style de la case cochée */
-.form-check-input:checked + .form-check-label {
+.form-check-input:checked+.form-check-label {
 	background-color: var(--bleu);
 	border-color: #FF6616;
 	color: #eeeeee;
 }
 
-.DelayLate{
+.DelayLate {
 	border-radius: 25px;
 
 }
@@ -74,6 +114,7 @@ display: grid;
 	border-radius: 10px;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 /**********************  OFFCANVAS************************/
 
 
@@ -81,6 +122,6 @@ display: grid;
 
 /********************** DEBUT PAGE RETARD ABS STAGIAIRRE ************************/
 
-table tr .statut{
+table tr .statut {
 	border: 2px solid green;
 }

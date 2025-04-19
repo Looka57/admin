@@ -49,12 +49,11 @@ header .containerHeader img {
     margin: 30px auto;
 }
 
-.box {
-    width: 100%;
-    height: auto;
-    border-radius: 25px;
-    padding: 10px;
+.box{
+    padding: 20px;
+    border-radius: 30px;
 }
+
 
 .btnEmail, .btnLogout {
     color: white; 
@@ -65,7 +64,7 @@ header .containerHeader img {
 .btnEmail:hover, .btnLogout:hover {
     background-color: white;
     border-color: var(--orange);
-    color: black !important; /* Texte devient noir */
+    color: black !important; 
 }
 
 .reseauSociaux i{
