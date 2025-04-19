@@ -65,6 +65,17 @@
 	.topBar {
 		margin: 0px;
 	}
+
+
+	/* FORMULAIRE STUDENT */
+
+	.photoProfil{
+		display: none;
+	}
+
+	.photoProfilInput{
+		display: block !important;
+	}
 }
 
 

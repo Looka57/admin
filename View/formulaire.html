@@ -128,6 +128,10 @@
             <!-- =====================FORMULAIRE STUDENT=============================== -->
             <div class="container containerStudentDetails ">
                 <div class="enteteForm"></div>
+                <div class="photoProfilInput text-center m-3">
+                    <h6>Photo *</h6>
+                    <input type="file" id="photoProfil" name="photoProfil" >
+                </div>    
                 <div class="formulaireStudent">
                     <div class="row mx-auto">
                         <div class="photoProfil ">
@@ -183,6 +187,30 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="mb-3">
+                                    <label for="Role" class="form-label">Role</label>
+                                    <select name="Role" id="Role" class="form-select ">
+                                        <option value="">Choisir un role</option>
+                                        <option value="Informatique">Candidat</option>
+                                        <option value="Mathématiques">Stagiaire</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="Classe" class="form-label">Classe</label>
+                                    <select name="Classe" id="Classe" class="form-select ">
+                                        <option value="">Choisir une classe</option>
+                                        <option value="Informatique">CDA</option>
+                                        <option value="Mathématiques">C#</option>
+                                        <option value="Mathématiques">Java</option>
+                                        <option value="Mathématiques">FullStack</option>
+                                        <option value="Mathématiques">DevWeb</option>
+                                        <option value="Mathématiques">Réseau</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
                                     <label for="mail" class="form-label">Email</label>
                                     <input type="email" class="form-control" id="mail" aria-describedby="emailHelp">
                                 </div>
@@ -193,6 +221,7 @@
                                     <input type="text" class="form-control" id="Téléphone">
                                 </div>
                             </div>
+                            
                         </div>
 
                         <div class="row">

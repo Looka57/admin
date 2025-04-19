@@ -60,3 +60,11 @@
     border-color: var(--orange);
     color: var(--bleu);
 }
+
+.photoProfil{
+    display: block;
+}
+
+.photoProfilInput{
+    display: none;
+}
