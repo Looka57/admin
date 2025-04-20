@@ -38,6 +38,7 @@
 }
 
 .boxNotif {
+	
 	border: 4px solid rgba(255, 136, 0, 0.988);
 }
 
@@ -45,6 +46,8 @@
 .progress-bar {
 	background-color: var(--bleu);
 }
+
+
 
 /* INFO DOSSIER */
 

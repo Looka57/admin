@@ -139,14 +139,14 @@ document.addEventListener('DOMContentLoaded', function () {
                             height = chart.height,
                             ctx = chart.ctx;
                         if (window.innerWidth > 768) {
-                        ctx.restore();
-                        let image = new Image();
-                        image.src = 'https://img.icons8.com/ios-filled/50/couple-posing.png';
-                        let imageSize = 80;
-                        let x = width / 2.37 - imageSize / 2,
-                            y = height / 2 - imageSize / 2;
-                        ctx.drawImage(image, x, y, imageSize, imageSize);
-                        ctx.save();
+                            ctx.restore();
+                            let image = new Image();
+                            image.src = 'https://img.icons8.com/ios-filled/50/couple-posing.png';
+                            let imageSize = 80;
+                            let x = width / 2.37 - imageSize / 2,
+                                y = height / 2 - imageSize / 2;
+                            ctx.drawImage(image, x, y, imageSize, imageSize);
+                            ctx.save();
                         }
                     },
                 },
@@ -226,45 +226,45 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-   // 7. Graphique des dossiers par classes
-const fileCanvas = document.querySelector('#fileClass');
-if (fileCanvas && typeof Chart !== 'undefined') {
-    const labels = ['cda', 'dev', 'dev2', 'Réseau', 'java', 'C#', 'ran1', 'ran4'];
+    // 7. Graphique des dossiers par classes
+    const fileCanvas = document.querySelector('#fileClass');
+    if (fileCanvas && typeof Chart !== 'undefined') {
+        const labels = ['cda', 'dev', 'dev2', 'Réseau', 'java', 'C#', 'ran1', 'ran4'];
 
-    const fileChart = new Chart(fileCanvas, {
-        type: 'bar',
-        data: {
-            labels: labels,
-            datasets: [
-                {
-                    label: 'Dossiers en attente',
-                    data: [12, 9, 14, 10, 8, 6, 7, 9],
-                    backgroundColor: 'rgba(255, 102, 22 , 0.8)',
-                    borderColor: 'rgba(255, 102, 22, 1)',
-                    borderWidth: 1,
-                    borderRadius:25,
+        const fileChart = new Chart(fileCanvas, {
+            type: 'bar',
+            data: {
+                labels: labels,
+                datasets: [
+                    {
+                        label: 'Dossiers en attente',
+                        data: [12, 9, 14, 10, 8, 6, 7, 9],
+                        backgroundColor: 'rgba(255, 102, 22 , 0.8)',
+                        borderColor: 'rgba(255, 102, 22, 1)',
+                        borderWidth: 1,
+                        borderRadius: 25,
 
-                },
-                {
-                    label: 'Dossiers clôturés',
-                    data: [7, 5, 9, 6, 4, 3, 8, 10],
-                    backgroundColor: 'rgba(21, 26, 55, 0.8)',
-                    borderColor: 'rgba(21, 26, 55, 1)',
-                    borderWidth: 1,
-                    borderRadius:25,
-                },
-            ],
-        },
-        options: {
-            responsive: true,
-            scales: {
-                y: {
-                    beginAtZero: true,
+                    },
+                    {
+                        label: 'Dossiers clôturés',
+                        data: [7, 5, 9, 6, 4, 3, 8, 10],
+                        backgroundColor: 'rgba(21, 26, 55, 0.8)',
+                        borderColor: 'rgba(21, 26, 55, 1)',
+                        borderWidth: 1,
+                        borderRadius: 25,
+                    },
+                ],
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                    },
                 },
             },
-        },
-    });
-}
+        });
+    }
 
 
 
@@ -294,7 +294,7 @@ if (fileCanvas && typeof Chart !== 'undefined') {
 
 
 
-    
+
 
     // 7. Gestion du clic sur la carte pour afficher/cacher le tableau
     let card = document.getElementById('cardDevWeb2');
@@ -320,7 +320,7 @@ document.addEventListener("DOMContentLoaded", function () {
         minDate: "today",
         locale: "fr",
         allowInput: true,
-        onChange: function(selectedDates, dateStr) {
+        onChange: function (selectedDates, dateStr) {
             // Définit la date de fin minimum après la date de début choisie
             dateFinPicker.set("minDate", dateStr);
         }
@@ -347,40 +347,40 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-  document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
     // Cibler tous les inputs type="file"
     const fileInputs = document.querySelectorAll("input[type='file']");
 
     fileInputs.forEach((input) => {
-      input.addEventListener("change", function () {
-        const file = input.files[0];
+        input.addEventListener("change", function () {
+            const file = input.files[0];
 
-        if (file) {
-          // ✅ Exemple de validation simple : fichier < 5 Mo
-          const isValid = file.size <= 5 * 1024 * 1024;
+            if (file) {
+                // ✅ Exemple de validation simple : fichier < 5 Mo
+                const isValid = file.size <= 5 * 1024 * 1024;
 
-          if (isValid) {
-            // 🔒 Griser l'input
-            input.disabled = true;
-            input.style.opacity = "0.6";
+                if (isValid) {
+                    // 🔒 Griser l'input
+                    input.disabled = true;
+                    input.style.opacity = "0.6";
 
-            // 🟢 Passer le bouton à "Valider"
-            const row = input.closest("tr");
-            const btn = row.querySelector("button");
+                    // 🟢 Passer le bouton à "Valider"
+                    const row = input.closest("tr");
+                    const btn = row.querySelector("button");
 
-            if (btn) {
-              btn.textContent = "Valider";
-              btn.classList.remove("btn-warning");
-              btn.classList.add("btn-success");
+                    if (btn) {
+                        btn.textContent = "Valider";
+                        btn.classList.remove("btn-warning");
+                        btn.classList.add("btn-success");
+                    }
+                } else {
+                    alert("Fichier trop volumineux !");
+                    input.value = ""; // réinitialiser
+                }
             }
-          } else {
-            alert("Fichier trop volumineux !");
-            input.value = ""; // réinitialiser
-          }
-        }
-      });
+        });
     });
-  });
+});
 
 
 

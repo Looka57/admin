@@ -142,12 +142,14 @@
                                 <img width="80" height="80" src="https://img.icons8.com/dotty/80/rotate.png" alt="rotate" />
                             </div>
                         </div>
-                        <div class="p-3 mb-3 border rounded-3 bg-light studentInfos">
-                            <div class="student-info">
-                                <h4>Dépot de document</h4>
-                                <button type="button" class="btn btn-outline-light">Ajouter</button>
+                        <div class="p-4 mb-4 border rounded-3 bg-light">
+                            <h4 class="mb-3 text-center">Dépôt de document</h4>
+                            <div class="input-group">
+                                <input type="file" class="form-control" id="documentUpload">
+                                <button class="btn btn-primary" type="button">Ajouter</button>
                             </div>
                         </div>
+                        
                         <div class="p-3 mb-3 border rounded-3 bg-light studentInfos">
                             <div class="student-info-supp">
                                 <h4>Supprimer Dossier</h4>
@@ -155,23 +157,27 @@
                             </div>
                         </div>
                     </div>
-            
+                    
                     <div class="col-md-8 col-sm-12">
-                        <div class="row g-3 mb-4">
-                            <div class="col-12">
+                        <div class="row mb-4">
+                            <div class="col-12 ">
                                 <div class="row g-5">
                                     <div class="col-md-5 col-sm-12 p-3 mx-4 border rounded-3 bg-light">
-                                        <h4>Progression du dossier</h4>
-                                        <div class="progress mb-5" style="height: 20px;">
-                                            <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuemin="0"
-                                                aria-valuemax="100" aria-valuenow="50">100%</div>
+                                        <h4 class="mb-4">Progression du dossier</h4>
+                                        <div class="progress" style="height: 50px;">
+                                            <div class="progress-bar" role="progressbar" style="width: 50%"
+                                                aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">50%</div>
                                         </div>
-                                        <div class="progress" style="height: 20px;">
-                                            <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuemin="0"
-                                                aria-valuemax="100" aria-valuenow="50">50%</div>
+                                        <p>Validation eleve</p>
+                                        <div class="progress mt-5 " style="height: 50px;">
+                                            <div class="progress-bar progress-bar-striped bg-warning" role="progressbar"
+                                                style="width: 25%" aria-valuemin="0" aria-valuemax="100"
+                                                aria-valuenow="25">25%</div>
                                         </div>
+                                        <p >Validation mns</p>
+
                                     </div>
-                                    <div class="col-md-6 col-sm-12 p-3 rounded-3 boxNotif">
+                                    <div class="col-md-6 mx-auto col-sm-12 p-3 rounded-3 boxNotif">
                                         <h4>Notifications</h4>
                                         <table class="table rounded-3 table-custom">
                                             <thead>
@@ -199,6 +205,7 @@
                                 </div>
                             </div>
                         </div>
+
             
                         <div class="p-3 g-3 border rounded-3 bg-light">
                             <h4>Pièce à fournir</h4>
@@ -222,7 +229,7 @@
                                                 </button>
                                             </td>
                                             <td>
-                                                <button type="button" class="btn btn-success btn-sm">Valider</button>
+                                                <button type="button" class="btn btn-success btn-sm ">Valider</button>
                                                 <button type="button" class="btn btn-danger btn-sm">Refuser</button>
                                             </td>
                                         </tr>
@@ -245,7 +252,7 @@
                                             <td>Entretien</td>
                                             <td class="d-none d-md-table-cell">18.10.2024</td>
                                             <td>
-                                                <button type="button" class="btn btn-warning btn-sm">
+                                                <button type="button" class="btn btn-warning btn-sm ">
                                                     <i class="bi bi-file-earmark-text"></i> Vérifier
                                                 </button>
                                             </td>
@@ -264,7 +271,7 @@
                                                 </button>
                                             </td>
                                             <td>
-                                                <button type="button" class="btn btn-success btn-sm">Valider</button>
+                                                <button type="button" class="btn btn-success btn-sm ">Valider</button>
                                                 <button type="button" class="btn btn-danger btn-sm">Refuser</button>
                                             </td>
                                         </tr>
@@ -273,7 +280,6 @@
                             </div>
                         </div>
                     </div>
-            
                 </div>
             </div>
             
