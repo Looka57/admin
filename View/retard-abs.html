@@ -161,7 +161,7 @@
                                     <th scope="col">#</th>
                                     <th scope="col">Nom</th>
                                     <th scope="col" class="d-none d-md-table-cell">Prenom</th>
-                                    <th scope="col">Classe</th>
+                                    <th scope="col" class="d-none d-md-table-cell">Classe</th>
                                     <th scope="col" class="d-none d-lg-table-cell">Date</th>
                                     <th scope="col" class="d-none d-md-table-cell">Durée</th>
                                     <th scope="col" class="d-none d-md-table-cell">Type</th>
@@ -174,12 +174,12 @@
                                     <th scope="row">1</th>
                                     <td>Dupont</td>
                                     <td class="d-none d-md-table-cell">Jean</td>
-                                    <td>Java</td>
+                                    <td class="d-none d-lg-table-cell">Java</td>
                                     <td class="d-none d-lg-table-cell">12/03/2025</td>
                                     <td class="d-none d-md-table-cell">2 jours</td>
                                     <td>Maladie</td>
                                     <td><a href="#" class="btn btn-info btn-sm">Télécharger</a></td>
-                                    <td>
+                                    <td class="d-flex flex-wrap gap-2">
                                         <button type="button" class="btn btn-success btn-sm">Valider</button>
                                         <button type="button" class="btn btn-danger btn-sm">Refuser</button>
                                     </td>
@@ -188,12 +188,12 @@
                                     <th scope="row">2</th>
                                     <td>Martin</td>
                                     <td class="d-none d-md-table-cell">Sophie</td>
-                                    <td>C#</td>
+                                    <td class="d-none d-lg-table-cell">C#</td>
                                     <td class="d-none d-lg-table-cell">15/03/2025</td>
                                     <td class="d-none d-md-table-cell">1 jour</td>
                                     <td>Congé</td>
                                     <td><a href="#" class="btn btn-info btn-sm">Télécharger</a></td>
-                                    <td>
+                                    <td class="d-flex flex-wrap gap-2">
                                         <button type="button" class="btn btn-success btn-sm">Valider</button>
                                         <button type="button" class="btn btn-danger btn-sm">Refuser</button>
                                     </td>
@@ -202,12 +202,12 @@
                                     <th scope="row">3</th>
                                     <td>Leblanc</td>
                                     <td class="d-none d-md-table-cell">Marc</td>
-                                    <td>Ran2</td>
+                                    <td class="d-none d-lg-table-cell">Ran2</td>
                                     <td class="d-none d-lg-table-cell">20/03/2025</td>
                                     <td class="d-none d-md-table-cell">3 jours</td>
                                     <td>Urgence</td>
                                     <td><a href="#" class="btn btn-info btn-sm">Télécharger</a></td>
-                                    <td>
+                                    <td class="d-flex flex-wrap gap-2">
                                         <button type="button" class="btn btn-success btn-sm">Valider</button>
                                         <button type="button" class="btn btn-danger btn-sm">Refuser</button>
                                     </td>
@@ -216,12 +216,12 @@
                                     <th scope="row">4</th>
                                     <td>Durand</td>
                                     <td class="d-none d-md-table-cell">Claire</td>
-                                    <td>Java</td>
+                                    <td class="d-none d-lg-table-cell">Java</td>
                                     <td class="d-none d-lg-table-cell">10/04/2025</td>
                                     <td class="d-none d-md-table-cell">1 semaine</td>
                                     <td>Vacances</td>
                                     <td><a href="#" class="btn btn-info btn-sm">Télécharger</a></td>
-                                    <td>
+                                    <td class="d-flex flex-wrap gap-2">
                                         <button type="button" class="btn btn-success btn-sm">Valider</button>
                                         <button type="button" class="btn btn-danger btn-sm">Refuser</button>
                                     </td>
@@ -230,12 +230,12 @@
                                     <th scope="row">5</th>
                                     <td>Petit</td>
                                     <td class="d-none d-md-table-cell">Lucas</td>
-                                    <td>Dev Web</td>
+                                    <td class="d-none d-lg-table-cell">Dev Web</td>
                                     <td class="d-none d-lg-table-cell">25/05/2025</td>
                                     <td class="d-none d-md-table-cell">2 jours</td>
                                     <td>Raisons personnelles</td>
                                     <td><a href="#" class="btn btn-info btn-sm">Télécharger</a></td>
-                                    <td>
+                                    <td class="d-flex flex-wrap gap-2">
                                         <button type="button" class="btn btn-success btn-sm">Valider</button>
                                         <button type="button" class="btn btn-danger btn-sm">Refuser</button>
                                     </td>
@@ -346,10 +346,12 @@
                                     <th scope="col">#</th>
                                     <th scope="col">Nom</th>
                                     <th scope="col" class="d-none d-md-table-cell">Prenom</th>
+                                    <th scope="col"  class="d-none d-lg-table-cell">Classe</th>
                                     <th scope="col" class="d-none d-lg-table-cell">Date</th>
                                     <th scope="col" class="d-none d-md-table-cell">Heure d'arrivée</th>
                                     <th scope="col">Motif</th>
-                                    <th scope="col">Actions</th>
+                                    <th scope="col">Justificatifs</th>
+                                    <th scope="col ">Actions</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -357,56 +359,71 @@
                                     <th scope="row">1</th>
                                     <td>Dupont</td>
                                     <td class="d-none d-md-table-cell">Jean</td>
+                                    <td class="d-none d-lg-table-cell">Dev Web</td>
                                     <td class="d-none d-lg-table-cell">12/03/2025</td>
                                     <td class="d-none d-md-table-cell">09:15</td>
                                     <td>Transport</td>
-                                    <td>
+                                    <td><a href="#" class="btn btn-info btn-sm">Télécharger</a></td>
+                                    <td class="d-flex flex-wrap gap-2">
                                         <button type="button" class="btn btn-success btn-sm">Valider</button>
-                                        </td>
+                                        <button type="button" class="btn btn-danger btn-sm">Refuser</button>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <th scope="row">2</th>
                                     <td>Martin</td>
                                     <td class="d-none d-md-table-cell">Sophie</td>
+                                    <td class="d-none d-lg-table-cell">Java</td>
                                     <td class="d-none d-lg-table-cell">15/03/2025</td>
                                     <td class="d-none d-md-table-cell">09:30</td>
                                     <td>Maladie</td>
-                                    <td>
+                                  <td><a href="#" class="btn btn-info btn-sm">Télécharger</a></td>
+                                    <td class="d-flex flex-wrap gap-2">
                                         <button type="button" class="btn btn-success btn-sm">Valider</button>
-                                        </td>
+                                        <button type="button" class="btn btn-danger btn-sm">Refuser</button>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <th scope="row">3</th>
                                     <td>Leblanc</td>
                                     <td class="d-none d-md-table-cell">Marc</td>
+                                    <td class="d-none d-lg-table-cell">Dev Web</td>
                                     <td class="d-none d-lg-table-cell">20/03/2025</td>
                                     <td class="d-none d-md-table-cell">10:00</td>
                                     <td>Retard accidentel</td>
-                                    <td>
+                                  <td><a href="#" class="btn btn-info btn-sm">Télécharger</a></td>
+                                    <td class="d-flex flex-wrap gap-2">
                                         <button type="button" class="btn btn-success btn-sm">Valider</button>
-                                        </td>
+                                        <button type="button" class="btn btn-danger btn-sm">Refuser</button>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <th scope="row">4</th>
                                     <td>Durand</td>
                                     <td class="d-none d-md-table-cell">Claire</td>
+                                    <td class="d-none d-lg-table-cell">C#</td>
                                     <td class="d-none d-lg-table-cell">10/04/2025</td>
                                     <td class="d-none d-md-table-cell">09:45</td>
                                     <td>Problème de transport</td>
-                                    <td>
+                                  <td><a href="#" class="btn btn-info btn-sm">Télécharger</a></td>
+                                    <td class="d-flex flex-wrap gap-2">
                                         <button type="button" class="btn btn-success btn-sm">Valider</button>
-                                        </td>
+                                        <button type="button" class="btn btn-danger btn-sm">Refuser</button>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <th scope="row">5</th>
                                     <td>Petit</td>
                                     <td class="d-none d-md-table-cell">Lucas</td>
+                                    <td class="d-none d-lg-table-cell">C#</td>
                                     <td class="d-none d-lg-table-cell">25/05/2025</td>
                                     <td class="d-none d-md-table-cell">09:05</td>
                                     <td>Famille</td>
-                                    <td>
+                                  <td><a href="#" class="btn btn-info btn-sm">Télécharger</a></td>
+                                    <td class="d-flex flex-wrap gap-2">
                                         <button type="button" class="btn btn-success btn-sm">Valider</button>
-                                        </td>
+                                        <button type="button" class="btn btn-danger btn-sm">Refuser</button>
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
