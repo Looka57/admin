@@ -167,7 +167,7 @@
 	margin: 0 10px;
 }
 
-.search label input {
+/* .search label input {
 	position: relative;
 	width: 100%;
 	border-radius: 40px;
@@ -182,7 +182,9 @@
 	top: 10px;
 	left: 10px;
 	font-size: 1.2rem;
-}
+} */
+
+
 
 .user {
 	position: relative;
