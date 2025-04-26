@@ -9,7 +9,7 @@
 	gap: 30px;
 }
 
-.cardBox .card {
+.cardBox .cards {
 	position: relative;
 	padding: 20px;
 	background-color: var(--bleu-opacité);
@@ -22,31 +22,31 @@
 	overflow: hidden;
 }
 
-.cardBox .card:nth-child(even) {
+.cardBox .cards:nth-child(even) {
 	background-color: var(--orange-opacité);
 }
 
 
-.cardBox .card .cardNumber {
+.cardBox .cards .cardNumber {
 	position: relative;
 	font-weight: 400;
 	font-size: 2.5rem;
 }
 
-.cardBox .card .cardName {
+.cardBox .cards .cardName {
 	position: relative;
 	font-size: 1.5rem;
 
 }
 
-.card .iconCard {
+.cards .iconCard {
 	position: relative;
 	display: flex;
 	align-items: center;
 
 }
 
-.cardBox .card::before {
+.cardBox .cards::before {
 	content: "";
 	position: absolute;
 	top: -20px;
@@ -59,7 +59,7 @@
 	transition: all 0.5s ease-in-out;
 }
 
-.cardBox .card:hover::before {
+.cardBox .cards:hover::before {
 	width: 300%;
 	height: 300%;
 	top: 50%;
@@ -74,10 +74,10 @@
 } 
 
 
-.cardBox .card:hover {
+.cardBox .cards:hover {
 	color: white;
 }
 
-.cardBox .card:hover .iconCard {
+.cardBox .cards:hover .iconCard {
 	filter: invert(100%);
 }
