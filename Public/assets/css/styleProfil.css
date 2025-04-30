@@ -1,11 +1,17 @@
 .containerHeader {
     width: 90%;
-    height: 350px;
+    height: auto;
     margin: 40px auto;
     background: rgb(21, 26, 55);
     background: linear-gradient(180deg, rgba(21, 26, 55, 1) 36%, rgba(255, 255, 255, 1) 33%);
     border-radius: 25px;
 
+}
+
+.containersCardDeco{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .titreContainerHeader{
@@ -36,6 +42,7 @@ header .containerHeader img {
     display: flex;
     justify-content: space-between;
     padding: 10px 30px 10px 30px;
+    flex-wrap: wrap;
 }
 
 .positionIcon {
